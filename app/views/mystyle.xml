@@ -1,0 +1,49 @@
+<Alloy>
+	<ScrollView id="mystyle" class="widthFill heightFill">
+
+		<View class="border"></View>
+		<Label id="styleHeader_lbl" class="fontMedium">DISCOVER YOUR</Label>
+		<Label id="styleName_lbl" class="fontLight">STYLE</Label>
+		<Label id="shareStyle" class="iconFont" visible="false"></Label>
+		<Label id="styleValue_lbl" class="fontLight">Make shopping more fun by exploring designs that truly fit your taste</Label>
+		<Label id="take_quiz_btn" class="fontMedium" onClick="takeQuiz">TAKE THE QUIZ</Label>
+		<View id="collectionContainer" class="layoutVertical widthFill heightSize">
+
+			<View class="border" width="90%"></View>
+			<View class="widthFill heightSize" top="5dp">
+				<Label id="style_lbl" class="fontMedium">LOOKS IN YOUR STYLE</Label>
+				<Label id="viewall_btn" class="fontMedium" onClick="viewAllStyle" ></Label>
+			</View>
+			<ListView top="5dp" id="curtainsListView" class="listview" defaultItemTemplate="gridTemplate" onItemclick="looksListEvent" >
+				<Templates>
+					<Require type="view" src="listTemplate" id="template"></Require>
+				</Templates>
+				<ListSection id ="curtainsSection"></ListSection>
+				<FooterView>
+					<!-- <View height="20dp">
+					<ActivityIndicator id="loader" top="5dp"/>
+					</View> -->
+
+					<View class="widthFill heightSize" top="5">
+						<Label id="loadMore" class="fontMedium loadMore"  onClick="loadMoreStyle">LOAD MORE</Label>
+						<ActivityIndicator id="loader" class="indicator" message=" Loading..." />
+					</View>
+
+				</FooterView>
+
+			</ListView>
+
+			<!-- <View class="widthFill heightSize" top="5">
+
+			<Label id="loadMore" class="fontMedium loadMore" bottom="10dp" onClick="loadMoreStyle">LOAD MORE</Label>
+			<ActivityIndicator id="loader" class="indicator" message=" Loading..." />
+			</View> -->
+			<Label height="10"></Label>
+		</View>
+
+		<!-- <Label id="loadMore" class="fontMedium loadMore" onClick="loadMoreStyle">LOAD MORE</Label> -->
+
+		<!-- <View top="5dp" width="widthFill" height="5dp"></View> -->
+
+	</ScrollView>
+</Alloy>

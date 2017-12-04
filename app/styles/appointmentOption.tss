@@ -1,0 +1,156 @@
+
+"#appointmentOption":{
+	backgroundColor: "#231f20",
+	scrollType: "vertical",
+	//scrollingEnabled:false,
+	zIndex: 15
+}
+
+"#headerContainer":{
+	top: "5dp",
+	left: "0dp",
+	height: "50dp"
+}
+
+
+"#screenName":{
+	left: "20dp",
+	//top: "10dp",
+	top:"5dp",
+	color: "#fff",
+	font:{
+		fontSize: "18dp"
+	}
+}
+
+"#refresh_btn":{
+	widht: "20dp",
+	height: "20dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	right: "40dp",
+	top: "10dp",
+	color: "#fff",
+	text:Alloy.Globals.icon.refresh
+}
+
+"#close_btn":{
+	width: "20dp",
+	height: "20dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	//right: "10dp",
+	right: "5%",
+	//top: "10dp",
+	top:"5dp",
+	color: "#fff",
+	text:Alloy.Globals.icon.close
+}
+
+"#book_appointment_btn":{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: "70%",
+	height: "50dp",
+	borderColor: "#7b7979",
+	borderWidth: 1,
+	//top: "50dp"
+	color: "#fff",
+	bottom: "75dp",//60
+	font:{
+		fontSize: "16dp"
+	}
+}
+"#addAddressContainer":{
+	bottom: "65dp"
+}
+"#addNewAddress":{
+	bottom: "40dp",//10
+	font:{
+		fontSize: "14dp"
+	},
+	height: "25dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color:Alloy.Globals.labelTitleColor
+}
+
+"#appointListContainer": {
+	top: "55dp",
+	left: "5dp",
+	right: "5dp",
+	scrollType: "vertical",
+	bottom: "160dp"
+}
+
+".appointOptionTemplate":{
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	width:Ti.UI.FILL,
+	layout: "vertical"
+}
+
+"#locationName":{
+	left: "40dp",
+	top: "0",
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#fff",
+	height: "12dp"
+}
+
+"#locationKm":{
+	color: "#a0a0a0",
+	font:{
+		fontSize: "12dp"
+	},
+	top: "0",
+	right: "20dp"
+}
+
+"#exculsive_lbl":{
+	color: "#fff",
+	font:{
+		fontSize: "10dp"
+	},
+	top: "5dp",
+	left: "40dp"
+}
+
+"#address_lbl":{
+	left: "40dp",
+	color: "#a0a0a0",
+	width: "70%", //Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	maxLines: 4,
+	wordWrap: true,
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+"#getDirection_lbl":{
+	color:Alloy.Globals.labelTitleColor,
+	top: "5dp",
+	left: "40dp",
+	bottom: "15dp",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+".selectRow":{
+	text:Alloy.Globals.icon.tick,
+
+	//text:"",
+	color: Alloy.Globals.labelTitleColor,
+	left: "10dp",
+	top: "5dp",
+	visible: false,
+	font:{
+		fontSize: "12dp"
+	}
+}

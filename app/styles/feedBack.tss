@@ -1,0 +1,155 @@
+".containerForPage" : {
+	top:"53dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	layout: "vertical",
+}
+".containerWithMargin" : {
+	left: "20dp",
+	right: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	borderColor: "#ffffff"
+}
+".smallHeading" : {
+	top:"26dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#333333",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".rowBlock" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".inputText" : {
+	left: "10dp",
+	right: "10dp",
+	color: "#a0a0a0",
+	width: Titanium.UI.FILL,
+	height: "35dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize:"16dp"
+	},
+}
+".icon" : {
+	right: "10dp",
+	text: Alloy.Globals.icon.dropdownArrow,
+	width: Titanium.UI.SIZE,
+	height: "35dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#333333",
+	font:{
+		fontSize:"5dp",
+		fontFamily: "icomoon"
+	},
+	zIndex: 1
+}
+".horizontalSeparator" : {
+	bottom: 0,
+	height: "1dp",
+	width: Titanium.UI.FILL,
+	backgroundColor:"#cccccc"
+}
+".inputTextArea" : {
+	left: "10dp",
+	right: "10dp",
+	width: Titanium.UI.FILL,	
+	height: Titanium.UI.SIZE,
+	color: "#a0a0a0",
+	hintTextColor: "#a0a0a0",
+	tintColor: "transparent",
+	backgroundColor: "transparent",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize:"16dp"
+	},
+}
+".containerWithOutMargin" : {
+	top: "40dp",
+	left: "20dp",
+	right: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL
+}
+".buttonText" : {
+	bottom: "58dp",
+	left: "30dp",
+	right: "30dp",
+	width: Titanium.UI.FILL,	
+	height: "40dp",
+	color: "#ffffff",
+	backgroundColor: "#231f20",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize:"16dp"
+	},
+}
+".smallTextOrange" : {
+	bottom: "25dp",
+	left: "30dp",
+	right: "30dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"14dp"
+	},
+	color:"#e65e48",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".dropDownScroll":{
+	top: "35dp",
+	//top: "40dp",
+	backgroundColor: "#ffffff",
+	height: 0,
+	borderColor: "#cccccc",
+	left:"1dp",
+	right:"1dp",
+	bottom:"1dp",
+	
+}
+
+".rowBlock" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+
+
+/*Attachment*/
+
+".camera" : {
+	top: 2,
+	right: "10dp",
+	text: Alloy.Globals.icon.camera,
+	//width: Titanium.UI.SIZE,
+	width: "50dp",
+	height: "50dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#333333",
+	font:{
+		fontSize:"20dp",
+		fontFamily: "icomoon"
+	},
+	zIndex: 1,
+	//borderColor:"red"
+}
+
+".attachedImageCont" : {
+	top:2,
+	right: "60dp",
+	//width: "60dp",
+	width: "80dp",
+	height: "40dp",
+	borderColor:"red"
+}
+
+".attachedImage" :{
+	top:2,
+	//width: Titanium.UI.FILL,
+	height:"80dp",
+}

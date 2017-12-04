@@ -1,0 +1,141 @@
+"#totalDisplayContainer":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	top:"53dp",
+	backgroundColor:"#ffffff"
+}
+"#totalLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#7e7d7d",
+	left:"20dp"
+}
+"#amountLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#e65e48",
+	left:"10dp"
+}
+"#rupies":{
+	font:{
+		fontSize:"11dp",
+		fontFamily:"icomoon"
+	},
+	color:"#e65e48",
+	text:Alloy.Globals.icon.currency,
+	left:"0dp",
+	top:"3dp",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#taxLbl":{
+	font:{
+		fontSize:"8dp",
+	},
+	color:"#333333",
+	right:"20dp",
+	bottom:"5dp"
+}
+".addressSeperator":{
+	height:"1dp",
+	width:"33%",
+	left:"0dp",
+	top:"103dp",
+	backgroundColor:"#e65e48"
+}
+".nextSeperator":{
+	height:"1dp",
+	left:"33%",
+	width:Titanium.UI.FILL,
+	top:"103dp",
+	backgroundColor:"#e7e7e7"
+}
+".addressLbl":{
+	top:"108",
+	left:"10%",
+	font:{
+		fontSize:"11dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#000000",
+	text:"ADDRESS"
+}
+"#addressContainer":{
+	top:"130dp",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	bottom:"70dp"
+}
+".downLbl":{
+	height:"40dp",
+	bottom:"0dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#backToBagLbl":{
+	left:"0dp",
+	backgroundColor:"#b0b0b0"
+}
+"#reviewLbl":{
+	right:"0dp",
+	backgroundColor:"#e65e48"
+}
+"#checkIcon":{
+	left:"20dp",
+	width:"15dp",
+	height:"15dp",
+	top:"10dp",
+	text : Alloy.Globals.icon.tick,
+	font : {
+		fontSize : "15dp",
+		fontFamily : "icomoon"
+	},
+	color : "#e65e48",
+	//borderColor : "red",
+	type : "check",
+	touchEnabled : false,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+}
+"#billingAddressLbl":{
+	top:"10dp",
+	left:"45dp",
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	type : "check",
+	color:"#7e7d7d",
+	text:"Use the same for Billing Address",
+	touchEnabled : false
+}
+
+"#emptyAddressLbl":{
+	font:{
+		fontSize: "12dp",
+	},
+	visible: false,
+	color:"#a0a0a0",
+}
+"#billingContainer":{
+	visible:false
+}
+"#addAddressLbl":{
+	height:"40dp",
+	width:"40dp",
+	borderRadius:"20dp",
+	color:"#000000",
+	borderWidth:"0.1",
+	bottom:"70dp",
+	right:"10dp",
+	backgroundColor:"#e65e48",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.add,
+}

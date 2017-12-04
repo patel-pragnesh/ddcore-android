@@ -1,0 +1,60 @@
+<Alloy>
+	<Window id="allCollections" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+
+		<Require src="headerView" type="widget" id="header"></Require>
+		<ScrollView id="collectionScroll" class="collectionsScroll">
+
+			<!-- UPHOLSTERY  -->
+			<View class="heightSize layoutVertical top0">
+				<View id="upholsteryContainer" class="viewAllContainer">
+					<Label id="upholsteryNameLbl" class="categoryName fontHeavy"></Label>
+					<View id="upholsteryViewAllContainer" class="heightFill right0 width40">
+						<Label id="upholsteryViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="upholsteryrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="upholsteryListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id ="upholsterySection"></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="upholsteryLoadMore" class="loadMore">
+								<Label id="upholsteryLoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="upholsteryActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+
+			<!-- CURTAINS -->
+			<View class="heightSize layoutVertical top0">
+				<View id="curtainsContainer" class="viewAllContainer">
+					<Label id="curtainNameLbl" class="categoryName fontHeavy"></Label>
+					<View id="curtainViewAllContainer" class="heightFill right0 width40">
+						<Label id="curtainsViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="curtainsListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id ="curtainsSection"></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="curtainsLoadMore" class="loadMore">
+								<Label id="curtainsLoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="curtainsActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy> 

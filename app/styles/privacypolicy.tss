@@ -1,0 +1,134 @@
+".superView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor: "#ffffff",
+	backgroundColor: "#231f20"
+}
+".refundHeader":{
+	top: "20dp",
+	zIndex :"100",
+	width:Titanium.UI.FILL,
+	height: "40dp"
+}
+".headerLbl":{
+	left: "20dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize: "16dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color: "#ffffff"
+}
+".closeLbl":{
+	right: "15dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER	
+}
+".policyView" :{
+	left: "20dp",
+	right: "20dp",
+	//width:"100%",
+	height:Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".rowBlock" : {
+	top: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".policyText" :{
+	font:{
+		fontSize: "13dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color: "#ffffff"
+}
+".horizontalSeparator" : {
+	top: "30dp",
+	height: "0.5dp",
+	width: Titanium.UI.FILL,
+	backgroundColor: "#999999"
+}
+".questions" :{
+	left: "20dp",
+	right: "20dp",
+	//width:"100%",
+	height: Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".qAndA" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".questionsWrapper" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".questionsText" : {
+	left: 0,
+	width: "90%",
+	height: Titanium.UI.SIZE,
+	font : {
+        fontSize : "12dp",
+       fontFamily:"futura-hv-bt-heavy"	
+    },
+    color: "#e65e48"
+}
+".questionsIcon" :{
+	right: 0,
+	width: "10%",
+	color: "#ffffff",
+	font:{
+		fontSize: "12dp",
+		fontFamily: "icomoon"
+	},
+	text:Alloy.Globals.icon.downArrow,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".answerWrapper" :{
+	width: Titanium.UI.FILL,
+	height: 0,
+	layout: "vertical"
+}
+".answerText":{
+	font:{
+		fontSize: "12dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".innerPoints" : {
+	top: "8dp",
+	bottom: "8dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+}
+".dot" : {
+	left: 0,
+	height: "5dp",
+	width: "5dp",
+	borderRadius:"2.5dp",
+	backgroundColor: "#e65e48"
+}
+".answerPoint" : {
+	left: "20dp",
+	font:{
+		fontSize: "12dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}

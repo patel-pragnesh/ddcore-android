@@ -1,0 +1,38 @@
+<Alloy>
+	<View id="pickerTemplate" class="pickerContainer">
+		<View id="pickerContainer" width="300dp" height="Titanium.UI.SIZE" layout="vertical" backgroundColor="#231f20">
+			<Picker id="picker"	onChange="changeDate"></Picker>
+			
+			<Picker id="picker1" class="pickerClass" onChange="changeDate"></Picker>
+			
+
+			<!-- <Picker id="addressPicker">
+			<Column id="addressCols">
+			<Row title="Assam"/>
+			<Row title="Bhopal"/>
+			<Row title="Maharashtra"/>
+			<Row title="Goa"/>
+			<Row title="Tamil Nadu"/>
+			<Row title="Kerala"/>
+			<Row title="Orissa"/>
+			<Row title="Assam"/>
+			<Row title="Bhopal"/>
+			<Row title="Maharashtra"/>
+			<Row title="Goa"/>
+			<Row title="Tamil Nadu"/>
+			<Row title="Kerala"/>
+			<Row title="Orissa"/>
+			</Column>
+			</Picker> -->
+			<!-- button container  -->
+			<View class="actionContainer">
+				<Label class="fontLight actionLbl" left="10%" onClick="setDate">SET</Label>
+				<Label class="fontLight actionLbl" right="10%" onClick="closePicker">CANCEL</Label>
+			</View>
+		</View>
+		<!-- <View class="actionContainer">
+		<Label class="fontLight actionLbl" left="10%" onClick="setDate">SET</Label>
+		<Label class="fontLight actionLbl" right="10%" onClick="closePicker">CANCEL</Label>
+		</View> -->
+	</View>
+</Alloy>

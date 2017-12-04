@@ -1,0 +1,32 @@
+<Alloy>
+	<View id="myshortlist" class="widthFill heightFill" >
+
+		<View class="widthSize heightSize" right="10dp" top="10" bubbleParent="false" layout="horizontal"  onTouchstart="showDropdownList">
+			<Label id="allitem_lbl" class="fontHeavy labelTitleColor" top="0" right="5dp" onTouchstart="showDropdownList">ALL</Label>
+			<Label id="allitems_btn" bubbleParent="false" class="dropDown iconFont left0" top="4" right="5dp" onTouchstart="showDropdownList"></Label>
+		</View>
+		
+		
+			<ListView top="30dp" id="curtainsListView" class="listview" defaultItemTemplate="gridTemplate" onItemclick="shortlistEvent" separatorColor="transparent" onScrollstart="hideDropdownList">
+				<Templates>
+					<Require type="view" src="listTemplate" id="template"></Require>
+				</Templates>
+				<ListSection id ="curtainsShortlist"></ListSection>
+				<FooterView>
+					<View id="footerView" height="85dp">
+						<ActivityIndicator id="activityInd" top="10"/>
+					</View>
+				</FooterView>
+				
+			</ListView>
+		
+		
+		<View id="popContainer" class="widthFill heightFill" top="0" left="0" zIndex="30" onTouchstart="hideDropdownList" visible="false">
+			<ScrollView id="dropDownList"></ScrollView>
+			<View id="dropDownBg"></View>
+		</View>
+		
+		<Label id="removeAll" class="widthFill removeAll fontLight"  onClick="removeAllShortlist" />
+		
+	</View>
+</Alloy>

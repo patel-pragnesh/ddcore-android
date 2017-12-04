@@ -1,0 +1,26 @@
+<Alloy>
+	<View id="mainContainer" class="heightSize layoutVertical top0">
+                <View id="estore1Container" class="viewAllContainer">
+                    <Label id="estore1NameLbl" class="categoryName fontHeavy"></Label>
+                    <View id="estore1ViewAllContainer" class="heightFill right0 width40" onClick="navigateToEstoreViewAll">
+                        <Label id="estore1ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+                        <Label id="estore1rightArrow" class="rightArrow iconFont"></Label>
+                    </View>
+                </View>
+                <ListView id="estore1ListView" class="listview" defaultItemTemplate="gridTemplate" onItemclick="estoreItemClick">
+                    <Templates>
+                        <Require type="view" src="listTemplate" id="template"></Require>
+                    </Templates>
+                    <ListSection id="section"></ListSection>
+                    <FooterView>
+                        <View class="heightSize layoutVertical">
+                            <View id="estore1LoadMore" class="loadMore" onClick="loadMoreEshopCategory">
+                                <Label id="estore1LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+                                <ActivityIndicator id="estore1ActivityIndicator" class="indicator" message=" Loading..." />
+                            </View>
+                            <View class="collectionsSeperator"></View>
+                        </View>
+                    </FooterView>
+                </ListView>
+            </View>
+</Alloy>

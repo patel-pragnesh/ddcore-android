@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.ddecor.digitalEstore</id>
+    <name>D\'Decor</name>
+    <version>1.2.3</version>
+    <publisher>webwerks</publisher>
+    <url>http://www.ddecor.com</url>
+    <description>undefined</description>
+    <copyright>2016 by webwerks</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>b416e414-22cd-479c-9fff-d792a85724bf</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    Please Enable you Location
+                </string>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="6" android:versionName="1.2.3">
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <application android:installLocation="preferExternal"
+                android:largeHeap="true"
+                android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar">
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBOVGjUab9aTN0X6D9MDVV1Fg-zu2cSFGE"/>
+            </application>
+        </manifest>
+        <services>
+            <service type="interval" url="service.js"/>
+        </services>
+        <receiver android:exported="true" android:name="net.pixelfactor.installreferrer.ReferrerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.map</module>
+        <module platform="android">facebook</module>
+        <module platform="iphone">facebook</module>
+        <module platform="android">com.gbaldera.titouchgallery</module>
+        <module platform="android">net.pixelfactor.installreferrer</module>
+        <module platform="android">com.activate.gcm</module>
+        <module platform="android">analytics.google</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">false</target>
+        <target device="mobileweb">false</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>5.5.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="com.activate.gcm.sender_id" type="string">832793554734</property>
+    <property name="com.activate.gcm.icon" type="int">2130837566</property>
+    <property name="com.activate.gcm.component" type="string">com.ddecor.digitalEstore/com.ddecor.digitalEstore.DDecorActivity</property>
+    <property name="appc-app-id" type="string">5a1bb9bc3681dc76b33ab8c7</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">MXUzWJH9kTiqwjTT15JfQgR5sRCdYd9Y</property>
+    <property name="acs-oauth-key-development" type="string">IZUcGdwDvbQ4AL1X4xDLiDIIhEOr3EsD</property>
+    <property name="acs-api-key-development" type="string">Kf4LUWbT63JKaLBTxixUHVH1HznS1z5K</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">hCgObWivlyUysrqIGQ</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">zzko7vudvfDhSmrWQ2z96FRwopcBbiaq</property>
+    <property name="acs-oauth-key-production" type="string">2BFBhJV49ICE9DKZFLg4Pwj56XuejoE1</property>
+    <property name="acs-api-key-production" type="string">yaP3BtfgHuTWBCcX2AT63NbC3vXUSHM3</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">g5zTa4cB2WTlXtlEum</property>
+    <property name="appc-org-id" type="string">100029091</property>
+    <property name="appc-creator-user-id" type="string">8c2458a1-6af7-49b7-bc22-86c4104571e4</property>
+</ti:app>

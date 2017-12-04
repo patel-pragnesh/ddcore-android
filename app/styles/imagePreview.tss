@@ -1,0 +1,63 @@
+"#imagePreview":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	visible:false,
+	backgroundColor:"#e7e7e7",
+	type : "imagePreview"
+}
+"#closeLbl":{
+	width:"40dp",
+	height:"40dp",
+	top:"15dp",
+	right:"15dp",
+	text:Alloy.Globals.icon.close,
+	color:"#333333",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	zIndex:"10",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#imagePreviewContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//bottom:"55dp",
+}
+"#subImageContainer":{
+	width:Titanium.UI.FILL,
+	height:"60dp",
+	layout:"horizontal",
+	scrollType:"horizontal",
+	backgroundColor:"#333333",
+	bottom:"0dp",
+}
+".preview_share_wish_icon":{
+	font:{
+		fontSize:"18dp",
+		fontFamily:"icomoon"
+	},
+	bottom:"15dp",
+	width:"35dp",
+	height:"35dp",
+	color:"#333333",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#imagePreviewWishIcon":{
+	right:"10dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+"#imagePreviewShareIcon":{
+	right:"50dp",
+	text:Alloy.Globals.icon.share,
+}
+
+".defaultLogo":{
+	font:{
+		fontSize: "160dp",
+		fontFamily:"icomoon"	
+	},
+	color:"#000000",
+	zIndex:'-1',
+	
+}

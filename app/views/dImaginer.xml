@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="dImaginer" onFocus="updateCount" onAndroid:back="goToBack" onClose="destroyWindow">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ImageView class="imgView"></ImageView> 
+		<ScrollView id="superScroll" class="detailScroll">
+			<View id="containerForPage">
+				<View class="small_dash"></View>
+				<Label class="aboutUs_lbl fontMedium">STYLE UP YOUR</Label>
+				<Label class="aboutUsHead_lbl fontLight">DREAM ROOM</Label>
+				
+				<Label id="storeLbl" class="fontMedium"></Label>
+				<!-- <Label id="aboutUsParagraph_lbl" class="aboutUsParagraph_lbl fontLight"></Label> -->
+			</View>
+			<View id="videoContainer">
+				<!-- <VideoPlayer id="videoPlayer" ns="Ti.Media" url="http://dev.ddecor.com/media/homevideo/file/s/a/samplevideo_1.mp4" /> -->
+				<VideoPlayer id="videoPlayer" ns="Ti.Media"  />
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

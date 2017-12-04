@@ -1,0 +1,197 @@
+<Alloy>
+
+	<!-- Template for Grid type listing -->
+
+	<ItemTemplate name="gridTemplate" bindId="templateView" class="gridTemplate">
+		<View id="mainContainer">
+			<View id="product1" class="productContainer">
+				<View class="cartImageContainer" backgroundColor="#eeece7">
+					<ImageView id="image1" bindId="gridProductImage1" class="productImage"></ImageView>
+					<Label bindId="outOfStock1" class="outOfStock fontLight"></Label>
+					<Label class="defaultLogo" text=Alloy.Globals.icon.logo bindId="gridLogo0"></Label>
+					<Label id="cart1" bindId="gridCart1" class="cartIcon"></Label>
+				</View>
+				<View class="shareContainer">
+					<View class="nameContainer"  bindId="p1nameContainer" >
+						<Label id="productName1" bindId="gridProductname1" class="name"></Label>
+						<Label class="productSizeClass" bindId="productSize1"></Label>
+						<Label id="wheretoBuy1" bindId="gridWhereToBuy1" class="whereBye"></Label>
+					</View>
+					<Label id="shareIcon1" bindId="gridShare1" class="share_wish_icon"></Label>
+					<Label id="wishIcon1" bindId="gridWish1"  class="share_wish_icon"></Label>
+				</View>
+
+			</View>
+			
+			<View id="product2" class="productContainer">
+				<View class="cartImageContainer" bindId="imageContainer" backgroundColor="#eeece7">
+					<ImageView id="image2" bindId="gridProductImage2" class="productImage"></ImageView>
+					<Label bindId="outOfStock2" class="outOfStock fontLight"></Label>
+					<Label class="defaultLogo" text=Alloy.Globals.icon.logo bindId="gridLogo" ></Label>
+					
+					<Label id="cart2" bindId="gridCart2" class="cartIcon"></Label>
+				</View>
+				<View class="shareContainer">
+					<View class="nameContainer">
+						<Label id="productName2" bindId="gridProductname2" class="name"></Label>
+						<Label class="productSizeClass"  bindId="productSize2"></Label>
+						<Label id="wheretoBuy2" bindId="gridWhereToBuy2" class="whereBye"></Label>
+					</View>
+					<Label id="shareIcon2" bindId="gridShare2" class="share_wish_icon"></Label>
+					<Label id="wishIcon2" bindId="gridWish2" class="share_wish_icon"></Label>
+				</View>
+			</View>
+		</View>
+	</ItemTemplate>
+
+	<!-- Template for List type listing -->
+	<ItemTemplate name="listTypeTemplate" bindId="templateView">
+		<View id="listMainContainer">
+			<View class="listproductContainer">
+				<View class="listImageContainer">
+					<ImageView id="listProductImage" bindId="gridProductImage1"></ImageView>
+					<Label class="listDefaultLogo" text=Alloy.Globals.icon.logo></Label>
+				</View>
+				<View bindId="listContainer" class="listDetailsContainer">
+					<View class="listNameContainer">
+						<Label id="listProductNameLbl" bindId="gridProductname1" class="fontHeavy"></Label>
+						<Label class="productSizeClass"  bindId="productSize1"></Label>
+						<Label id="listWhereBuyLbl" bindId="gridWhereToBuy1" >Where to buy</Label>
+						<Label id="outOfStock" bindId="outOfStock1" class="outOfStockList fontLight" ></Label>
+					</View>
+					<Label id="listWishIcon" bindId="gridWish1" class="share_wish_icon" ></Label>
+					<Label id="listShareIcon"  bindId="gridShare1" class="share_wish_icon" ></Label>
+					<Label id="listCartIcon"  bindId="gridCart1" class="share_wish_icon" ></Label>
+					<Label id="listProductDetails"></Label>
+				</View>
+			</View>
+			<View class="listSeperator"></View>
+		</View>
+	</ItemTemplate>
+
+	<!-- Template for block type listing -->
+	<ItemTemplate name="blockTypeTemplate" bindId="templateView">
+		<View id="blockMainContainer">
+			<View class="blockproductContainer">
+				<View class="blockImageContainer">
+					<ImageView id="blockProductImage" bindId="gridProductImage1"></ImageView>
+					<!-- <Label class="blockDefaultLogo" text=Alloy.Globals.icon.logo></Label> -->
+					<Label bindId="outOfStock1" class="outOfStockBlock fontLight" ></Label>
+				</View>
+				<View class="shareContainer">
+					<View class="nameContainer">
+						<Label id="blockproductName" bindId="gridProductname1" class="name"></Label>
+						<Label class="productSizeClass"  bindId="productSize1"></Label>
+						<Label id="blockWheretoBuy" bindId="gridWhereToBuy1" top="5" class="whereBye">Where to buy</Label>
+					</View>
+					<Label id="blockShareIcon" bindId="gridShare1"  class="share_wish_icon top0"></Label>
+					<Label id="blockWishIcon"  bindId="gridWish1"  class="share_wish_icon top0"></Label>
+					<Label id="blockCartIcon"  bindId="gridCart1" class="share_wish_icon top0" ></Label>
+				</View>
+				<View class="blockSeperator"></View>
+			</View>
+		</View>
+	</ItemTemplate>
+
+	<!-- Template for cart listing -->
+	<ItemTemplate name="cartTemplate" bindId="templateView">
+		<View id="listMainContainer">
+			<View class="listproductContainer">
+				<!-- <ImageView id="listProductImage" bindId="cartImage"></ImageView> -->
+				<View width="65" left="0" height="Titanium.UI.FILL">
+
+					<ImageView id="listProductImage" bindId="cartImage"></ImageView>
+					<Label id="opacBlurLbl" bindId="opacBlurLbl"></Label>
+					<Label id="opacLbl" bindId="opacLbl"></Label>
+				</View>
+				<View class="listDetailsContainer">
+					<View class="listNameContainer">
+						<Label id="listProductNameLbl" bindId="productName"  class="fontHeavy">THE BENEATH BED</Label>
+						<Label id="productTypeLbl" bindId="productSize">DOUBLE BEDSHEET SET</Label>
+						<View id="priceContainer">
+							<Label class="small_rupies"></Label>
+							<Label id="pricePerSetLbl" bindId="price"></Label>
+						</View>
+					</View>
+					<View id="qtyContainer"   >
+						<ImageView class="colorImage" bindId= "colorImage"></ImageView>
+						<View id="subQtyContainer" bindId="qtyContainer">
+							<Label id="setlbl" touchEnabled="false" bindId="qtyLbl"></Label>
+							<Label id="downIcon" bindId="dropDownIcon" touchEnabled="false"></Label>
+						</View>
+					</View>
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="0" right="15">
+						<Label class="rupies"></Label>
+						<Label  class="priceLbl" bindId="totalPrice"></Label>
+					</View>
+					<Label id="cartWishIcon" bindId="cartWish" class="cart_share_wish_icon" ></Label>
+					<Label id="cartDeleteIcon" bindId="cartDelete" class="cart_share_wish_icon" ></Label>
+				</View>
+			</View>
+			<View class="listSeperator"></View>
+		</View>
+	</ItemTemplate>
+
+	<!-- Template for shortlisting -->
+	<ItemTemplate name="shortlistTemplate" bindId="templateView">
+		<View id="listMainContainer" bindId="mainShortlistContainer">
+			<View class="listproductContainer">
+				<View width="65" left="0" height="Titanium.UI.FILL">
+
+					<ImageView id="listProductImage" bindId="cartImage"></ImageView>
+					<Label id="opacBlurLbl" bindId="opacBlurLbl"></Label>
+					<Label id="opacLbl" bindId="opacLbl"></Label>
+				</View>
+				<View class="listDetailsContainer">
+					<View class="listNameContainer">
+						<Label id="listProductNameLbl" bindId="productName"  class="fontHeavy"></Label>
+						<Label id="productTypeLbl" bindId="productSize"></Label>
+
+					</View>
+					<Label id="notifyLbl" bindId="notifyLbl"></Label>
+					<ImageView class="colorImage" bindId= "colorImage"></ImageView>
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="0" right="15">
+						<Label class="rupies"></Label>
+						<Label class="priceLbl" bindId="totalPrice"></Label>
+					</View>
+					<Label id="cartWishIcon" bindId="cartWish" class="cart_share_wish_icon" ></Label>
+					<Label id="cartDeleteIcon" bindId="cartDelete" class="cart_share_wish_icon" ></Label>
+				</View>
+			</View>
+			<View class="listSeperator"></View>
+		</View>
+	</ItemTemplate>
+
+	<!-- Template for review item listing extra -->
+	<ItemTemplate name="reviewItemTemplate" bindId="templateView">
+		<View id="listMainContainer">
+			<View touchEnabled="false" class="listproductContainer">
+				<ImageView id="listProductImage" bindId="reviewImage"></ImageView>
+				<View class="listDetailsContainer">
+					<View class="listNameContainer">
+						<Label id="listProductNameLbl" bindId="productName" class="fontHeavy">THE BENEATH BED</Label>
+						<Label id="productTypeLbl" bindId="productSize" >DOUBLE BEDSHEET SET</Label>
+						<Label id="pricePerSetLbl" bindId="perSetprice" ></Label>
+					</View>
+					<View id="qtyContainer">
+						<ImageView class="colorImage" bindId="colorImage"></ImageView>
+						<View id="subQtyContainer">
+							<Label id="setlbl" bindId="qtyLbl"></Label>
+						</View>
+					</View>
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="0" right="15">
+						<Label class="rupies"></Label>
+						<Label class="priceLbl" bindId="totalPrice"></Label>
+					</View>
+					<!-- <Label id="cartWishIcon" class="cart_share_wish_icon" ></Label>
+					<Label id="cartDeleteIcon" class="cart_share_wish_icon" ></Label> -->
+				</View>
+			</View>
+			<View class="listSeperator"></View>
+		</View>
+	</ItemTemplate>
+	<ItemTemplate name="emptyTemplate" bindId="templateView">
+		<Label class="emptyDataLbl" bindId="message">THERE ARE NO COLLECTIONS IN THIS CATEGORY.</Label>
+	</ItemTemplate>
+
+</Alloy>

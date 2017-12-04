@@ -1,0 +1,305 @@
+"#storeLocator": {
+	backgroundColor: "#fff",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL
+}
+
+"#header":{
+	height: "53dp",
+	width:Titanium.UI.FILL,
+	//borderColor: "green",
+	top: "0",
+	left: "0",
+	backgroundColor: "#231f20"
+}
+
+".searchStore":{
+	text:Alloy.Globals.icon.search,
+	right: "14%",
+	font:{
+		fontSize: "18dp"
+	},
+	color: "#fff"
+}
+
+
+
+".closeStore":{
+	text:Alloy.Globals.icon.close,
+	right: "5%",
+	font:{
+		fontSize: "16dp"
+	},
+	color: "#fff"
+}
+
+".screenName":{
+	font:{
+		fontSize: "16dp"
+	},
+	left: "5%",
+	color: "#fff"
+}
+
+
+"#searchField":{
+	font:{
+		fontSize: "14dp"
+	},
+	color: "#ffff",
+	left: "5%",
+	width:Titanium.UI.FILL,
+	right: "20%"
+}
+
+
+"#filterContainer": {
+	top: "53dp",
+	backgroundColor: "#231f20",
+	width:Titanium.UI.FILL,
+	height: "35dp"
+}
+".filtersLbl":{
+	font:{
+		fontSize: "10dp"
+	},
+	color: Alloy.Globals.labelTitleColor,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	height:Titanium.UI.FILL,
+	width: "48%"
+}
+"#fabric_lbl":{
+	left: "0dp"
+}
+"#blind_lbl":{
+	right: "0dp"
+}
+
+".isSelected":{
+	backgroundColor:Alloy.Globals.labelTitleColor,
+	height:"2dp",
+	width: "48%",
+	//borderColor:"green",
+	//left:"5dp",
+	bottom:"1dp"
+}
+
+
+".filterSeperator":{
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#a6ffffff",
+	text: "|"
+}
+
+
+"#map_container":{
+	top: "90dp",
+	left: "0",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//borderColor: "green"
+}
+
+"#store_list":{
+	bottom: "0dp",
+	width:Titanium.UI.FILL,
+	height: "40dp",//"300dp",//"40dp",
+	//borderColor: "red",
+	zIndex: 1
+}
+
+"#storeDirection":{
+	text:Alloy.Globals.icon.location,
+	backgroundColor: "#fff",
+	borderColor: "#A4A4A4",
+	borderRadius: 20,
+	borderWidth:0.5,
+	color: "#A4A4A4",
+	font:{
+		fontSize: "14dp"
+	},
+	width: "30dp",
+	height: "30dp",
+	top: "0dp",
+	right: "16%",
+	//right:"24%",
+	zIndex: 2,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	
+}
+
+"#storeDetails":{
+	text:Alloy.Globals.icon.details,
+	backgroundColor: "#fff",
+	borderColor: "#A4A4A4",
+	borderRadius: 20,
+	borderWidth:0.5,
+	color: "#A4A4A4",
+	font:{
+		fontSize: "14dp"
+	},
+	width: "30dp",
+	height: "30dp",
+	top: "0dp",
+	right: "5%",
+	zIndex: 2,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+
+"#store_list_container":{
+	top: "20dp",
+	left: "0dp",
+	borderColor: "#231f20",
+	backgroundColor: "#231f20",
+	visible: false
+}
+
+".listViewStyle":{
+	top: "20dp",
+	left: "5%",
+	right: "5%",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+
+"#filterLbl":{
+	text:Alloy.Globals.icon.filter,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	bottom: "5dp",
+	right: "5%",
+	width: "30dp",
+	height: "30dp",
+	//borderColor:"#A4A4A4",
+	color: "#fff",
+	font:{
+		fontSize: "14dp"
+	},
+	borderRadius: 20,
+	backgroundColor:Alloy.Globals.labelTitleColor,
+	visible: false
+}
+
+
+
+"#filterContatiner":{
+	backgroundColor: "#66231f20",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	visible: false,
+	zIndex: 3
+}
+
+"#filterListContainer":{
+	width: Titanium.UI.SIZE,//"80dp",
+	height: "0dp",//"200dp",
+	right: "5%",
+	bottom: "5dp",//"40dp",
+	//borderColor: "green",
+	layout: "vertical"
+}
+
+".commonFilterListLabel":{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "12dp"
+	},
+	right: 0,
+	top: "20dp"
+}
+
+/*
+"AttributedString": {
+	attributes: [
+		{
+			type: Ti.UI.ATTRIBUTE_UNDERLINES_STYLE,
+			value: Ti.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE,
+			range: [0, 5]
+		}
+	]
+}
+*/
+
+"AttributedString" : {
+  attributes: [
+    {
+      type: Ti.UI.ATTRIBUTE_FOREGROUND_COLOR,
+      value: 'red',
+      range: [0, 5]
+    },
+    {
+      type: Ti.UI.ATTRIBUTE_UNDERLINES_STYLE,
+      value: Ti.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE,
+      range: [9, 5]
+    }
+  ]
+}
+
+"#closeFilterLbl":{
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor:Alloy.Globals.labelTitleColor,
+	color: "white",
+	font:{
+		fontSize: "12dp"
+	},
+	width: "30dp",
+	height: "30dp",
+	right: "5%",//"0dp",
+	bottom: "5dp",
+	//top:"20dp",
+	borderRadius: 20
+}
+
+"#locationName":{
+	left:"0%",
+	top:"0",
+	font:{
+		fontSize:"12dp"
+	},
+	color:"#fff",
+	height:"12dp"
+}
+
+"#locationKm":{
+	color:"grey",
+	font:{
+		fontSize:"10dp"
+	},
+	top:"0",
+	right:"0%"
+}
+
+"#exculsive_lbl":{
+	color:"#fff",
+	font:{
+		fontSize:"10dp"
+	},
+	top:"5dp",
+	left:"0%",
+}
+
+"#address_lbl":{
+	color:"#fff",
+	width:"70%", //Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	maxLines:4,
+	wordWrap:true,
+	font:{
+		fontSize:"10dp"
+	}
+	
+}
+
+"#getDirection_lbl":{
+	color:Alloy.Globals.labelTitleColor,
+	top:"5dp",
+	left:"0%",	
+	font:{
+		fontSize:"12dp"
+	}
+}

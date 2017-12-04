@@ -1,0 +1,430 @@
+
+"#main_login_container":{
+	scrollType: "vertical"
+}
+"#super_signin_container":{
+	width: "88%",
+	// borderColor:"black",
+	height:Titanium.UI.SIZE,
+	layout: "vertical"
+}
+"#sub_forgot_container":{
+	width: "88%",
+	// borderColor:"black",
+	height:Titanium.UI.SIZE,
+	layout: "vertical",
+	top: "130dp"//check
+}
+
+".signin_logo":{
+	width: "150dp",
+	height: "50dp",
+	//	borderColor: "red",
+	//top: "0dp",
+	image: "/images/DDecorLogo.png"
+}
+"#signin_email_txt":{
+	top: "50dp",
+	hintText: "MOBILE / EMAIL",
+	
+}
+"#signin_forgot_txt":{
+	top: "50dp",
+	hintText: "EMAIL"
+}
+"#signin_numbar_txt":{
+	top: "12dp",
+	hintText: "NUMBER",
+	maxLength: 10
+}
+"#signin_resetpassword_txt":{
+	top: "50dp",
+	hintText: "NEW PASSWORD",
+	passwordMask: true
+}
+"#signin_resetconfpassword_txt":{
+	top: "12dp",
+	hintText: "CONFIRM PASSWORD",
+	passwordMask: true
+}
+"#signin_password_txt":{
+	top: "10dp",
+	hintText: "PASSWORD",
+	passwordMask: true
+}
+"#signin_forgot_lbl":{
+	text: "FORGOT PASSWORD?",
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#000000",
+	right: "1%",
+	top: "15dp"
+}
+".buttonLbl1":{
+	top: "30dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	backgroundColor: "#4d000000",//B3A9ABA6
+	//backgroundSelectedColor: "#e6e6e5",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".buttonLbl2":{
+	top: "12dp",
+	width: "80%",
+	height: "40dp",
+	color: "#8b8b8c",
+	backgroundColor: "transparent",
+	//backgroundSelectedColor: "#e6e6e5",
+	borderColor: "#99000000",
+	borderWidth: "0.5dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".buttonLbl3":{
+	top: "10dp",
+	width: "80%",
+	height: "40dp",
+	color: "#8b8b8c",
+	backgroundColor: "transparent",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#otp_resend_lbl":{
+	top: "12dp",
+	width: "80%",
+	height: "40dp",
+	color: "#e65e48",
+	backgroundColor: "transparent",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#otp_submit_lbl":{
+	top: "12dp",
+	width: "80%",
+	height: "40dp",
+	color: "white",
+	backgroundColor: "#4d000000",//B3A9ABA6
+	//backgroundSelectedColor: "#e6e6e5",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#social_login_container":{
+	top: "80dp",
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.FILL
+}
+"#signin_or_lbl":{
+	font:{
+		fontSize: "11sp"
+	},
+	text: "OR LOGIN VIA ",
+	color: "#000000"
+}
+"#signin_facebook_lbl":{
+	left: "5dp",
+	height: "36dp",
+	width: "36dp",
+	borderWidth: 0.5,
+	borderRadius: "18dp",
+	backgroundColor: "#4765ac",// "#0066cc",
+	//borderColor: "#4765ac",//"#0066cc",
+	text: Alloy.Globals.icon.facebookIcon,
+	color: "white",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: "20dp"
+	}
+}
+"#signin_google_lbl":{
+	left: "5dp",
+	height: "36dp",
+	width: "36dp",
+	borderRadius: "18dp",
+	borderWidth: 0.5,
+	backgroundColor: "#e04a31",//"#ff4000",
+	//borderColor: "#e04a31",//"#ff4000",
+	text: Alloy.Globals.icon.googleIcon,
+	color: "white",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: "19dp"
+	}
+}
+
+//forgot password tss
+"#forgot_password_container":{
+	zIndex: "100",
+	visible: false
+}
+"#guest_container":{
+	zIndex: "110",
+	visible: false
+}
+"#otp_container":{
+	zIndex: "120",
+	visible: false
+}
+"#reset_password_container":{
+	zIndex: "130",
+	visible: false
+}
+"#register_container":{
+	zIndex: "140",
+	backgroundColor: "#ffffff",
+	visible: false
+}
+/////
+".or_lbl":{
+	top: "28dp",
+	text: "OR",
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#000000"
+}
+".meanwhile_lbl":{
+	top: "100dp",
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#000000"
+}
+".otp_lbl":{
+	top: "50dp",
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#000000"
+}
+"#continue_guest_lbl":{
+	top: "20dp",
+	width: "80%",
+	height: "40dp",//34dp
+	color: "white",
+	backgroundColor: "#4d000000",//B3A9ABA6
+	//backgroundSelectedColor: "#e6e6e5",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".message":{
+	height: "25dp",
+	backgroundColor: "#000000",
+	color: "#e65e48",
+	font:{
+		fontSize: "12dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".otp_textfield_container":{
+	top: "40dp",
+	height: "50dp"
+}
+".otp_textfieldSeperator":{
+	height: "1dp",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#A1A39E"
+}
+".otp_text_container":{
+	width: "20%",
+	left: "4%"
+}
+".otp_txt":{
+	backgroundColor: "transparent",
+	height: "48dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#4d4f4a",
+	maxLength: "1",
+	passwordMask: true,
+	font:{
+		fontSize: "15sp"
+	}
+}
+// register tss
+
+"#super_register_container":{
+	width: "88%",//885
+	height:Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".note_lbl":{
+	top: "10dp",
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#000000",
+	left: "20dp"
+}
+"#register_header":{
+	height: "40dp",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#000000",
+	top: "0dp"
+}
+
+".registerText":{
+	top: "10dp"
+}
+"#register_password_txt":{
+	passwordMask: true,
+	height: "40dp",
+	width:Titanium.UI.FILL,
+	right: "15dp",
+	backgroundColor: "transparent",
+	color: "#4d4f4a",
+	hintTextColor: "#a0a0a0",
+	font:{
+		fontSize: "14sp",
+		fontFamily: "futura_lt_bt_light-webfont"
+	}
+}
+"#showpassword_lbl":{
+	width: "15dp",
+	right: "0dp",
+	color: "black",
+	text:Alloy.Globals.icon.password,
+	visible: false
+}
+"#register_password_seperator":{
+	bottom: "0.5dp"
+}
+".pstrength_lbl":{
+	top: "20dp",
+	left: "25dp",
+	color: "#000000",
+	font:{
+		fontSize: "12sp"
+	}
+}
+"#strengthStatus":{
+	top: "10dp",
+	left: "25dp",
+	color: "#000000",
+	font:{
+		fontSize: "12sp"
+	}
+}
+"#slider":{
+	//top:"15dp",
+	height: "4dp",
+	left: "0dp"
+}
+".trems_container":{
+	top: "15dp",
+	width:Titanium.UI.SIZE,
+	height: "20dp"
+}
+"#check":{
+	left: "0dp",
+	height: "15dp",
+	width: "15dp",
+	borderColor:"#000",	
+	font:{
+		fontSize: "10dp",
+		//fontFamily: "icomoon"
+	},
+	color:"#e65e48",	
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#terms_lbl":{
+	left: "20dp",
+	font:{
+		fontSize: "10dp"
+	},
+	color: "#000000"
+}
+"#register_signup_lbl":{
+	top: "12dp",
+	width: "60%",
+	height: "34dp",
+	color: "#ffffff",
+	backgroundColor: "#000000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#register_cancel_lbl":{
+	top: "12dp",
+	width: "60%",
+	height: "34dp",
+	color: "orange",
+	backgroundColor: "transparent",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#sliderContainer":{
+	left: "25dp",
+	right: "25dp",
+	top: "10dp"
+}
+
+".passwordStrengthLbl":{
+	top: "10dp",
+	left: "25dp",
+	color: "#000000",
+	font:{
+		fontSize: "10dp"
+	}
+}
+/// register new field tss
+
+
+".commonRadioStyles":{
+	//color:Alloy.Globals.labelTitleColor,
+	color: "#33000000",
+	font: {
+		fontSize: '14dp'
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	right: "5dp",
+	bubbleParent: true,
+	text:Alloy.Globals.icon.radio,
+	width:Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+}
+".top0":{
+	top: 0
+}
+".left5":{
+	left: "5%"
+}
+
+
+".top10":{
+	top: 10
+}
+
+".left0":{
+	left: "0%"
+}
+
+".genderlbl":{
+	color: "#a0a0a0",
+	font:{
+		fontSize: "14dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+}
+".greyColor":{
+	color: "#b2b2b2"
+}
+
+".labelValue":{
+	color: "#000",
+	top: 10,
+	font:{
+		fontSize: "16dp"
+	}
+}
+
+".dropDown":{
+	color: "#000",
+	top: 16,
+	text:Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "6dp"
+	},
+	touchEnabled:false
+}
+
+".border":{
+	backgroundColor: "#a0a0a0",//"#6E6E6E",
+	height: "2px",
+	width:Titanium.UI.FILL,
+	left: "5%",
+	right: "5%",
+	//top: 2//10
+}

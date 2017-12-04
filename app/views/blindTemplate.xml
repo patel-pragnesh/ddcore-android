@@ -1,0 +1,43 @@
+<Alloy>
+	
+		
+	
+	<View class="heightSize layoutVertical top0" id="mainContainer" >
+		
+		<View id="blinds1Container" class="viewAllContainer">
+			<Label id="blinds1NameLbl" class="categoryName fontHeavy"></Label>
+			
+			<View id="blinds1ViewAllContainer" class="heightFill right0 width40" onClick="navigateToBlindViewAll">
+				<Label id="blinds1ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+				<Label id="blinds1rightArrow" class="rightArrow iconFont"></Label>
+			</View>
+			
+		</View>
+		
+		<ListView id="blinds1ListView" class="listview" defaultItemTemplate="gridTemplate" onItemclick="blindsItemClick">
+			<Templates>
+				<Require type="view" src="listTemplate" id="template"></Require>
+			</Templates>
+			<ListSection id="section">
+			<!-- 	<ListItem></ListItem>
+				<ListItem></ListItem>
+				<ListItem></ListItem> -->
+				
+			</ListSection>
+			<FooterView>
+				<View class="heightSize layoutVertical">
+					<!-- <View id="blinds1LoadMore" class="loadMore" onClick="loadMoreListItem"> -->
+					<View id="blinds1LoadMore" class="loadMore" onClick="loadMoreBlindCategory">
+						
+						<Label id="blinds1LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+						<ActivityIndicator id="blinds1ActivityIndicator" class="indicator" message=" Loading..." />
+					</View>
+					<View class="collectionsSeperator"></View>
+				</View>
+			</FooterView>
+		</ListView>
+		
+	</View>
+	
+	
+</Alloy>

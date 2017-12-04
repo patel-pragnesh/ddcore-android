@@ -1,0 +1,119 @@
+"#mystyle": {
+	top: "0",
+	left: "0",
+	scrollType: "vertical",
+	layout: "vertical",
+	
+}
+
+".border":{
+	top: "50dp",
+	width: 50,
+	height: "1dp",
+	backgroundColor: "#dcdcdc"
+}
+
+"#styleHeader_lbl":{
+	top: "15dp",
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+
+"#styleName_lbl":{
+	top: "5dp",
+	color: "#000",
+	font:{
+		fontSize: "18dp"
+	}
+}
+
+"#styleValue_lbl":{
+	top: "5dp",
+	left: "5%",
+	right: "5%",
+	color: "#a0a0a0",
+	font:{
+		fontSize: "12dp"
+	},
+	// textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	 width:Titanium.UI.FILL,
+	// textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+"#take_quiz_btn":{
+	top: "5dp",//"50%",
+	width: "70%",
+	height: "40dp",
+	//backgroundColor: "#4d000000",//"gray",
+	backgroundColor:"#7b7979",
+	color: "#fff",
+	//color: "#333333",
+	font:{
+		fontSize: "12dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#style_lbl":{
+	color: "#000",
+	font:{
+		fontSize: "10dp"
+	},
+	left: "5%",
+	top: "5dp"
+}
+
+"#viewall_btn":{
+	right: "5%",
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "10dp",
+		fontFamily: "icomoon"
+	},
+	top: "5dp",
+	text: "VIEW ALL \ue912"
+}
+
+".listview":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+"#shareStyle":{
+	text:Alloy.Globals.icon.share,
+	color: "#a6a6a6",
+	font:{
+		fontSize: "16dp"
+	},
+	top: "-16dp",
+	right: "10%"
+}
+
+
+".loadMore":{
+	top: "5dp",
+	backgroundColor:"#f4f4f4",
+	color:"#333333",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: "90%",
+	bottom:"10dp",
+	height: "40dp",
+	font:{
+		fontSize: "12dp"
+	},
+}
+
+".indicator":{
+	style: Ti.UI.ActivityIndicatorStyle.PLAIN,
+	color: "#333333",
+	top: "5dp",
+	bottom: "10dp",
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	font:{
+		fontSize: "12dp"
+	}
+}

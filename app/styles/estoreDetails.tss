@@ -1,0 +1,708 @@
+"#blurImage":{
+	defaultImage:"/images/default_logo.png"
+}
+
+".detailScroll":{
+	top:"53dp",
+	scrollType:"vertical",
+	layout:"vertical"	
+}
+"#estoreImageScroll" : {
+  left:"0dp",
+  top:"0dp",
+  height:"200dp",
+} 
+"#estoreImage":{
+//	left:"0dp",
+  	top:"0dp",
+  	//defaultImage:"/images/default_logo.png",
+	//height:Titanium.UI.SIZE,
+	height:"200dp",
+//	width:Titanium.UI.FILL,
+	//borderColor:"blue",
+	zIndex:"8"
+}
+".share_wish_icon":{
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	top:"10dp",
+	width:"35dp",
+	height:"35dp",
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+	
+}
+".preview_share_wish_icon":{
+	font:{
+		fontSize:"18dp",
+		fontFamily:"icomoon"
+	},
+	bottom:"15dp",
+	width:"35dp",
+	height:"35dp",
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#shareIcon":{
+	right:"50dp",
+	text:Alloy.Globals.icon.share,
+	
+}
+"#wishIcon":{
+	right:"10dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+"#imagePreviewWishIcon":{
+	right:"10dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+"#imagePreviewShareIcon":{
+	right:"50dp",
+	text:Alloy.Globals.icon.share,
+}
+"#ratingLbl":{
+	top:"0dp",
+	left:"10dp",
+	text:"RATINGS",
+	color:"#ffffff",
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_medium_bt-webfont"	
+	}
+}
+"#ratingIcon":{
+	top:"6dp",
+	left:"10dp",
+	text:"\ue918 \ue918 \ue918 \ue918 \ue918",
+	//color:"#e65e48",
+	color:"#fff",
+	font:{
+		fontSize:"10sp",
+		fontFamily:"icomoon"	
+	}
+}
+"#colorOptionScroll":{
+	width:Titanium.UI.FILL,
+	//height:"55dp",
+	height:"60dp",
+	layout:"horizontal",
+	scrollType:"horizontal",
+	backgroundColor:"#a6f2f2f2"
+}
+"#imageOptionScroll":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	layout:"horizontal",
+	scrollType:"horizontal",
+	backgroundColor:"#333333",
+}
+".colorSeperator":{
+	height:"0.5dp",
+	width:Titanium.UI.FILL,
+	backgroundColor:"#999999"
+}
+".skuNamePriceContainer":{
+	width:Titanium.UI.FILL,
+	left:"10dp",
+	right:"10dp",
+	height:Titanium.UI.SIZE,
+	top:"25dp",
+}
+".subNameContainer":{
+	left:"0dp",
+	top:'0dp',
+	width:"65%",//70
+	height:Titanium.UI.SIZE,
+	layout:"vertical"
+}
+".priceContainer":{
+	right:"0dp",
+	top:'0dp',
+	width:"38%",//28
+	height:Titanium.UI.SIZE,
+	layout:"vertical"
+}
+"#skuNameLbl":{
+	font:{
+		fontSize:"25dp"
+	},
+	color:"#000000",
+	top:"0dp",
+	left:"0dp",
+	width:Titanium.UI.FILL,
+}
+"#subSkuNameLbl":{
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#333333",
+	left:"0dp",
+	top:"8dp"
+}
+"#priceLbl":{
+	font:{
+		fontSize:"14dp"//16
+	},
+	color:"#e65e48",
+	top:"0dp",
+	right:"0dp",
+	width:Titanium.UI.FILL,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+"#taxLbl":{
+	font:{
+		fontSize:"7dp"
+	},
+	color:"#333333",
+	right:"0dp",
+	top:"4dp"
+}
+"#descriptionLbl":{
+	top:"15dp",//22
+	font:{
+		fontSize:"12dp"
+	},
+	color:"#555555",
+	width:Titanium.UI.FILL,
+	left:"10dp",
+	right:"10dp",
+	//height:"36dp",
+	maxLines:"3",
+	//wordWrap:true,
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	//ellipsize:true
+}
+
+"#collectionDetail1":{
+	height:Ti.UI.SIZE,
+	contentWidth: Ti.UI.FILL,
+	//height:"55dp",
+	top:"18dp",
+	left:"10dp",
+	right:"10dp",
+	layout:"horizontal"
+}
+"#collectionName":{
+	left : "0dp",
+    top : "0dp",
+    height : Ti.UI.SIZE,
+    width : Ti.UI.FILL,
+    font : {
+        fontSize : "9dp",
+        fontFamily:"futura_medium_bt-webfont"
+        //fontWeight : "bold"
+    },
+    color : "#333333",
+}
+
+"#collectionImage":{
+	top:"10dp",
+	width:Titanium.UI.FILL,
+	height:"60dp",
+	left:"0dp",
+	//borderColor:"yellow"
+}
+
+"#collectionSeperator":{
+	left:"10dp",
+	height:"80dp",
+	width:"1dp",
+	backgroundColor:"#cccccc",
+	top:"0dp"
+}
+
+"#collectionSubDetail":{
+	top:"0dp",
+	left:"10dp",
+	//right:"0dp",
+	height:Titanium.UI.SIZE,
+	//borderColor:"blue",
+	width:"55%",
+	//width:Titanium.UI.FILL,
+	
+}
+
+
+"#readMoreLbl":{
+	font:{
+		FontSize:"13sp"
+	},
+	color:"#e65e48",
+	top:"0dp",
+	right:"10dp"
+}
+"#ironImage":{
+//	top:"25dp",
+	////width:"40%",
+//	left:"10dp",
+	////height:"30dp",
+}
+"#moreDetailsContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top:"18dp",
+	left:"10dp",
+	right:"10dp",
+	layout:"vertical"
+}
+"#viewMoreDetailsLbl":{
+	top:"0dp",
+	left:"0dp",
+	height:"35dp",
+	width:Titanium.UI.FILL,
+	font:{
+		fontSize:"15dp",
+	},
+	color:"#e65e48",
+	touchEnabled:false
+}
+//available design
+".availableDesignLbl":{
+	font:{
+		fontSize:"11dp",
+	},
+	color:"#333333",
+	top:"30dp",
+	left:"10dp"
+}
+"#availableDesignScroll":{
+	width:Titanium.UI.FILL,
+}
+".storelocatorlbl":{
+	top:"15dp",
+	font:{
+		fontSize:"12sp",
+		fontFamily:"icomoon"
+	},
+	color:"#FFFFFF",
+	width:Titanium.UI.FILL,
+	height:"40dp",
+	backgroundColor:"#404040",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".viewAllContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	layout:"Vertical"
+}
+".categoryName":{
+	font:{
+		fontSize:"11dp"
+	},
+	color:"#333333",
+	left:"0dp",
+	touchEnabled:false
+}
+".rightArrow":{
+	font:{
+		fontSize: "15dp",
+	},
+	color: "#7e7d7d",
+	text:Alloy.Globals.icon.downArrow,
+	height:Titanium.UI.FILL,
+	right:"0dp",
+	width:"20dp",
+	touchEnabled:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+
+// list view
+".mainContainer":{
+	top:"0dp",
+	height:Titanium.UI.SIZE,
+	layout:"horizontal"
+}
+".productContainer":{
+	//width:Alloy.Globals.imageWidth,
+	height:Titanium.UI.SIZE,
+	layout:"vertical",
+	bubbleParent:false
+}
+".cartImageContainer":{
+	 width:Titanium.UI.FILL,
+	 height:Titanium.UI.FILL,
+}
+".productImage":{
+	width:Titanium.UI.FILL,
+	height:Alloy.Globals.imageWidth,
+	top:"0dp",
+	backgroundColor:"#33000000",
+	backgroundSelectedColor:"#40000000",
+}
+".cartIcon":{
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	text:Alloy.Globals.icon.search,
+	width:"25dp",
+	height:"25dp",
+	color:"#a6000000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	bottom:"10dp",
+	right:"10dp",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+".shareContainer":{
+	top:"10dp",//10
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+}
+".nameContainer":{
+	left:"3dp",
+	height:Titanium.UI.SIZE,
+	width:"65%",
+	layout:"vertical",
+	top:"3dp"
+}
+".name":{
+	top:"0dp",
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#333333",
+	height:"12dp",
+	width:Titanium.UI.FILL,
+	ellipsize:true,
+	wordWrap:false,
+	touchEnabled:false
+}
+".whereBye":{
+	top:"2dp", 
+	font:{
+		fontSize:"10dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#e65e48",
+	height:"12dp",
+	ellipsize:true,
+	wordWrap:false,
+	width:Titanium.UI.FILL
+}
+".categoriesSubContainer":{
+	top:"0dp",
+	width:Titanium.UI.FILL,
+	height:"40dp",
+	touchEnabled:false,
+}
+"#SuperSimilarCollection":{
+	top:"15dp",
+	width:Titanium.UI.FILL,
+	left:"10dp",
+	right:"10dp",
+	height:Titanium.UI.SIZE,
+	layout:"vertical",
+	bottom:"50dp"
+}
+"#listSeperator":{
+	width:Titanium.UI.FILL,
+	bottom:"0dp",
+	backgroundColor:"#e6e6e6",
+	height:"1dp"
+}
+".stockSeperator":{
+	width:Titanium.UI.FILL,
+	top:"10dp",
+	backgroundColor:"#e6e6e6",
+	height:"1dp",
+	left:"10dp",
+	right:"10dp"
+}
+
+///
+
+".downLbl":{
+	height:"40dp",
+	bottom:"0dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#returnLbl":{
+	left:"0dp",
+	backgroundColor:"#b0b0b0"
+}
+"#addToBagLbl":{
+	right:"0dp",
+	visible:false,
+	backgroundColor:"#e65e48",
+	//touchEnabled:false
+}
+"#whereToBuy":{
+	right:"0dp",
+	visible:false,
+	backgroundColor:"#e65e48"
+}
+"#upArrowLbl":{
+	height:"40dp",
+	width:"40dp",
+	borderRadius:"20dp",
+	color:"#000000",
+	bottom:"70dp",
+	borderWidth:"0.1",
+	right:"10dp",
+	backgroundColor:"#e65e48",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	visible:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.top,
+}
+".typeContainer":{
+	width:"60dp",
+	height:"60dp",
+	left:"10dp",
+	//layout:"vertical",
+	borderColor:"red"
+}
+"#designLbl":{
+	
+	font:{
+		fontSize:"7sp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	bottom:"3dp",
+	left:"3dp",
+	text:"ROLLER",
+	color:"#ffffff",
+	ellipsize:true,
+	wordWrap:false
+}
+".instockContainer":{
+	width:Titanium.UI.FILL,
+	left:"10dp",
+	top:"5dp",
+	right:"10dp",
+	height:Titanium.UI.SIZE
+}
+".instockLbl":{
+	left:"0dp",
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color:"#1bb83c",
+}
+".checkAvailabilityLbl":{
+	right:"0dp",
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	color:"#555555",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM,
+	text:"Check estimated delivery",
+	//visible:false
+}
+"#previewContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	visible:false,
+	backgroundColor:"#e7e7e7"
+}
+"#ratingContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	visible:false,
+	backgroundColor:"#231f20",
+}
+"#imagePreviewContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//bottom:"55dp",
+}
+"#subImageContainer":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	backgroundColor:"#333333",
+	bottom:"0dp",
+}
+"#closeLbl":{
+	width:"40dp",
+	height:"40dp",
+	top:"15dp",
+	right:"15dp",
+	text:Alloy.Globals.icon.close,
+	color:"#ffffff",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	zIndex:"10",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#pincodeContainer":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	right:"0dp",
+	//layout:"horizontal",
+	visible:false
+	
+}
+"#pincodeTxt":{
+	width:"100dp",
+	height:Titanium.UI.FILL,
+	left:"0dp",
+	font:{
+		fontSize:"10dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#333333",
+	hintText:"Enter Pincode",
+	hintTextColor:"#333333",
+	maxLength:"6",
+	keyboardType:Titanium.UI.KEYBOARD_PHONE_PAD,
+}
+"#checkBtn":{
+	width:"50dp",
+	height:"20dp",
+	left:"105dp",
+	color: "#7F7F7F",
+	text:"CHECK",
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#estimateDateLbl":{
+	right:"0dp",
+	font:{
+		fontSize:"12sp",
+		fontFamily:"futura_lt_bt_light-webfont"	
+	},
+	visible:false,
+	color:"#555555",
+}
+//rating
+".ratingHeader":{
+	top:"0dp",
+	width:Titanium.UI.FILL,
+	height:"53dp",//40,
+}
+".ratingLbl":{
+	left:"15dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize:"15sp",
+		fontFamily:'futura_lt_bt_light-webfont'
+	},
+	color:"#ffffff",
+}
+".closeLbl":{
+	right:"15dp",
+	width:"40dp",
+	height:"40dp",
+	font:{
+		fontSize:"20sp",
+		fontFamily:"icomoon"
+	},
+	color:"#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
+}
+"#subRatingContainer":{
+	top:"83dp",
+}
+".rate":{
+	left:"20dp",
+	font:{
+		fontSize:"30dp",
+		fontFamily:"icomoon"
+	},
+	color:"#737373",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.rateOutline,
+	//touchEnabled : false
+}
+"#done":{
+	bottom:"15dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor: "#80e7e7e7",
+	borderWidth:"0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+////
+
+".scrollableContainer":{
+	backgroundGradient:{
+		type:'linear', 
+		colors:[{
+			color : '#cc000000', position: 0
+			},{
+			color : 'transparent', position: 1.0
+		}], 
+		startPoint:{
+			//x:0,
+			x:"0",
+			y:"100%"
+			//y:"15%"
+		}, 
+		endPoint:{
+			//x:0,
+			//y:"100%"
+			x:"0",
+			y:"80%"
+		}, 
+		backFillStart:false
+	},	
+	touchEnabled:false,
+	height:"200dp",
+}
+
+
+"#previewCloseLbl":{
+	width:"40dp",
+	height:"40dp",
+	top:"15dp",
+	right:"15dp",
+	text:Alloy.Globals.icon.close,
+	color:"#333333",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	zIndex:"10",
+	visible:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".shopIndicator":{
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	color: "#7F7F7F",
+	left:'105dp',
+	style : Ti.UI.ActivityIndicatorStyle.PLAIN,
+	color:"#7F7F7F",
+	message:"Checking..."
+}
+
+".productSizeClass":{
+	top:"2dp",
+	font:{
+		fontSize:"9dp",//10
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#a6a6a6",
+	height:Titanium.UI.SIZE,
+	//height:"12dp",
+	width:Titanium.UI.FILL,
+	//wordWrap:true,
+	ellipsize:true,
+	wordWrap:false,
+}
+
+

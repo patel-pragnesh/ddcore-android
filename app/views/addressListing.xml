@@ -1,0 +1,30 @@
+<Alloy>
+	<Window id="addressListing" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="clearMemory">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<View id="totalDisplayContainer">
+			<Label id="totalLbl" class="fontLight">TOTAL</Label>
+			<!-- <Label id="amountLbl" class="fontHeavy"></Label> -->
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" right="20">
+					<Label id="rupies"></Label>
+					<Label id="amountLbl"  class="fontHeavy"></Label>	
+			</View>
+			<!-- <Label id="taxLbl" class="fontMedium"></Label> -->
+		</View>
+		<View class="addressSeperator"></View>
+		<View class="nextSeperator"></View>
+		<Label class="addressLbl"></Label>
+		<View id="addressContainer"></View>
+		<Label id="emptyAddressLbl" class="fontMedium">NO ADDRESS</Label>
+		<View backgroundColor="#ffffff" class="bottom0 layoutVertical heightSize transparent_border" id="reviewContainer">
+			<View id="billingContainer"  bottom="10">
+				<Label id="checkIcon"></Label>
+				<Label id="billingAddressLbl"></Label>
+			</View>
+			<View>
+				<Label id="backToBagLbl" class="downLbl fontHeavy">BACK TO BAG</Label>
+				<Label id="reviewLbl" class="downLbl fontHeavy">REVIEW ORDER</Label>
+			</View>
+		</View>
+		<Label id="addAddressLbl"></Label>
+	</Window>
+</Alloy>

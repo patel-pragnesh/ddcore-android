@@ -1,0 +1,32 @@
+<Alloy>
+	<ItemTemplate name="orderTemplate" selectionStyle="none" backgroundColor="transparent" height="Ti.UI.SIZE" top="5%" layout="vertical">
+
+		<!-- Dynamic order list -->
+
+		<View id="orderList" class="top0 widthFill heightSize"  >
+			<ImageView bindId="orderImage" id="orderImage" class="left5 top5"></ImageView>
+			<Label bindId="orderTitle" id="orderTitle" class="top5 labelClass fontHeavy"></Label>
+			<Label bindId="orderPrice"  id="orderPrice"  class="fontHeavy labelClass top5" right="10dp"></Label>
+			<Label bindId="orderCatergory" id="orderCatergory" class="labelClass fontMedium"></Label>
+			<!-- <Label bindId="orderColor" id="orderColor"></Label> -->
+			<ImageView bindId="orderColor" id="orderColor"></ImageView>
+			<Label bindId="orderUOM" id="orderUOM" class="fontHeavy"></Label>
+			
+			<Label class="left5 fontLight returnOrderDate" bindId="returnOrderDate" >Returned on : 28 July 2016</Label>
+			
+			<View id="orderaction_container" class="right5">
+				<!-- <Label class="orderactionLabel left5 fontLight" >Delivered On: 28th Nov 2016</Label> -->
+
+				<Label class="orderactionLabel  fontLight" bindId="orderAction" right="10dp">Enquiry</Label>
+				
+				
+				<!-- <Label class="orderactionLabel right0 fontLight" visible="false">Return</Label>
+				<Label class="orderactionLabel right0 fontLight" >Cancel</Label> -->
+
+			</View>
+			
+		</View>
+
+
+	</ItemTemplate>
+</Alloy>

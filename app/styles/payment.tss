@@ -1,0 +1,220 @@
+"#totalDisplayContainer":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	top:"53dp",
+	backgroundColor:"#ffffff"
+}
+"#totalLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#7e7d7d",
+	left:"20dp"
+}
+"#amountLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#e65e48",
+	left:"10dp"
+}
+"#rupies":{
+	font:{
+		fontSize:"11dp",
+		fontFamily:"icomoon"
+	},
+	color:"#e65e48",
+	text:Alloy.Globals.icon.currency,
+	left:"0dp",
+	top:"3dp",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#taxLbl":{
+	font:{
+		fontSize:"8dp",
+	},
+	color:"#333333",
+	right:"20dp",
+	bottom:"5dp"
+}
+".addressSeperator":{
+	height:"1dp",
+	width:"33%",
+	left:"0dp",
+	top:"103dp",
+	zIndex:"2",
+	backgroundColor:"#333333"
+}
+".reviewSeperator":{
+	height:"1dp",
+	left:"34%",
+	width:"33%",
+	top:"103dp",
+	zIndex:"2",
+	backgroundColor:"#333333"
+}
+".paymentSeperator":{
+	height:"1dp",
+	left:"68%",
+	width:"33%",
+	top:"103dp",
+	zIndex:"2",
+	backgroundColor:"#e65e48"
+}
+".nextSeperator":{
+	height:"1dp",
+	left:"0",
+	width:Titanium.UI.FILL,
+	top:"103dp",
+	zIndex:"0",
+	backgroundColor:"#e7e7e7"
+}
+"#addressLbl":{
+	top:"108",
+	left:"10%",
+	width:"33%",
+	font:{
+		fontSize:"10dp",
+		fontFamily : "icomoon"
+		//fontFamily:"futura_lt_bt_light-webfont",
+	},
+	color:"#000000",
+}
+"#reviewLbl":{
+	left:"45%",
+	top:"108",
+	width:"33%",
+	font:{
+		fontSize:"11dp",
+		fontFamily : "icomoon"
+	},
+	color:"#000000",
+}
+
+"#paymentLbl":{
+	left:"78%",
+	top:"108",
+	width:"33%",
+	font:{
+		fontSize:"11dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#000000",
+	text:"PAYMENT"
+}
+
+".downLbl":{
+	height:"40dp",
+	bottom:"0dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width :Titanium.UI.FILL,
+	backgroundColor:"#e65e48"
+}
+"#paymentOptionContainer":{
+	//top:"150dp",
+	width:Titanium.UI.FILL,
+	height:"40dp",
+	layout:"horizontal"
+}
+".radio1":{
+	//left:"10dp",
+	width:"40dp",
+	height:"40dp",
+	color:"#dfdfdf",
+	font:{
+		fontSize:"14dp",
+		fontFamily:"icomoon"
+	},
+	touchEnabled:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.radio
+}
+".paymentOptionLbl":{
+	//left:"10dp",
+	height:"40dp",
+	font:{
+		fontSize:"14dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#333333",
+	touchEnabled:false,
+}
+//CONFIRMATION
+
+
+"#confirmationContainer":{
+	visible: false,
+	zIndex:"15",
+	backgroundColor: "#231f20"
+}
+"#thankYouView":{
+	visible: false,
+	zIndex:"15",
+	backgroundColor: "#231f20"
+}
+".confirmationHeader":{
+	top: "0dp",
+	width:Titanium.UI.FILL,
+	height: "53dp"
+}
+
+"#confirmationlbl":{
+	left: "15dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize: "15dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff"
+}
+".closeLbl":{
+	right: "15dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".questionLbl":{
+	font:{
+		fontSize: "14dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#moveToEshopLbl":{
+	bottom: "30dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor: "#80e7e7e7",
+	borderWidth: "0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".optionlbl":{
+	bottom: "30dp",
+	width: "37%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor: "#80e7e7e7",
+	borderWidth: "0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#noLbl":{
+	left:"10%"
+}
+"#yesLbl":{
+	right:"10%"
+}

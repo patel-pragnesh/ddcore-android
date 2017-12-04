@@ -1,0 +1,113 @@
+<Alloy>
+	<Window id="customerService" class="windowBackground" onClose="cleanUp" onAndroid:back="goToBack" onFocus="updateCount" onTouchstart="hideKeyboard">
+		<Require src="headerView"type="widget" id="header">
+		</Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View class="containerForPage">
+				<View class="containerWithMargin">
+					<Label class="smallHeading fontHeavy">
+						WRITE TO US
+					</Label>
+					<Label id="email" class="smallTextOrange fontLight" onClick="mailTo">
+					</Label>
+					<Label class="smallHeading fontHeavy">
+						BUZZ US
+					</Label>
+					<Label id="phoneNo" class="smallTextOrange fontLight" onClick="dial">
+					</Label>
+				</View>
+				<View class="horizontalSeparator" top="18dp">
+				</View>
+				<View class="containerWithOutMargin">
+					<Label class="smallHeading fontHeavy" top="25dp">
+						ORDER ENQUIRY
+					</Label>
+					<View id="orderTypeDropDown" class="rowBlock" top="50dp" zIndex="4">
+						<Label id="orderType" class="inputText fontLight">
+							ORDER TYPE
+						</Label>
+						<Label id="dropDown0"  type="icon" class="icon">
+						</Label>
+						<ScrollView id="orderTypeScroll" class="dropDownScroll layoutVertical"  zIndex="4" >
+						</ScrollView>
+					</View>
+					<View class="horizontalSeparator" top="80dp">
+					</View>
+					
+					<View id="orderNoDropDown" class="rowBlock" top="85dp" zIndex="3">
+						<Label id="orderNumber" class="inputText fontLight">
+							ORDER NUMBER
+						</Label>
+						<Label id="dropDown1"  type="icon" class="icon">
+						</Label>
+						<ScrollView id="orderNoScroll" class="dropDownScroll layoutVertical"  zIndex="3">
+						</ScrollView>
+					</View>
+					
+					<View class="horizontalSeparator" top="115dp"></View>
+					
+					<!-- new block  -->
+					
+					<View id="orderItemDropDown" class="rowBlock" top="120dp" zIndex="2">
+						<Label id="orderItem" class="inputText fontLight">
+							SELECT ORDER ITEM
+						</Label>
+						<Label id="dropDown3"  type="icon" class="icon">
+						</Label>
+						<ScrollView id="orderItemScroll" class="dropDownScroll layoutVertical"  zIndex="2">
+						</ScrollView>
+					</View>
+					
+					<View class="horizontalSeparator" top="150dp"></View>
+					
+				<!-- new block  -->
+					
+					
+					
+					
+					<View id="reasonDropDown" class="rowBlock" top="160dp" zIndex="1" >
+						<Label id="reasonSelect" class="inputText fontLight">
+							WHAT IS IT ABOUT?
+						</Label>
+						<Label id="dropDown2" type="icon" class="icon">
+						</Label>
+						<ScrollView id="reasonScroll" class="dropDownScroll layoutVertical" zIndex="2">
+						</ScrollView>
+					</View>
+					<View class="horizontalSeparator" top="190dp"></View>
+					
+					
+					
+					<View class="rowBlock" top="200dp" layout="vertical" >
+						<!-- <TextArea id="reason" class="inputTextArea fontLight" hintText="TELL US ABOUT IT.."></TextArea>
+						<View class="horizontalSeparator"></View> -->
+						<!-- <Label class="fontLight inputTextArea" bottom="10dp">TELL US ABOUT IT..</Label>
+						<View class="horizontalSeparator"></View> -->
+						<TextArea id="reason" class="inputTextArea fontLight" bottom="10dp" hintText="TELL US ABOUT IT.." height="38dp" >
+						</TextArea>
+						<View class="horizontalSeparator">
+						</View>
+					</View>
+					
+					<!-- <View class="horizontalSeparator" top="230"></View> -->
+					<View class="rowBlock" top="260dp" >
+						<Label id="camera" class="icon" onClick="openCamera">
+						</Label>
+						<View class="attachedImageCont" >
+							<ImageView id="attachedImage" class="attachedImage">
+							</ImageView>
+						</View>
+					</View>
+				</View>
+				<View class="containerWithOutMargin" layout="vertical" top="20dp" bottom="20dp">
+					<Label id="submit" class="buttonText fontMedium" onClick="saveCustomerService">
+						SUBMIT
+					</Label>
+					<Label id="cancel" class="smallTextOrange fontLight">
+						Cancel
+					</Label>
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

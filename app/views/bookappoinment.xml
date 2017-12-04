@@ -1,0 +1,85 @@
+<Alloy>
+	<ScrollView id="bookappoinment" layout="vertical" onTouchstart="hideDropdownList">
+		<View id="bookappoinment_container" class="widthFill heightSize" layout="vertical" visible="true">
+			<View class="widthFill heightSize" top="10dp" left="0" height="53dp">
+				<Label id="screenName" class="fontLight">REQUEST AN APPOINTMENT</Label>
+				<Label id="refresh_btn" onClick="refreshPage"></Label>
+				<Label id="close_btn" onClick="closeBookappoinment"></Label>
+			</View>
+			<View id="date_container" class="border_container" layout="horizontal">
+				<!-- Date picker -->
+				<View class="heightFill" top="5%"  width="30%" left="1%" onClick="showPicker"  >
+					<Label id="date" class="fontHeavy date" left="20dp">DAY</Label>
+					<Label class="dropdown iconFont" right="5%" id="icon1"></Label>
+				</View>
+				<View class="borderVertical"></View>
+				<View class="heightFill" top="5%" width="30%" left="1%" onClick="showPicker"  >
+					<Label id="month" class="fontHeavy date" left="20dp" >MONTH</Label>
+					<Label class="dropdown iconFont" right="5%" id="icon2"></Label>
+				</View>
+				<View class="borderVertical"></View>
+				<View class="heightFill" top="5%" width="30%" left="1%" onClick="showPicker" >
+					<Label id="year" class="fontHeavy date" left="20dp" >YEAR</Label>
+					<Label class="dropdown iconFont" right="5%" id="icon3"></Label>
+				</View>
+
+			</View>
+			<View top="10dp" left="0" class="widthFill heightSize" layout="vertical">
+				<Label id="selectTimeSlot_lbl" class="fontHeavy">SELECT TIME SLOT</Label>
+				<View id="morning" slot="morning" class="widthSize heightSize" top="20dp" left="5%" layout="horizontal"  onClick="toggelRadio">
+					<Label slot="morning"  id="morningRd"  class="iconFont radioIcon" color="#e64e48" right="5%"></Label>
+					<Label slot="morning"  class="fontLight appointmentLabel">MORNING (09.00 AM - 12.00 PM)</Label>
+				</View>
+				<View id="afternoon" slot="afternoon" class="widthSize heightSize" top="20dp" left="5%" layout="horizontal"  onClick="toggelRadio">
+					<Label slot="afternoon" id="afternoonRd"  class="iconFont radioIcon" right="5%"></Label>
+					<Label slot="afternoon" class="fontLight appointmentLabel">AFTERNOON (12.00 PM - 06.00 PM)</Label>
+				</View>
+				<View id="evening" slot="evening" class="widthSize heightSize" top="20dp" left="5%" layout="horizontal"  onClick="toggelRadio">
+					<Label slot="evening" id="eveningRd"  class="iconFont radioIcon" right="5%"></Label>
+					<Label slot="evening" class="fontLight appointmentLabel">EVENING (06.00 PM - 09.00 PM)</Label>
+				</View>
+				<View id="selectOption" class="border_container" top="30dp" onClick="showDropdownList">
+					<!-- select store -->
+					<Label id="selectStore_lbl" class="fontHeavy" >SELECT OPTION</Label>
+					<!-- <Label class="fontHeavy" right="5%">*</Label> -->
+					<Label id="arrow" class="dropdown iconFont" right="5%"></Label>
+				</View>
+				
+				<View id="dropList" class="widthFill">
+					<Label id="inStore" onClick="selectStoreOption" class="fontHeavy dropListLabel widthFill" >IN STORE</Label>
+					<Label id="inHome" onClick="selectStoreOption" class="fontHeavy dropListLabel widthFill" bottom="10dp">AT HOME</Label>
+					<!-- <Label id="opt3" onClick="selectStoreOption" class="fontHeavy dropListLabel" bottom="10dp">OTHERS</Label> -->
+				</View>
+
+				<!--Commented for time begin should be used during API intergration  -->
+				<View id="selectionOptionContainer" class="widthFill layoutVertical" height="0"  visible="true" top="0" left="0" >
+					<!-- <Label id="optionLbl" color="#fff" left="5%"></Label> -->
+					<View top="5dp" left="0" class="widthFill heightSize">
+						<Label bindId="headerTitle" id="locationName"  class="fontHeavy" >D'DECOR STORE, BANDRA</Label>
+						<Label bindId="locationKm" id="locationKm"  class="fontMedium" >3.3 km</Label>
+					</View>
+					<Label bindId="subTitle" id="exculsive_lbl" class="fontMedium">EXCULSIVE</Label>
+					<Label bindId="address" id="address_lbl">Ground floor, Noton Height, 20 , Guru Nanak Road, Station Road, Bandra West.</Label>
+					<!-- <Label bindId="getDirection" id="getDirection_lbl">GET DIRECTIONS</Label> -->
+
+				</View>
+				
+				<ScrollView id="dropdownSelectionList"  class="widthFill" height="0" visible="false" ></ScrollView>
+				<!-- <View id="dropdownSelectionList"  class="widthFill"></View> -->
+				<!-- <Label id="note_lbl" class="fontLight">NOTES (OPTIONAL)</Label> -->
+				<Label id="note_lbl" class="fontLight" height="0" visible="false" ></Label>
+				<!-- <View class="border"></View> -->
+				<TextArea id="note_txt" class="fontLight" hintText="NOTES (OPTIONAL)" ></TextArea>
+				<View class="border"></View>
+
+			</View>
+		</View>
+		<Label id="book_appointment_btn" class="fontMedium" onClick="bookAppoinment">REQUEST</Label>
+		<View id="thankyou_container" class="widthFill heightSize" top="-50%" layout="vertical" visible="false">
+			<Label class="fontLight thankyouLbl">THANK YOU!!</Label>
+			<Label class="fontLight thankyouMsgLbl">
+				Thank you for requesting an appointment. We have received your details and notified the store. You will receive a confirmation over email/phone within the next 24 hours</Label>
+		</View>
+
+	</ScrollView>
+</Alloy>

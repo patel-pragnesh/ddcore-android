@@ -1,0 +1,127 @@
+<Alloy>
+	<Window id="estimate" onAndroid:back="goToBack" onOpen="refresh" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" onClose="clearMemory">
+
+		<View id="superView" class="superView">
+			<View class="estimateHeader">
+				<Label class="headerLbl">ESTIMATE</Label>
+				<Label class="headerSmallLbl">120CM * 150CM (RECESS) STANDARD LINING</Label>
+				<Label id="refreshIcon" class="refreshIcon" onClick="refresh"></Label>
+				<Label id="estimateCloseLbl" class="closeLbl" onClick="goToBack"></Label>
+			</View>
+			<ScrollView visible="true" top="40dp">
+				<View class="widthFill top0">
+					<View class="top0" left="20dp" right="20dp" height="Titanium.UI.SIZE" zIndex="1">
+						<Label id="productNameLabel" class="productNameLabel"></Label>
+						<View id="inputBox">
+							<TextField id="textForWidth" unit="MILLIMETER" type="TextField" class="textField fontLight" hintText="WIDTH" value="250"></TextField>
+							<View class="orangeView"></View>
+							<Label id="maxwidth" class="maxText"></Label>
+						</View>
+						<View id="labelBox">
+							<TextField id="textForHeight" unit="MILLIMETER" type="TextField" class="textField fontLight" hintText="HEIGHT" value="250"></TextField>
+							<View class="orangeView"></View>
+							<Label id="maxHeight" class="maxText"></Label>
+						</View>
+						<View id="measurementDropDown" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+								<Label id="measurementLbl" class="fontMedium dropDownLbl">MILLIMETER</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="measurementScroll" class="dropDownScroll layoutVertical"  zIndex="2"></ScrollView>
+						</View>
+						<View id="fittingDropDown" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+								<Label id="fittingLbl" class="fontMedium dropDownLbl">SELECT OPERATION</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="fittingScroll" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+						<View class="verticalSeperator"></View>
+						<View id="clothDropDown" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false" zIndex="0">
+								<Label id="clothLbl" class="fontMedium dropDownLbl">CASSETTE</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="clothScroll" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+					</View>
+					<View class="dropDownSeperator" top="170dp" zIndex="0"></View>
+					<View class="dropDownSeperator" top="220dp" zIndex="0"></View>
+					<View height="Titanium.UI.SIZE" top="280" width="Titanium.UI.SIZE">
+							<Label id="rupies">
+							</Label>
+							<Label id="amountLbl"  class="fontHeavy">
+							</Label>
+						</View>
+					<Label id="getQuote" class="button_text_font">GET QUOTE</Label>
+					<Label id="whr2Buy1" class="button_text_font getQuoteButton">WHERE TO BUY</Label>
+					<Label id="freeHomeConsultation1" text="FREE HOME CONSULTATION"  class="buttonLbl2" bottom="10dp" onClick="navigateToAppointment"></Label>
+				</View>
+			</ScrollView>
+			<View visible="false" top="40dp" layout="vertical">
+				<View id="estimatesTab" class="estimatesTab">
+					<Label id="cusion_lbl" class="tabsLbl fontMedium">MANUAL</Label>
+					<View id="sliderSelection" class="isSelected slideLeft"></View>
+					<Label class="tabsSeperator"></Label>
+					<Label id="curtains_lbl" class="tabsLbl fontMedium">AUTOMATIC</Label>
+				</View>
+				<ScrollableView id="scrollableView"  class="widthFill heightFill">
+					<View id="manual" title="MANUAL"  class="widthFill heightFill">
+						<View class="costEstimateWrapper">
+							<View class="widthSize heightSize layoutVertical">
+								<Label id="cost" class="button_text_font costFont">12,000 APX</Label>
+								<Label class="button_text_font smallFont">MINIMUM CHARGES APPLICABLE</Label>
+							</View>
+						</View>
+						<View id="controlDropDown" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+								<Label id="controlLbl" class="fontMedium dropDownLbl">CONTROL LOCATION</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="controlScroll" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+						<View class="verticalSeperator" top="102.5dp"></View>
+						<View id="headRailDropDown" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false" zIndex="0">
+								<Label id="headrailLbl" class="fontMedium dropDownLbl">HEADRAIL TYPE</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="headRailScroll" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+						<View class="dropDownSeperator" top="100dp" zIndex="0"></View>
+						<View class="dropDownSeperator" top="145dp" zIndex="0"></View>
+						
+						<!-- <Label id="whr2Buy1" class="button_text_font getQuoteButton">WHERE TO BUY</Label> -->
+						<!-- <Label id="freeHomeConsultation" text="FREE HOME CONSULTATION"  class="buttonLbl2 button_text_font" bottom="10dp" onClick="navigateToAppointment"></Label> -->
+					</View>
+					<View id="automatic" title="AUTOMATIC"  class="widthFill heightFill">
+						<View class="costEstimateWrapper layoutVertical">
+							<Label id="cost1" class="button_text_font costFont">12,000 APX</Label>
+							<Label class="button_text_font smallFont">MINIMUM CHARGES APPLICABLE</Label>
+						</View>
+						<View id="controlDropDown1" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+								<Label id="controlLbl1" class="fontMedium dropDownLbl">CONTROL LOCATION</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="controlScroll1" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+						<View class="verticalSeperator" top="102.5dp"></View>
+						<View id="headRailDropDown1" class="layoutVertical">
+							<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false" zIndex="0">
+								<Label id="headrailLbl1" class="fontMedium dropDownLbl">HEADRAIL TYPE</Label>
+								<Label class="iconFont dropDownIcon"></Label>
+							</View>
+							<ScrollView id="headRailScroll1" class="dropDownScroll layoutVertical"></ScrollView>
+						</View>
+						<View class="dropDownSeperator" top="100dp" zIndex="0"></View>
+						<View class="dropDownSeperator" top="145dp" zIndex="0"></View>
+						
+						<!-- <Label id="whr2Buy1" class="button_text_font getQuoteButton">WHERE TO BUY</Label>
+						<Label id="freeHomeConsultation1" text="FREE HOME CONSULTATION"  class="buttonLbl2" bottom="10dp"></Label> -->
+					</View>
+				</ScrollableView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

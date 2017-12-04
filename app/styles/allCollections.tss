@@ -1,0 +1,86 @@
+".collectionsScroll":{
+	width:Titanium.UI.FILL,
+	left:"15dp",
+	right:"15dp",
+	layout:"vertical",
+	top:"53",
+	scrollType:"vertical",
+	height:Titanium.UI.FILL
+	///contentHeight:Titanium.UI.FILL
+}
+// "#curtainsListView":{
+	// //top:"-10dp",
+	// width:Ti.UI.FILL,
+	// //backgroundColor:"transparent",
+// }
+".listview":{
+	//width:Titanium.UI.FILL,
+	//height:Titanium.UI.SIZE,
+	
+}
+".viewAllContainer":{
+	top:"10dp",
+	width:Titanium.UI.FILL,
+	//height:"35dp",//40
+	height:"20dp",
+	//height:Titanium.UI.SIZE
+}
+".categoryName":{
+	font:{
+		fontSize:"11dp"
+	},
+	color:"#333333",
+	left:"0dp"
+}
+".width40":{
+	width:"40%"
+}
+".viewAll":{
+	font:{
+		fontSize: "9dp",
+	},
+	color:"#e65e48",
+	right:"20dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	text:"VIEW ALL",
+	height:Titanium.UI.FILL,
+	
+}
+".rightArrow":{
+	font:{
+		fontSize: "15dp",
+	},
+	color: "#e65e48",
+	text:Alloy.Globals.icon.leftArrow,
+	height:Titanium.UI.FILL,
+	right:"0dp",
+	width:"20dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".loadMore":{
+	top:"13dp",//20
+	width:Titanium.UI.FILL,
+	height:"35dp",
+	backgroundColor:"#f4f4f4",
+}
+".loadmorelbl":{
+	font:{
+		fontSize:"12dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#333333",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	
+}
+".collectionsSeperator":{
+	width:"96%",
+	backgroundColor:"#e6e6e6",
+	height:"1dp",
+	top:"20dp"
+}
+".indicator":{
+  style: Ti.UI.ActivityIndicatorStyle.PLAIN,
+  color:"#333333"
+}

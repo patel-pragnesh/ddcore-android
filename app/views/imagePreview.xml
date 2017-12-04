@@ -1,0 +1,18 @@
+<Alloy>
+	<View id="imagePreview" visible="false">
+			<View bottom="60">
+				<Label id="closeLbl"></Label>
+				<View id="imagePreviewContainer">
+					<!-- <ImageView class="widthFill heightFill" image="/images/bed1.jpg"></ImageView>
+					<ImageView class="widthFill heightFill" image="/images/bed1.jpg"></ImageView>
+					<ImageView class="widthFill heightFill" image="/images/bed1.jpg"></ImageView> -->
+				</View>
+				<!-- <Label class="defaultLogo" text=Alloy.Globals.icon.logo bindId="gridLogo" ></Label> -->
+				<Label id="imagePreviewWishIcon" class="preview_share_wish_icon"></Label>
+				<Label id="imagePreviewShareIcon" class="preview_share_wish_icon"></Label>
+			</View>
+			<ScrollView id="subImageContainer">
+				<!-- <ImageView width="60" left="8dp" height="44" image="/images/bed1.jpg"></ImageView> -->
+			</ScrollView>
+		</View>
+</Alloy>

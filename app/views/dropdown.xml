@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="dropdown">
+		<ScrollView id="dropdownList" layout="vertical" >
+			
+		</ScrollView>
+	</View>
+</Alloy>

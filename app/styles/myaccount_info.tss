@@ -1,0 +1,299 @@
+".labelTitleColor":{
+	color: Alloy.Globals.labelTitleColor
+}
+
+
+".left0":{
+	left: "0%"
+}
+
+".left2":{
+	left: "2%"
+}
+
+
+".left5":{
+	left: "5%"
+}
+
+
+".left10":{
+	left: "10%"
+}
+
+".right5":{
+	right: "5%"
+}
+
+
+".top10":{
+	top: 10
+}
+
+".top0":{
+	top: 0
+}
+
+".top5":{
+	top: 5
+}
+
+"#myaccount_info": {
+	layout: "vertical",
+	visible: true
+}
+
+
+
+
+"#editProfile_btn":{
+	//color:"#e64e48",
+	font:{
+		fontSize: "12dp"
+	},
+	right: "5%",
+	top: 20//10
+}
+
+
+
+
+".labelTitle":{
+	color: Alloy.Globals.labelTitleColor,
+	top: 20,
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+".note_lbl":{
+	font:{
+		fontSize: "10dp"
+	},
+	top: 20,
+	color:"#333333"
+}
+
+".labelValue":{
+	color: "#000",
+	top: 10,
+	font:{
+		fontSize: "16dp"
+	}
+}
+
+".addressValueContainer":{
+	//borderColor: "green",
+	height: "140dp",
+	layout: "vertical",
+	scrollType: "vertical",
+	showVerticalScrollIndicator: true
+}
+
+".address_value_lbl":{
+	//line: 2,
+	//maxLines: 4,
+	width: "74%",//"76%",
+	//borderColor: "transparent",
+	//borderWidth: 1,
+	color:"#000",
+	wordWrap:true,
+	font:{
+		fontSize:"14dp"
+	}
+}
+
+".addressEdit":{
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "12dp"
+	},
+	right: "5%",
+	top: "20%"
+}
+
+".border":{
+	backgroundColor: "#a0a0a0",//"#6E6E6E",
+	height: "2px",
+	width:Titanium.UI.FILL,
+	left: "5%",
+	right: "5%",
+	//top: 2//10
+}
+
+"#addnewAdderss_btn":{
+	//top:"5dp",
+	bottom:"40dp",
+	font:{
+		fontSize: "16dp"
+	},
+	//borderColor:"red"
+}
+
+"#myaccount_info_edit":{
+	layout: "vertical",
+	scrollType: "vertical"
+}
+
+
+
+
+"#radioText":{
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+".commonRadioStyles":{
+	//color:Alloy.Globals.labelTitleColor,
+	color: "#dfdfdf",
+	font: {
+		fontSize: '14dp'
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	right: "5dp",
+	bubbleParent: true,
+	text:Alloy.Globals.icon.radio,
+	width:Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+}
+
+".imp_lbl":{
+	color: "#000",
+	font:{
+		fontSize: "18dp"
+	},
+	top: "12dp"
+}
+
+".textfield":{
+	font:{
+		fontSize: "16dp"
+	},
+	color: "#000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	//autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_ALL,
+	width:"78%",//Titanium.UI.SIZE,
+	top: "0dp",
+	left: 0,
+	
+	//height:"30dp",
+	// borderColor:"red",
+	// borderWidth:1,
+}
+
+"#update_btn":{
+	backgroundColor: "#231f20",//"#000",
+	color: "#fff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: 280,
+	height: 50,
+	font:{
+		fontSize: "16dp"
+	},
+	top:30
+}
+
+"#cancel_btn":{
+	height: 40,
+	font:{
+		fontSize: "16dp"
+	},
+	bottom:20,
+	top:5,
+}
+
+"#changePassword_container":{
+	backgroundColor: "#f5f5f5",
+	height: "0",//"130dp",
+	visible: false
+}
+
+"#passwordStrength":{
+	backgroundColor: "green",
+	height: "5dp"
+}
+
+
+"#password_txt":{
+	color: "#b2b2b2",
+	font:{
+		fontSize: "25dp"
+	},
+	left: "2%"
+}
+
+"#change_password_txt":{
+	color: "#b2b2b2",
+	font:{
+		fontSize: "16dp"
+	},
+}
+
+/*
+"#addressline1_txt":{
+color:"#b2b2b2"
+}
+
+"#addressline2_txt":{
+color:"#b2b2b2"
+}
+
+"#pincode_txt":{
+color:"#b2b2b2"
+}
+*/
+".greyColor":{
+	color: "#b2b2b2"
+}
+
+".dropDown":{
+	color: "#000",
+	top: 16,
+	text:Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "6dp"
+	}
+}
+
+"#number_txt":{
+	maxLength:10,
+	keyboardType:Ti.UI.NUMBER_PAD
+}
+
+"#previewPassword":{
+	text:Alloy.Globals.icon.password,
+	color:"#000",
+	font:{
+		fontSize:"16dp"
+	},
+	width:"22dp",
+	height:"22dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+
+"#fname_txt":{
+	//keyboardType:   Ti.UI.KEYBOARD_EMAIL
+}
+
+
+
+
+"#confirm_password_txt":{
+	color: "#b2b2b2",
+	font:{
+		fontSize: "18dp"
+	},
+}
+
+"#previewConfirmPassword":{
+	text:Alloy.Globals.icon.password,
+	color:"#000",
+	font:{
+		fontSize:"16dp"
+	},
+	width:"22dp",
+	height:"22dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}

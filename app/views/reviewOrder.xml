@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="reviewOrder" class="windowBackground" onAndroid:back="goToBack" onClose="destroyWindow" onFocus="updateCount" onTouchstart="hideKeyboard">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<View id="totalDisplayContainer">
+			<Label id="totalLbl" class="fontLight">TOTAL</Label>
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" right="20">
+					<Label id="rupies"></Label>
+					<Label id="amountLbl"  class="fontHeavy"></Label>	
+			</View>
+			<!-- <Label id="taxLbl" class="fontMedium"></Label> -->
+		</View>
+		<View class="addressSeperator"></View>
+		<View class="reviewSeperator"></View>
+		<View class="nextSeperator"></View>
+		<Label id="addressLbl"></Label>
+		<Label class="reviewLbl"></Label>
+		<ListView id="cartList" class="listView" onItemclick="hideKeyboard">
+			<Templates>
+				<Require type="view" src="listTemplate" id="template"></Require>
+			</Templates>
+			<ListSection id="mainSection" ></ListSection>
+		</ListView>
+		
+		<View class="widthFill heightSize" bottom="40dp" left="0" backgroundColor="#fff">
+			<TextField id="couponTxt" class="fontLight" onChange="applyCoupon"> </TextField>
+			<Label id="clearCoupnLbl" class="iconFont" onClick="applyDiscountCoupon"></Label>
+		</View>
+		
+		<Label id="changeAddressLbl" class="downLbl fontHeavy" onClick="closeReviewOrder">CHANGE ADDRESS</Label>
+		<Label id="paymentLbl" class="downLbl fontHeavy">PAYMENT OPTIONS</Label>
+	</Window>
+</Alloy>

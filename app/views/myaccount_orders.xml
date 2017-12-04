@@ -1,0 +1,18 @@
+<Alloy>
+	<View id="myaccount_order_container" class="widthFill heightFill">
+		<View id="dropdown" class="widthSize top10 right0 heightSize" right="10dp" layout="horizontal" bubbleParent="false" >
+			<Label id="openOrder_btn" class="fontHeavy labelTitleColor top0" left="0dp" right="5dp" onTouchstart="showDropdownList" orderId="openOr">OPEN ORDERS</Label>
+			<Label id="dropDownArrow" class="dropDown top5 iconFont" left="0dp" onTouchstart="showDropdownList"></Label>
+		</View>
+		<ScrollView id="orderList_container" top="40dp"  class="left0 right0 widthFill heightFill" layout="vertical"></ScrollView>
+		<Label id="noOrders" class="fontLight"></Label>
+		
+		<View id="popContainer" class="widthFill heightFill" top="0" left="0" zIndex="30" onTouchstart="hideDropDownList" visible="false">
+
+			<ScrollView id="dropDownList" zIndex="31"></ScrollView>
+			<View id="dropDownBg" zIndex="34"></View>
+
+		</View>
+
+	</View>
+</Alloy>

@@ -1,0 +1,282 @@
+
+"#myaccount_order_container": {
+	backgroundColor: "#fff",
+	layout: "vertical"
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".top0":{
+	top: 0
+}
+
+".top10":{
+	top: 10
+}
+
+
+".top20":{
+	top: 20
+}
+
+".left0":{
+	left: "0%"
+}
+
+".left5":{
+	//left: "5%"
+	left:"10dp",
+}
+
+
+".right0":{
+	right: "0%"
+}
+
+
+".right5":{
+	right: "5%"
+}
+
+
+"#openOrder_btn":{
+	font:{
+		fontSize: "12dp"
+	},
+	right: "10%"
+}
+
+
+".listViewStyle":{
+	backgroundColor: "transparent" ,
+	left: "0",//"2.5%",
+	right: "0",//"2.5%" ,
+	height:Titanium.UI.FILL,
+	//width:"95%",
+	top: "0dp",
+	separatorColor: "transparent",
+	separatorHeight: 3,
+	zIndex: 10
+}
+
+".commonListItemStyle":{
+	top: 0,
+	backgroundColor: "transparent",
+	height:Ti.UI.SIZE
+}
+
+".labelClass":{
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+
+
+"#orderCount":{
+	color: "#333333",
+	left: "25%"
+}
+
+"#orderPrice":{
+	color: "#333333",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#orderDate":{
+	color: "#333333",
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+
+
+
+
+/***/
+"#orderDetail_container":{
+	layout: "vertical",
+	//left:"10dp",
+}
+
+"#orderStatus":{
+	color: "#000",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#orderProgressStatus":{
+	backgroundColor: "#00bf00",//"#04B404",
+	height: "5dp",
+	left: "0%",
+	right: "5%",
+	zIndex: 1
+}
+
+".border":{
+	backgroundColor: "#6E6E6E",
+	height: "5dp",
+	width: "95%",
+	left: "0%",
+	right: "0%",
+	zIndex: 0
+}
+
+"#orderStatusDate":{
+	color: "#000"
+}
+
+"#cancelOrder":{
+	color: Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize:"14dp"
+	}
+}
+
+"#address":{
+	wordWrap: true,
+	//width:"70%",
+	maxLine: 4
+}
+
+
+
+/********************* template tss************************/
+
+
+
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".labelClass":{
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+
+
+"#orderImage":{
+	width: "50dp",
+	height: "50dp",
+	backgroundColor:"#a0a0a0"
+	//borderColor: "red"
+}
+
+
+"#orderTitle":{
+	color: "#333333",
+	left: "80dp",
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+"#orderPrice":{
+	color: "#333333",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+
+"#orderCatergory":{
+	color: "#6E6E6E",
+	top: 22,
+	left: "80dp",
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+"#orderColor":{
+	width: "18dp",
+	height: "16dp",
+	left: "80dp",
+	top: 40,
+	backgroundColor: "#58D3F7"
+}
+
+"#orderUOM":{
+	top: 42,
+	left: "120dp",
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "10dp"
+	}
+}
+"#orderaction_container":{
+	//layout:"horizontal",
+	height: "20dp",
+	//width:"150dp",
+	width:Titanium.UI.SIZE,
+	//width:Titanium.UI.FILL,
+	//top:60,
+	top: 40
+}
+
+".orderactionLabel":{
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "12dp"
+	},
+	//borderColor:"black",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+
+"#orderDetail_container":{
+	layout: "vertical"
+}
+
+"#orderStatus":{
+	color: "#000",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#orderProgressStatus":{
+	backgroundColor: "#04B404",
+	height: "2px",
+	left: "0%",
+	right: "5%",
+	zIndex: 1
+}
+
+".border":{
+	backgroundColor: "#6E6E6E",
+	height: "2px",
+	width: "95%",
+	left: "0%",
+	right: "0%",
+	zIndex: 0
+}
+
+"#orderStatusDate":{
+	color: "#000"
+}
+
+/********************* template tss************************/
+
+// download pdf
+
+".downloadPdfLbl":{
+	color:"#e65e48",
+	font:{
+		fontSize:"11dp",
+		fontFamily:"icomoon"
+	},
+	height:"0dp",
+	top:"5dp",
+}
+
+
+

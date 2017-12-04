@@ -1,0 +1,55 @@
+
+".pickerContainer": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	zIndex: 20,
+	backgroundColor: "#66231f20",
+	//borderColor:"red"
+}
+
+"#picker":{
+	// width:Titanium.UI.FILL,
+	// height: "50%",
+	//left: 0,
+	//top: 0,
+	//useSpinner:true,
+	//height:"200dp",
+	top: "0%",
+	type:Ti.UI.PICKER_TYPE_DATE,
+	minDate: "1900,1,1",
+	//minDate: Alloy.Globals.currentDate,
+	maxDate: Alloy.Globals.currentDate,//"2050,1,1"
+}
+
+
+
+".pickerClass":{
+	type:Ti.UI.PICKER_TYPE_DATE,
+	top: "0%",
+	minDate: Alloy.Globals.currentDate,
+	maxDate: "2050,1,1"
+}
+
+"#addressPicker":{
+	width:Titanium.UI.FILL,
+	top: "0%",
+	left: "0%",
+	selectionOpens: true,
+	selectionIndicator: true
+}
+
+
+".actionContainer":{
+	width:Titanium.UI.FILL,
+	height: "50dp",//Titanium.UI.SIZE,
+	top: "10dp",
+	left: 0
+}
+
+".actionLbl":{
+	color: "#fff",
+	font:{
+		fontSize: "18dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}

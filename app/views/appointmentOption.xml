@@ -1,0 +1,46 @@
+<Alloy>
+	<ScrollView id="appointmentOption" class="widthFill heightFill" onScroll="checky" scrollingEnabled="false" onClick="openAddAddress">
+		<View id="listContainer" class="widthFill" left="0dp" top="0dp">
+			<View id="headerContainer" class="widthFill" height="53dp">
+				<Label id="screenName" class="fontLight">IN STORE</Label>
+				<!-- <Label id="refresh_btn" ></Label> -->
+				<Label id="close_btn" onClick="closeAppointment"></Label>
+			</View>
+			<ListView id="appointListContainer" class="widthFill heightFill" defaultItemTemplate="appointOptionTemplate" onItemclick="selectList">
+				<Templates>
+					<ItemTemplate name="appointOptionTemplate" class="appointOptionTemplate" selectionStyle="none">
+						<View top="5dp" left="0" class="widthFill heightSize">
+							<Label bindId="isSelected" id="isSelected"  class="selectRow iconFont"></Label>
+							<Label bindId="headerTitle" id="locationName"  class="fontHeavy" ></Label>
+							<Label bindId="locationKm" id="locationKm"  class="fontMedium" ></Label>
+						</View>
+						<Label bindId="subTitle" id="exculsive_lbl" class="fontMedium"></Label>
+						<Label bindId="address" id="address_lbl"></Label>
+						<Label bindId="getDirection" id="getDirection_lbl">GET DIRECTIONS</Label>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="listSection">
+					<!-- 
+					<ListItem></ListItem>
+					 <ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					<ListItem></ListItem>
+					-->
+				</ListSection>
+			</ListView>
+			<Label id="book_appointment_btn" class="fontMedium" onClick="selectOption">DONE</Label>
+			<Label id="addNewAddress" class="fontLight" >ADD NEW ADDRESS</Label>
+
+		</View>
+		
+		<View id="addAddressContainer" class="widthFill heightFill" left="0dp">
+			
+		</View>
+
+	</ScrollView>
+</Alloy>

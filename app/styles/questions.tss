@@ -1,0 +1,113 @@
+".questionsView" :{
+	backgroundColor: "#ffffff",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+
+".gradientView" : {
+	top: 0,
+	width: Titanium.UI.FILL,
+	height: "160dp",
+	backgroundGradient:{
+		type:'linear', 
+		colors:[{
+			color : '#000000', position: 0
+			},{
+			color : '#00000000', position: 1.0
+		}], 
+		startPoint:{
+			x:0,
+			y:"40%"
+		}, 
+		endPoint:{
+			x:0,
+			y:"100%"
+		}, 
+		backFillStart:false
+	},
+	zIndex: 10,
+	layout: "vertical"
+}
+".collection_lbl":{
+	top:"15dp",
+	font:{ 
+		fontSize:"12dp"
+	},
+	color:"#e65e48"
+}
+".small_dash":{
+	top:"23dp",
+	width:"45dp",
+	height:"1dp",
+	backgroundColor:"#aaaaaa"
+} 
+".categories_lbl":{
+	top:"23dp",
+	font:{
+		fontSize:"14dp"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".answersImage" :{
+	top: "40dp",
+	//image: "http://historycooperative.org/wp-content/uploads/2014/03/Vatican-city.jpg",
+	
+	height: Titanium.UI.FILL,
+	//width:"auto",
+	width: Titanium.UI.FILL,
+	zIndex: 2,
+	selected: false,
+	defaultImage:"/images/default_logo.png"
+	//left:"-30dp",
+	//borderColor:"green"
+}
+".bottomAnswer" : {
+	bottom: 0,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "#E6231f20",
+	layout: "vertical",
+	bubbleParent: false,
+	zIndex: 10
+}
+".row" : {
+	width: Titanium.UI.FILL,
+	height: "50dp",
+	backgroundColor: "transparent",
+}
+".answerbutton" : {
+	width: "50%",
+	height: Titanium.UI.FILL
+}
+".leftAlign" : {
+	left : 0
+}
+".rightAlign" : {
+	right : 0
+}
+".answerLabel" : {
+	top: "5dp",
+	bottom: "5dp",
+	width: "60%",
+	//height : Titanium.UI.FILL,
+	height : Titanium.UI.SIZE,
+	//lines: 2,
+	color: "#d1d0d0",
+	font: {
+		fontSize: "10dp"
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	
+}
+".vertical_seperator" : {
+	width:"1dp",
+	height: Titanium.UI.FILL,
+	backgroundColor: "#ccffffff"
+}
+".horizontal_seperator" : {
+	bottom: 0,
+	width: Titanium.UI.FILL,
+	height : "1dp",
+	backgroundColor: "#ccffffff"
+}

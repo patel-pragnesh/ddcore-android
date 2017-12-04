@@ -1,0 +1,165 @@
+".myappoinment_container": {
+	backgroundColor: "#fff",
+	top: "2%"
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".top0":{
+	top: 0
+}
+
+".top5":{
+	top: 5
+}
+
+".top10":{
+	top: 10
+}
+
+
+".top20":{
+	top: 20
+}
+
+".left0":{
+	left: "0%"
+}
+
+".left5":{
+	left: "5%"
+}
+
+
+".right0":{
+	right: "0%"
+}
+
+".right1":{
+	right: "1%"
+}
+
+".right5":{
+	right: "5%"
+}
+
+".right10":{
+	right: "10%"
+}
+
+
+".border":{
+	backgroundColor: "#555555",
+	height: "1px",
+	width: "95%",
+	left: "0%",
+	right: "0%",
+	zIndex: 0
+}
+
+".labelClass":{
+	font:{
+		fontSize: "14dp"
+	}
+}
+
+
+".greyColor":{
+	color: "#555555"
+}
+
+
+
+"#appoinment_status":{
+	font:{
+		fontSize: "13dp"
+	}
+}
+
+"#appoinment_date":{
+	left: "3%",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#appointment_number":{
+	font:{
+		fontSize: "10dp"
+	},
+	left: "3%",
+	color: "#333333"
+	//borderColor:"transparent"
+}
+
+"#appointment_address":{
+	color: "#555555",
+	//borderColor:"red",
+	left: "3%",
+	width: "80%",
+	wordWrap: true,
+	//lines:4,
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#note":{
+	width: "70%",
+	color: "#555555",
+	font:{
+		fontSize: "10dp"
+	},
+	left: "3%",
+	wordWrap: true,
+	visible: true
+}
+
+
+"#view_notes":{
+	left: "3%",
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+".height0":{
+	height: "0"
+}
+
+".call":{
+	text: Alloy.Globals.icon.call,
+	color: "#555555",
+	font:{
+		fontSize: "16dp"
+	},
+	top: 1
+}
+
+".edit":{
+	text: Alloy.Globals.icon.edit,
+	color: "#555555",
+	font:{
+		fontSize: "16dp"
+	},
+	top: 1
+}
+
+".delete":{
+	text: Alloy.Globals.icon.deleteIcon,
+	color: "#555555",
+	font:{
+		fontSize: "16dp"
+	},
+	top: 1,
+	right: "1%"
+}
+
+
+".appointmentTemplate":{
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	width:Ti.UI.FILL
+}

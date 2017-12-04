@@ -1,0 +1,230 @@
+<Alloy>
+	<Window id="allBlinds" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+
+		<Require src="headerView" type="widget" id="header"></Require>
+		<ScrollView id="collectionScroll" class="collectionsScroll">
+
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds1Container" class="viewAllContainer">
+					<Label id="blinds1NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds1ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds1ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds1rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds1ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds1LoadMore" class="loadMore">
+								<Label id="blinds1LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds1ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds2Container" class="viewAllContainer">
+					<Label id="blinds2NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds2ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds2ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds2rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds2ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds2LoadMore" class="loadMore">
+								<Label id="blinds2LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds2ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds3Container" class="viewAllContainer">
+					<Label id="blinds3NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds3ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds3ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds3rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds3ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds3LoadMore" class="loadMore">
+								<Label id="blinds3LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds3ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds4Container" class="viewAllContainer">
+					<Label id="blinds4NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds4ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds4ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds4rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds4ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds4LoadMore" class="loadMore">
+								<Label id="blinds4LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds4ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds5Container" class="viewAllContainer">
+					<Label id="blinds5NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds5ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds5ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds5rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds5ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds5LoadMore" class="loadMore">
+								<Label id="blinds5LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds5ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds6Container" class="viewAllContainer">
+					<Label id="blinds6NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds6ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds6ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds6rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds6ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds6LoadMore" class="loadMore">
+								<Label id="blinds6LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds6ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds7Container" class="viewAllContainer">
+					<Label id="blinds7NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds7ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds7ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds7rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds7ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds7LoadMore" class="loadMore">
+								<Label id="blinds7LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds7ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			<View class="heightSize layoutVertical top0">
+				<View id="blinds8Container" class="viewAllContainer">
+					<Label id="blinds8NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds8ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds8ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds8rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds8ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds8LoadMore" class="loadMore">
+								<Label id="blinds8LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds8ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>
+			
+			
+			
+			
+		</ScrollView>
+	</Window>
+</Alloy> 
+
+
+

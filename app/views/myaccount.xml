@@ -1,0 +1,51 @@
+<Alloy>
+	<Window id="myaccount" class="widthFill heightFill" backgroundColor="#fff" onAndroid:back="backToDashboard"   onClose="cleanUp" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN" >
+		<Require src="headerView" type="widget" id="header"></Require>
+		<View id="myaccount_photo_container" class="widthFill top0">
+			<ImageView id="profile_bg_img" hasStyle="false"></ImageView>
+			<ImageView id="profile_img" onTouchend="updateProfileImage"></ImageView>
+			<Label id="addPhoto" class="fontMedium">Add Photo</Label>
+			<Label id="username_lbl" class="fontMedium iconFont"></Label>
+			<Label id="useremail_lbl" class="fontLight"></Label>
+		</View>
+		
+		<View id="myaccount_detail_container" class="widthFill heightFill">
+			<Widget id="paging" src="com.ddecor.pagingcontrol"  />
+			<ScrollableView id="scrollableView" onScroll="changeScreen" >
+				<View title="INFO" id="info" hasChild="false" backgroundColor="#fff" class="widthFill heightFill">
+					<!-- <Require src="myaccount_info"></Require> -->
+					<!-- <Require src="emptyMyAccount"></Require> -->
+					
+				</View>
+				
+				<View title="ORDERS 00" id="orders" count="00" backgroundColor="#fff" hasChild="false">
+					
+				</View>
+				
+				<View title="SHORTLIST 00" id="shortlist" count="00" backgroundColor="#fff" hasChild="false">
+					<!-- <Require src="myshortlist"></Require> -->
+				</View>
+				<View title="SAVED VIEWS" id="savedviews" count="00" hasChild="false" backgroundColor="#fff" >
+					<!-- <Require src="savedviews"></Require> -->
+				</View>
+				<View title="STYLE" id="style" backgroundColor="#fff" hasChild="false">
+					<!-- <Require src="mystyle"></Require> -->
+				</View>
+				
+				<View title="APPOINTMENTS 00" id="appointment" count="00" backgroundColor="#fff">
+
+					<View id='appoinments' hasChild="false" top="0dp" width="Titanium.UI.FILL" height="Titanium.UI.FILL" >
+						<!-- <Require src="myappoinments"></Require> -->
+					</View>
+					<Label id="addAppoinment" onClick="navigateToBookAppoinment" visible="true"></Label>
+
+				</View>
+				
+				
+				
+
+			</ScrollableView>
+		</View>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,170 @@
+<Alloy>
+	<Window id="aboutUs" class="windowBackground" onFocus="updateCount" onClose="clearMemory">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View class="containerForPage">
+				<View class="small_dash"></View>
+				<Label class="aboutUsHead_lbl fontLight" top="20dp">WORLD'S LARGEST</Label>
+				<Label class="aboutUs_lbl fontMedium">PRODUCER OF CURTAINS & UPHOLSTERY FABRICS</Label>
+				<Label class="aboutUsParagraph_lbl fontLight">D’Decor is the world’s largest maker of soft furnishing fabrics. Everyday our factories create over 120,000 sq mtrs of high quality fabrics for homes around the world. We are proud to be ‘globally local’, understanding the aesthetic sensibilities of every country that we touch.</Label>
+				<Label class="aboutUsParagraph_lbl fontLight">Founded in 1999, we are today the partners of choice for premier furniture and furnishing makers around the world. We are defined by our commitment to excellence and our passion to bring to life visions that meld expertise with art.</Label>
+			</View>
+			<View id="infrastructure" class="widthFill heightSize" top="60dp" backgroundColor="#999999">
+				<View class="containerForPage">
+					<View class="small_dash"></View>
+					<Label class="aboutUs_lbl fontMedium" top="20dp">O U R</Label>
+					<Label class="aboutUsHeadWhite_lbl fontLight">INFRASTRUCTURE</Label>
+					<Label class="aboutUsParagraphWhite_lbl fontLight">5 state of the art plants in Tarapur, India is where all the magic is brought to life. Every year, 44 million meters of fabric are created here destined for homes around the world. Featuring cutting edge equipment with an average age of just 4 years, our Tarapur facilities are exemplary of how closely we have embraced technology and the spirit of re-invention. We are proud to have delivered several prominent firsts in Indian textile manufacturing such as creating water-repellent and flame-retardant fabrics as well as the country’s first robotic warehouse.</Label>
+					<View class="iconTriplet" top="25dp" layout="horizontal" width="100%"  >
+						<Label class="bigIcons" left=0 text="Alloy.Globals.icon.yarn" width="25%"></Label>
+						<Label class="bigIcons" text="Alloy.Globals.icon.fabricWeaving" width="25%"></Label>
+						<Label class="bigIcons"  text="Alloy.Globals.icon.fabricProcessing" width="20%"></Label>
+						<Label class="bigIcons"  text="Alloy.Globals.icon.machineStiching" width="25%"></Label>
+						
+					</View>
+					<View class="textTriplet" top="12dp" width="100%" layout="horizontal">
+						<Label class="textSmall" left=0 width="25%">YARN \nPROCESS</Label>
+						<Label class="textSmall" width="25%">FABRIC \nWEAVING</Label>
+						<Label class="textSmall" width="20%">FABRIC \nPROCESSING</Label>
+						<Label class="textSmall" width="25%">PRINTING & \nREADYMADE \nSTITCHING</Label>
+					</View>
+					<View class="iconTriplet" top="20dp" layout="horizontal" width="100%">
+						<!-- <Label class="bigIcons" left=0 text="Alloy.Globals.icon.machineStiching" width="25%"></Label>
+						<Label class="bigIcons" text="Alloy.Globals.icon.embroidary" width="25%"></Label>
+						<Label class="bigIcons"  text="Alloy.Globals.icon.robotised" width="20%"></Label>
+						<Label class="bigIcons"  text="Alloy.Globals.icon.robotised" width="25%"></Label> -->
+						
+						<Label class="bigIcons" left=0 text="\ue93c" width="25%"></Label>
+						<Label class="bigIcons" text="\ue93b" width="25%"></Label>
+						<Label class="bigIcons" text="Alloy.Globals.icon.embroidary" width="20%"></Label>
+						<Label class="bigIcons"  text="Alloy.Globals.icon.robotised" width="25%"></Label>
+						
+						
+					</View>
+					<View class="textTriplet" top="12dp" bottom="25dp" layout="horizontal" width="100%">
+						<!-- <Label class="textSmall" left=0 width="25%">PRINTING & \nREADYMADE \nSTICHING</Label>
+						<Label class="textSmall" width="25%">EMBROIDERY</Label>
+						<Label class="textSmall" width="20%">ROBOTIZED \nWAREHOUSING</Label>
+						<Label class="textSmall" width="25%">ROBOTIZED \nWAREHOUSING</Label> -->
+						
+						<Label class="textSmall" left=0 width="25%">DIGITAL \nPRINTING</Label>
+						<Label class="textSmall" width="25%">CUSTOM MADE \nBLINDS</Label>
+						<Label class="textSmall" width="20%">EMBROIDERY</Label>
+						<Label class="textSmall" width="25%">ROBOTIZED \nWAREHOUSING</Label>
+						
+						
+					</View>
+				</View>
+			</View>
+			
+			
+				<View id="management" class="widthFill heightSize layoutVertical" >
+				<View class="containerForPage">
+					<View class="small_dash"/>
+					<Label class="aboutUs_lbl fontMedium" top="20dp">O U R</Label>
+					<Label class="aboutUsHead_lbl fontLight">MANAGEMENT TEAM</Label>
+					<Label class="aboutUsParagraphWhite_lbl fontLight" color="#B3000000">They represent the dynamic forces that shape the past, present and future of D’Decor. Visionaries, innovators and leaders are just some of the many roles they straddle with ease. Together, they form D’Decor’s pillars of strength, a rock-solid foundation that has held strong for over a decade.</Label>
+
+				</View>
+				
+				<View class="widthFill layoutHorizontal heightSize" top="20dp" >
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/vkarora.png" />
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/sanjayarora.png" />
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/ajayarora.png" />
+				
+				</View>
+				
+			</View>
+			
+			
+			<View class="containerForPage">
+				<View class="widthFill heightSize" top="50dp">
+					<Label class="iconBig" text="Alloy.Globals.icon.award"></Label>
+				</View>
+				<Label class="rewardsHead_lbl fontLight" top="25dp">SYNTHETIC & RAYON \nFILAMENT FABRICS</Label>
+				<Label class="reward_lbl fontMedium" top="3dp">THE BEST EXPORT PERFORMANCE AWARD</Label>
+				<Label class="reward_lbl fontMedium" top="3dp">2013 - 2014</Label>
+				<Label id="viewAllAwards" class="viewAllLbl fontMedium" top="30dp">VIEW ALL AWARDS</Label>
+			</View>
+
+			<!-- New Desgin -->
+			<View id="capabalities" class="widthFill heightSize layoutVertical"   backgroundColor="#333333">
+				<View class="containerForPage">
+					<View class="small_dash"/>
+					<Label class="aboutUs_lbl fontMedium" top="20dp">D E S I G N</Label>
+					<Label class="aboutUsHead_lbl fontLight" color="#fff" >CAPABALITIES</Label>
+					<Label class="tangerineFont"  top="20dp">Creative with Contemporary</Label>
+					<Label class="aboutUsParagraphWhite_lbl fontMedium" color="#B3ffffff" bottom="20dp">
+	Innovation and customization are our biggest strengths. Our 15 year partnership with European Studios and investment in 5000 original artworks is the starting point for our 250 people strong product development team. Our continuous efforts and investment in new colors, design trends, substrates, weaves and finishes, provide customers with a wide variety of contemporary products to choose from each year. Our customers are spoilt for choice with over 20,000 SKUs each year.
+	\n
+	We have 60 CAD stations which convert the work of our team as electronic input to our computer aided manufacturing. These SKUs are combined and presented as 100 new collections to our customer. Each collection is designed to beautifully convert a room into your dream home, bringing the 'Live Beautiful' philosophy to life.
+						</Label>
+					<!-- <Label class="personName fontLight" top="10dp">MS. SIMONE ARORA</Label>
+					<Label class="aboutUs_lbl fontHeavy smallFont" bottom="20dp">CREATIVE DIRECTOR</Label> -->
+
+				</View>
+			</View>
+			<!-- <View id="management" class="widthFill heightSize layoutVertical" >
+				<View class="containerForPage">
+					<View class="small_dash"/>
+					<Label class="aboutUs_lbl fontMedium" top="20dp">O U R</Label>
+					<Label class="aboutUsHead_lbl fontLight">MANAGEMENT TEAM</Label>
+					<Label class="aboutUsParagraphWhite_lbl fontLight" color="#B3000000">They represent the dynamic forces that shape the past, present and future of D’Decor. Visionaries, innovators and leaders are just some of the many roles they straddle with ease. Together, they form D’Decor’s pillars of strength, a rock-solid foundation that has held strong for over a decade.</Label>
+
+				</View>
+				
+				<View class="widthFill layoutHorizontal heightSize" top="20dp" >
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/vkarora.png" />
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/sanjayarora.png" />
+					<ImageView class="heightSize" width="33.33%" left="0" image="/images/ajayarora.png" />
+				
+				</View>
+				
+			</View> -->
+
+			<!-- New Desgin -->
+
+			<!-- <Label id="storeLocator" class="darkButtonLabel iconFont"></Label> -->
+			<View class="containerForPage">
+				<View class="small_dash"></View>
+				<Label class="aboutUs_lbl fontMedium" top="10dp">ABOUT</Label>
+				<Label class="aboutUsHeadMed_lbl fontLight" top="5dp" onClick="openIntPage">INTERNATIONAL ALLAINCES</Label>
+				<View class="widthFill heightSize" top="30dp" onClick="openIntPage">
+					<ImageView class="iconBigImg" image="/images/marveldisney.png"></ImageView>
+				</View>
+				<Label class="aboutUsParagraph_lbl fontLight">Tuck your child in with their heroes, their princesses. Let their fantasies take shape. Let them sail ships, discover new lands and save the day. Presenting our new collection of bedding for kids.</Label>
+				<Label class="aboutUsParagraph_lbl fontLight">A child’s bedroom is where he creates his own world. And with our revolutionary digital rinting and 100% pure cotton fabric, you couldn’t have opened a better window to their imagination.</Label>
+			</View>
+			<View class="containerForPage" bottom="20dp">
+				<View class="small_dash"></View>
+				<View class="widthFill heightSize" top="25dp">
+					<ImageView class="iconBigImg" image="/images/sunbrella.png" height="45dp"></ImageView>
+				</View>
+				<Label class="aboutUsParagraph_lbl fontLight">Armed To Hold Up Against Any External Weather Conditions.</Label>
+				<Label class="aboutUsParagraph_lbl fontLight">For over 50 years, Sunbrella® has been the leader in performance fabrics. And there's good reason people look to Sunbrella first for their fabric needs.</Label>
+				<View class="iconTriplet" top="25dp">
+					<Label class="bigIcons" color="#999999" left=0 text="Alloy.Globals.icon.fadeProof"></Label>
+					<Label class="bigIcons" color="#999999" text="Alloy.Globals.icon.waterResist"></Label>
+					<Label class="bigIcons" color="#999999" right=0 text="Alloy.Globals.icon.breathable"></Label>
+				</View>
+				<View class="textTriplet" top="12dp">
+					<Label class="textSmallBlack" left=0>FADE PROOF</Label>
+					<Label class="textSmallBlack">WATER & STAIN \nRESISTANCE</Label>
+					<Label class="textSmallBlack" right=0>BREATHABLE</Label>
+				</View>
+			</View>
+
+			<!-- <View class="containerForPage">
+				<View class="small_dash"></View>
+				<View class="widthFill heightSize" top="15dp">
+					<Label class="iconBig" id="teflon">Teflon</Label>
+				</View>
+				<Label class="aboutUsParagraph_lbl fontLight" top="10dp">Ddecor new range with DuPont Teflon® Fabric Protector shall Keep your designs Timeless and Spot less.</Label>
+				<View class="widthFill" height="30dp"></View>
+
+			</View>
+			 -->
+
+		</ScrollView>
+	</Window>
+</Alloy>

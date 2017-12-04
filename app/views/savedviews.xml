@@ -1,0 +1,47 @@
+<Alloy>
+	<View id="savedviews" class="widthFill heightFill" onClick="hideDropdownList">
+
+		<View class="widthSize heightSize" right="10" top="10" bubbleParent="false" layout="horizontal" >
+			<Label id="allrooms_btn" class="fontHeavy labelTitleColor" top="0" right="5dp" onTouchstart="showDropdownList">ALL ROOMS</Label>
+			<Label id="allrooms_arrow" class="arrow iconFont" top="4" right="5dp" onTouchstart="showDropdownList"></Label>
+		</View>
+			
+			<ListView id="viewLists" class="widthFill heightSize" top="40" defaultItemTemplate="saveViewTemplate" onItemclick="saveViewListItemClick">
+				<Templates>
+					<ItemTemplate name="saveViewTemplate" class="saveViewTemplate" selectionStyle="none">
+						<View id="savedViewContainer" class="widthFill" height="100dp">
+							<Label bindId="layoutName" class="viewTitle fontHeavy">VISHAL'S STUDY</Label>
+							<ImageView bindId="layoutImage" class="viewImage"></ImageView>
+							<Label bindId="roomType" class="fontHeavy viewName">VISHAL'S STUDY 02</Label>
+							<Label bindId="layoutDate" class="fontMedium viewDate">20 NOVEMEBER 2015</Label>
+							<View class="widthSize heightSize"  right="5dp" top="20%"  layout="horizontal">
+								<Label bindId="share" class="iconFont share"></Label>
+								<Label bindId="download"  class="iconFont download"></Label>
+								<Label bindId="deleteView" class="iconFont delete"></Label>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="saveViewSection">
+					
+				</ListSection>
+				
+				<FooterView layout="vertical">
+					<View id="footerView" height="20dp">
+						<ActivityIndicator id="loader" top="5"/>
+					</View>
+					<Label id="noProduct">YOU HAVE NO SAVED VIEWED</Label>
+					<Label id="loadMore" class="loadMore fontMedium textCenter" top="10dp" onClick="loadMore">LOAD MORE</Label>
+				</FooterView>
+
+			</ListView>
+			
+		<View id="popContainer" class="widthFill heightFill" top="0" left="0" zIndex="30" onTouchstart="hideDropdownList" visible="false">
+			<ScrollView id="dropDownList">
+				 <Label id="All" class="dropDownLbl fontMedium" top="5dp" right="20dp" onClick="dropDownListSelection">ALL ROOMS</Label>
+			</ScrollView>
+			<View id="dropDownBg"></View>
+		</View>	
+		
+	</View>
+</Alloy>

@@ -1,0 +1,22 @@
+<Alloy>
+	<ItemTemplate name="orderReturnTemplate" selectionStyle="none" backgroundColor="transparent" height="Ti.UI.SIZE" top="5%" layout="vertical">
+
+		<View id="orderList" class="top0 widthFill heightSize" >
+			<ImageView bindId="orderImage" id="orderImage" class="left5 top5"></ImageView>
+			<Label bindId="orderTitle" id="orderTitle" class="top5 labelClass fontHeavy"></Label>
+			<Label bindId="orderPrice" id="orderPrice"  class="fontHeavy labelClass right5 top5"></Label>
+			<Label bindId="orderCatergory" id="orderCatergory" class="labelClass fontMedium"></Label>
+			<Label bindId="orderColor" id="orderColor"></Label>
+			<Label bindId="orderUOM" id="orderUOM" class="fontHeavy"></Label>
+		</View>
+		<View class="top5 widthFill heightSize" bottom="5">
+			<Label class="orderactionLabel left5 fontLight" bindId="orderStatusDate" color="#000"></Label>
+			<Label class="orderactionLabel right5 fontLight" bindId="orderAction"></Label>
+		</View>
+		<!-- <Label class="downloadPdfLbl left5 icomoon" bindId = "downloadPpdf"></Label> -->
+		
+		
+		
+
+	</ItemTemplate>
+</Alloy>

@@ -1,0 +1,540 @@
+"#fullView":{
+	height:Titanium.UI.FILL,
+	layout:"horizontal"
+}
+"#sliderView":{
+	height:Titanium.UI.FILL,
+	//backgroundImage :"/images/MainBG.png",
+	backgroundColor:"#ffffff"
+}
+"#mainView":{
+	height:Titanium.UI.FILL, 
+	backgroundColor:"#ffffff"
+}
+"#fadeView":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	top:"50dp", 
+	zIndex:"500",
+	backgroundColor:"transparent"
+}
+"#dashboardScroll":{
+	top:"0dp",
+	scrollType:"vertical",
+	backgroundColor:"#404040"
+}
+
+/* navigation bar*/
+"#menuButton":{
+	left:"-10dp",
+	// height :"45dp",
+	// width:"45dp",
+	//left:1,
+	height :"45dp",
+	width:"45dp",
+	font:{
+		fontSize: "35dp",
+	},
+	color: "#ffffff",
+	backgroundColor:"transparent"
+}
+"#logoIcon":{
+	height :"80dp",
+	left:"45dp",
+	width:Titanium.UI.SIZE,
+	font:{
+		fontSize: "25dp",
+	},
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	color: "#ffffff",
+}
+// "#logoIcon":{
+	// height :"27dp",
+	// left:"45dp",
+	// //width:Titanium.UI.SIZE,
+	// width:"80dp",
+	// font:{ 
+		// //fontSize: "76dp",
+		// //fontFamily:"icomoonDdecor.ttf"
+	// },
+	// //verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	// color: "#ffffff",
+// }
+
+
+"#dashboardNavigation":{
+	width:Titanium.UI.FILL,
+	height: "53dp",
+	backgroundColor: "transparent",
+	top: "0dp"
+}
+/* navigation bar*/
+/* scrollableViewImage*/
+"#itemScrollableView":{
+	width:Titanium.UI.FILL,
+	backgroundColor:"transparent"
+}
+"#explore_lbl":{
+	height:"40dp",
+	bottom:"0dp",
+	color:"#ffffff",
+	backgroundColor:"#80404040",
+	width:Titanium.UI.FILL,
+	font:{
+		//fontSize:"12sp"
+		fontSize:"16dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".scrollableImage":{
+	top:"0dp",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+}
+
+/* scroll control (page notation)*/
+
+"#scrollControllContainer":{
+	bottom:"15dp",//225//235
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	//height:"20",
+	zIndex:"14"
+}
+".buttonWidth":{
+	width:"6dp",//18dp
+	height:"6dp",
+	borderRadius:"3",
+	font:{
+		fontSize:"11sp",
+	},
+	backgroundColor:"transparent",
+}
+/* scroll control (page notation)*/
+
+"#collectionContainer":{
+	//width:Titanium.UI.FILL,
+//	height:Titanium.UI.SIZE,
+	backgroundColor:"#e6e6e6",
+	layout:"vertical"
+}
+".small_dash":{
+	top:"35dp",
+	width:"25dp",
+	height:"1dp",
+	backgroundColor:"#cccccc"
+}
+".collection_lbl":{
+	top:"20dp",
+	font:{
+		fontSize:"10sp"
+	},
+	color:"#e65e48"
+} 
+".categories_lbl":{
+	top:"7dp",
+	font:{
+		fontSize:"20sp"
+	},
+	color:"#333333"
+}
+"#categoriesContainer":{
+	top:"30dp",
+	layout:"vertical"
+}
+"#upCategoryContainer":{
+	width:Titanium.UI.FILL,
+	top:"0dp"
+}
+"#downCategoryContainer":{
+	width:Titanium.UI.FILL,
+	top:"0dp"
+}
+"#beddingCategoryContainer":{
+	width:Titanium.UI.FILL,
+	top:"0dp"
+}
+
+".storelocatorlbl":{
+	top:"18dp",
+	font:{
+		fontSize:"12sp",
+		fontFamily:"icomoon"
+	},
+	color:"#FFFFFF",
+	width:Titanium.UI.FILL,
+	height:"40dp",
+	backgroundColor:"#404040",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".visit_lbl":{
+	top:"20dp",
+	font:{
+		fontSize:"12sp",
+	},
+	color:"#e65e48"
+}
+".estore_lbl":{
+	top:"7dp",
+	font:{
+		fontSize:"20sp",
+	},
+	color:"#333333"
+}
+".estore_image":{
+	// width:Titanium.UI.FILL,
+	 height:"230dp",
+	// top:"15dp",
+	// bottom:"0dp",
+	width:"100%",
+	defaultImage:"/images/default_logo.png",
+	//height:Titanium.UI.SIZE,
+	top:"15dp",
+	bottom:"10dp",
+}
+".categoryLbl":{
+	color:"#000000",
+	font:{
+		fontSize:"10sp"
+	},
+	bottom:"5dp",
+	touchEnabled:false
+}
+".categoryIconLbl":{
+	font:{
+		fontSize:"50sp",
+	},
+	color:"#000000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled:false
+}
+
+
+// SLIDER TSS
+
+"#topView":{
+	height:"150dp",//150
+	width:Titanium.UI.FILL,
+}
+"#profileImage":{
+	width:"75dp",
+	height:"75dp",
+	borderRadius:"37.5dp",
+	left:"20dp",
+	defaultImage:"/images/default_user_picture.png",
+	image:"/images/default_user_picture.png",
+	borderColor:"#ffffff",
+	borderWidth:"0.35",
+}
+"#nameLabel":{
+	left:"115",
+	font:{
+		fontSize:"12dp"
+	},
+	color:"#555555",
+	height:"15dp",
+	top:"22.5",
+	width:Titanium.UI.FILL,
+	right:"20dp",
+	ellipsize:true,
+	wordWrap:false
+}
+"#emailLabel":{
+	left:"115",
+	font:{
+		fontSize:"13dp"
+	},
+	color:"#e65e48",
+	height:"16dp",
+	bottom:"20.5",//22.5
+	width:Titanium.UI.FILL,
+	right:"20dp",
+	ellipsize:true,
+	wordWrap:false
+}
+"#editProfile":{
+	bottom:"15dp",
+	right:"20dp",
+	height:"20dp",
+	width:"50dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	font:{
+		fontSize:"13dp"
+	},
+	color:"#e65e48"
+}
+".sliderSeperator":{
+	height:"1dp",
+	width:Titanium.UI.FILL,
+	//width:"82%",
+	left:"20dp",
+	right:"20dp",
+	backgroundColor:"#4d000000"
+}
+"#secondSeperator":{
+	height:"1dp",
+	width:Titanium.UI.FILL,
+	left:"20dp",
+	right:"20dp",
+	backgroundColor:"transparent",
+	//top:"10dp"
+}
+"#menuScroll":{
+	height:Titanium.UI.FILL,
+	backgroundColor:"transparent",
+	//disableBounce:"true",
+	scrollType:"vertical",
+	
+}
+"#logoutLbl":{
+	bottom:"50dp"
+}
+"#sliderCategories":{
+	backgroundColor:"transparent",
+	
+}
+".sliderCategoryLbl":{
+	font:{
+		fontSize:"13sp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	color:"#333333",
+	left:"0dp",
+	touchEnabled:false
+}
+".sliderRightArrow":{
+	font:{
+		fontSize: "15dp",
+	},
+	//color: "#4d000000",
+	color: "#000000",
+	text:Alloy.Globals.icon.downArrow,
+	right:"0dp",
+	touchEnabled:false
+}
+
+".cContainer":{
+	 top:"15dp",
+	// width:"82%",
+	 height:Titanium.UI.SIZE,
+	 layout:"vertical",
+	// borderColor:"red"
+	
+	width:Titanium.UI.FILL,
+	//width:"82%",
+	left:"20dp",
+	right:"20dp",
+	type:"scroll"
+}
+".notSubcategoryContainer":{
+//	borderColor:"red",
+	top:"15dp",
+	width:"82%",
+	height:"25dp",
+}
+".categoriesSubContainer":{
+	top:"0dp",
+	width:Titanium.UI.FILL,
+	height:"25dp",
+	touchEnabled:false,
+	//borderColor:"red"
+}
+".subCategories":{ 
+	color : "#333333",
+	font:{
+		fontSize:"12dp",
+		//fontFamily:"futura_medium_bt-webfont"
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	width:Titanium.UI.FILL,
+	height : "40dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left:"10dp",
+}
+".scrollableContainer":{
+	backgroundGradient:{
+		type:'linear', 
+		colors:[{
+			color : '#bf231f20', position: 0
+			},{
+			color : 'transparent', position: 1.0
+		}], 
+		startPoint:{
+			x:0,
+			y:"1%"
+		}, 
+		endPoint:{
+			x:0,
+			y:"15%"
+		}, 
+		backFillStart:false
+	},
+}
+"#shopLbl":{
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	color:"#333333",
+	//left:"0dp",
+	//touchEnabled:false,
+	height:"25dp",
+	top:"15dp",
+	//width:"82%",
+	width:Titanium.UI.FILL,
+	left:"20dp",
+	right:"20dp",
+}
+".otherMenu":{
+	font:{
+		fontSize:"12sp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#333333",
+	//left:"0dp",
+//	touchEnabled:false,
+	height:"25dp",
+	//borderColor:"red",
+	top:"15dp",
+	//width:"82%",
+	width:Titanium.UI.FILL,
+	left:"20dp",
+	right:"20dp",
+}
+///end
+
+"#cartContainer":{
+	width:"45dp",
+	height:"45dp",
+	right:"90dp",
+	//visible:false,
+	//touchEnabled:false
+}
+"#cartCountLbl":{
+	width:"18dp",
+	height:"18dp",
+	left:"5dp",
+	top:"7dp",
+	borderRadius:"9dp",
+	borderColor:"transparent",//231f20
+	borderWidth:"0.7",
+	color:"#000000",
+	visible:false,
+	zIndex:"10",
+	font:{
+		fontSize:"10dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor:"#e65e48",
+	touchEnabled: false
+}
+//over flow View tss
+"#openView":{
+	zIndex:"100",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top:"0dp",
+	right:"5dp",
+	visible:false,
+	backgroundColor:"transparent",
+}
+
+"#overFlowView":{
+	
+	zIndex:"101",
+	width:"55%",
+	//width:"98%",
+	top:"8dp",
+	right:"5dp",
+	height:Titanium.UI.SIZE,
+	borderRadius:"3dp",
+	borderColor:"gray",
+	borderWidth:"0.6",
+	//visible:false,
+	backgroundColor:"#ffffff",
+	layout:"vertical"
+}
+".overFlowOptions":{
+	width:Titanium.UI.FILL,//140
+	height:"40dp",
+	left:"10dp",
+	//right:"10dp",
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	color:"#333333"
+}
+
+
+"#dashboardImage":{
+	width:Titanium.UI.FILL,
+	image:"/images/dashboard_background.png"
+}
+
+/*".lbl1":{
+	top:"0dp",
+	left:"0dp",
+	font:{
+		fontFamily:"futura_lt_bt_light-webfont",
+		fontSize :"23dp"
+	},
+	color:"#c0bebc"
+}*/
+
+/*".lbl2":{
+	left:"0dp",
+	font:{
+		fontFamily:"futura-hv-bt-heavy",
+		fontSize :"40dp"
+	},
+	color:"#e9e8e7",
+	text:"BEAUTIFUL",
+	bottom:"0dp",
+	//verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM,
+}
+".subLblContainer":{
+	top:"30dp",
+	left:"0dp",
+	layout:"horizontal",
+	height:"40dp"
+}
+".lbl4":{
+	left:"3dp",
+	font:{
+		fontSize : "12dp",
+		fontFamily:"futura_lt_bt_light-webfont",
+	},
+	color:"#c0bebc",
+	text:"because",
+	bottom:"0dp",
+	//verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM,
+	//bottom:"3dp"
+}*/
+/*".lbl3":{
+	top:"80dp",
+	right:"0dp",
+	font:{
+		fontFamily:"futura_lt_bt_light-webfont",
+		fontSize :"14dp",
+	},
+	color:"#ffffff",
+}*/
+
+
+
+
+"#exploreLookBtn":{
+	backgroundColor:"#4D000000",
+	borderColor :"#4De64e48",
+	text:"EXPLORE OUR  LOOKS",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	zIndex:2,
+	color:"#ffff",
+	width:"240dp",
+	height:"40dp",
+	font:{
+		fontSize:"11dp"
+	}
+}

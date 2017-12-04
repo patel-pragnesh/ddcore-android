@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="beddingView" class="widthFill heightFill" onAndroid:back="clearMemory">
+		<View class="beddingHeader">
+			<Label class="beddingLbl">BED LINEN TYPES</Label>
+			<Label id="beddingCloseLbl" class="closeLbl"></Label>
+		</View>
+		<ScrollView id="beddingDetails"></ScrollView>
+		<Label id="listAllLbl" class="button_text_font">LIST ALL</Label>
+		<View id ="beddingTypeView"  visible="false" class="widthFill heightFill" >
+			<View class="beddingHeader">
+				<Label id="beddingTypeLbl" class="beddingLbl"></Label>
+				<Label id="beddingTypeCloseLbl" class="closeLbl"></Label>
+			</View>
+			<ScrollView>
+			<View id="beddingTypeDetails"></View>
+			</ScrollView>
+		</View>
+
+	</Window>
+</Alloy>

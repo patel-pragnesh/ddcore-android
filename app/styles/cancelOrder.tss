@@ -1,0 +1,72 @@
+
+"#cancelOrder": {
+	width: "100%",
+	height: "100%",
+	backgroundColor: "#000",
+	zIndex: 11
+}
+
+
+"#screenName":{
+	left: "5%",
+	top: "10dp",
+	color: "#fff",
+	font:{
+		fontSize: "18dp"
+	}
+}
+
+
+"#close_btn":{
+
+	right: "5%",
+
+
+	width: "20dp",
+	height: "20dp",
+	font:{
+		fontSize: "20dp",
+		
+	},
+	//right: "10dp",
+	top: "10dp",
+	color: "#fff",
+	text:Alloy.Globals.icon.close
+}
+
+"#cancelOrderMsgContainer":{
+	width: "90%",
+	height:Titanium.UI.SIZE,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: "18dp"
+	}
+	//borderColor:"red"
+}
+
+
+"#action1":{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: "70%",
+	height: "50dp",
+	borderColor: "#7b7979",
+	borderWidth: 1,
+	bottom: "60dp",
+	font:{
+		fontSize: "14dp"
+	},
+	color: "#fff"
+}
+
+"#action2":{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width: "70%",
+	height: "50dp",
+	color:Alloy.Globals.labelTitleColor,
+	bottom: "10dp",
+	font:{
+		fontSize: "11dp"
+	}
+}
+
+

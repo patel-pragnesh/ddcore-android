@@ -1,0 +1,126 @@
+<Alloy>
+	<Window id="myBag" onFocus="updateData" class="windowBackground" onAndroid:back="goToBack" onClose="destroyWindow">
+		<Require src="headerView"type="widget" id="header">
+		</Require>
+		<View id="filterContainer">
+			<Label id="shopingBagLbl" class="filtersLbl">
+				SHOPPING BAG
+			</Label>
+			<Label class="filterSeperator">
+			</Label>
+			<Label id="reviewLbl" class="filtersLbl">
+				SHORTLIST
+			</Label>
+		</View>
+		<View id="vwToAnimate">
+		</View>
+		<ScrollableView id="cartScroll" scrollingEnabled="false">
+			<View id="cartPage" class="tabsPageHolder">
+				<View id="opacCartView" class="widthFill heightFill top0">
+					<Label class="emptyLbl">
+						YOUR BAG IS EMPTY
+					</Label>
+					<Label id="visitOurStore">
+						VISIT OUR ESTORE
+					</Label>
+				</View>
+				<ListView id="cartList" class="listView">
+					<Templates>
+						<Require type="view" src="listTemplate" id="template">
+						</Require>
+					</Templates>
+					<ListSection id="mainSection" >
+					</ListSection>
+				</ListView>
+				<View class="bottom0 layoutVertical heightSize borderTransparent">
+					<View class="cartSeperator">
+					</View>
+					<View class="estimateContainer">
+						<Label id="estimateDeliveryLbl">
+						</Label>
+						<View id="pincodeContainer">
+							<TextField id="pincodeTxt" type="TextField">
+							</TextField>
+							<Label id="checkBtn"></Label>
+							<ActivityIndicator id="activityIndi" class="cartIndicator" />
+						</View>
+						<Label id="estimateDateLbl">
+						</Label>
+					</View>
+					<View class="cartSeperator">
+					</View>
+					<View id="totalDisplayContainer">
+						<Label id="totalLbl" class="fontLight">
+							TOTAL
+						</Label>
+						<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" right="20">
+							<Label id="rupies">
+							</Label>
+							<Label id="amountLbl"  class="fontHeavy">
+							</Label>
+						</View>
+						<!-- <Label id="taxLbl" class="fontMedium">
+						</Label> -->
+					</View>
+					<View>
+						<Label id="continueShoppingLbl" class="downLbl fontHeavy">
+							CONTINUE SHOPPING
+						</Label>
+						<Label id="checkoutLbl" class="downLbl fontHeavy">
+							CHECKOUT
+						</Label>
+					</View>
+				</View>
+			</View>
+			<View id="shortlistPage" class="tabsPageHolder">
+				
+				<View id="shortlistOpacCartView" class="widthFill heightFill top0">
+					<Label class="emptyLbl">
+						YOU HAVE NO SHORTLISTED PRODUCTS
+					</Label>
+					<Label id="shortlist_visitOurStore">
+						VISIT OUR RANGE
+					</Label>
+				</View>
+				<ListView id="shortList">
+					<Templates>
+						<Require type="view" src="listTemplate" id="template">
+						</Require>
+					</Templates>
+					<ListSection id="shortListSection" >
+					</ListSection>
+					<FooterView>
+						<View id="footerView" height="40dp">
+							<ActivityIndicator id="activityInd"/>
+						</View>
+					</FooterView>
+				</ListView>
+				
+				<!-- <Label id="shortListContinueShoppingLbl" class="downLbl fontHeavy">
+					CONTINUE SHOPPING
+				</Label> -->
+				
+				<View height="Titanium.UI.SIZE" bottom="0" >
+					
+					<Label id="shortListContinueShoppingLbl" class="downLbl fontHeavy">CONTINUE SHOPPING</Label>
+					
+					<Label id="shortListRemoveAll" class="downLbl fontHeavy" onClick="removeAllShortlist">REMOVE ALL</Label>
+					
+				</View>
+				
+				
+			</View>
+		</ScrollableView>
+		<View id="qtyContainer" class="widthFill heightFill">
+			<View class="qtyheader">
+				<Label class="qtyLbl">
+					SELECT QUANTITY
+				</Label>
+				<Label id="qtyCloseLbl" class="closeLbl">
+				</Label>
+			</View>
+			<ScrollView id="qtyDetails">
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

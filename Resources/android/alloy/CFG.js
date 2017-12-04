@@ -1,0 +1,1 @@
+module.exports={"dependencies":{"headerView":"1.0","com.ddecor.pagingcontrol":"0.1"}};

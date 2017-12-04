@@ -1,0 +1,48 @@
+<Alloy>
+
+	<Window id="feedBack" class="windowBackground" onClose="cleanUp" onAndroid:back="closeFeedback" onFocus="updateCount">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<View class="containerForPage" id="containerForPage">
+			<View class="containerWithMargin">
+				<Label class="smallHeading fontHeavy">PLEASE SHARE YOUR VIEW</Label>
+				
+				<View id="reasonDropDown" class="rowBlock" top="61dp" zIndex="1" visible="false" touchEnabled="false">
+					<Label id="reasonPicker" class="inputText fontLight" top="1dp" >WHAT IS IT ABOUT?</Label>
+					<Label id="dropDown" type="icon" class="icon"></Label>
+					<ScrollView id="reasonScroll" class="dropDownScroll layoutVertical" zIndex="2" ></ScrollView>
+				</View>
+				
+				<View class="horizontalSeparator" top="96dp" visible="false"></View>
+				
+				
+				<View class="rowBlock" top="126dp">
+					<Label class="inputTextArea fontLight" ></Label>
+				</View>
+				
+				<View class="horizontalSeparator" top="60dp" ></View>
+				<TextArea id="reason" type="TextField" class="inputTextArea fontLight" hintText="YOUR COMMENTS" top="70dp" height="140dp"></TextArea>
+			</View>
+			<View class="containerWithOutMargin" top="15dp">
+				<View class="horizontalSeparator" top="0"></View>
+				
+				<!-- attachment -->
+				<View height="80dp"  class="widthFill" top="10dp" borderColor="transparent">
+					
+					<Label id="camera" class="camera" onClick="openCamera">
+					</Label>
+					<!-- <View class="attachedImageCont" borderColor="greeen" >
+						<ImageView id="attachedImage" class="attachedImage" borderColor="red" />
+						
+					</View> -->
+					<ImageView id="attachedImage" width="50dp" height="50dp" top="2dp" right="70dp" borderColor="transparent"></ImageView>
+				</View>
+				<!-- attachment -->
+				
+				
+				
+				<Label id="submit" class="buttonText fontMedium" onClick="submitFeedback">SUBMIT</Label>
+				<Label id="cancel" class="smallTextOrange fontLight" onClick="closeFeedback">Cancel</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,89 @@
+<Alloy>
+	<Window id="eshop" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+
+		<Require src="headerView" type="widget" id="header"></Require>
+		
+		<ScrollView id="collectionScroll" class="collectionsScroll">
+        <!-- <View class="widthFill heightFill" backgroundColor="white" top="0dp" zIndex="5">
+            <ImageView class="commingSoonImage"></ImageView>
+            <!-- <Label id="ourRangeLbl" class="button_text_font"></Label> 
+        </View> -->
+			<!-- estore1  -->
+			<!-- <View class="heightSize layoutVertical top0">
+				<View id="estore1Container" class="viewAllContainer">
+					<Label id="estore1NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="estore1ViewAllContainer" class="heightFill right0 width40">
+						<Label id="estore1ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="estore1rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="estore1ListView"  class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id="estore1ListSection" ></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="estore1LoadMore" class="loadMore">
+								<Label id="estore1LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="estore1ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View> -->
+
+			<!-- estore2 -->
+			<!-- <View class="heightSize layoutVertical top0">
+				<View id="estore2Container" class="viewAllContainer">
+					<Label id="estore2NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="estore2ViewAllContainer" class="heightFill right0 width40">
+						<Label id="estore2ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="estore2rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="estore2ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id="estore2ListSection"></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="estore2LoadMore" class="loadMore">
+								<Label id="estore2LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="estore2ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View> -->
+			<!-- estore3 -->
+			<!-- <View class="heightSize layoutVertical top0">
+				<View id="estore3Container" class="viewAllContainer">
+					<Label id="estore3NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="estore3ViewAllContainer" class="heightFill right0 width40">
+						<Label id="estore3ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="estore3rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="estore3ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id="estore3ListSection"></ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="estore3LoadMore" class="loadMore">
+								<Label id="estore3LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="estore3ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View>	 -->
+		</ScrollView>
+	</Window>
+</Alloy> 

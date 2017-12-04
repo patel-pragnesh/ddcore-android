@@ -1,0 +1,187 @@
+<Alloy>
+    <Window id="signIn" onAndroid:back="GoToBack" onTouchstart="hideKeyboard"  onOpen="updateCount" onClose="clearMemory">
+        <ImageView class="windowBackgroundImage widthFill heightFill"></ImageView>
+        <!-- LOGIN SCREEN -->
+        <ScrollView id="main_login_container">
+            <View id="super_signin_container" borderColor="transparent" bottom="5">
+                <ImageView class="signin_logo" top="55dp"></ImageView>
+                <TextField id="signin_email_txt" type="TextField" class="textfield keyBoardTypeEmail" value=""></TextField>
+                <View id="email_seperator" class="textfieldSeperator top0"></View>
+                <TextField id="signin_password_txt" type="TextField" class="textfield" value=""></TextField>
+                <View id="password_seperator" class="textfieldSeperator top0"></View>
+                <Label id="signin_forgot_lbl" class="fontLight"></Label>
+                <Label id="signin_login_lbl" class="buttonLbl1 button_text_font" text="LOGIN"></Label>
+                <Label id="signin_register_lbl" class="buttonLbl2 button_text_font" text="SIGN UP"></Label>
+                <!-- <Label id="cancel_lbl" class="buttonLbl3 button_text_font" text="CANCEL"></Label> -->
+                <!-- <Label id="cancel_lbl" class="buttonLbl3 button_text_font" text="SKIP" color="#e64e48"></Label> -->
+                <View id="social_login_container" bottom="10dp">
+                    <View class="layoutHorizontal widthSize heightFill">
+                        <Label id="signin_or_lbl" class="fontLight"></Label>
+                        <Label id="signin_facebook_lbl" class="iconFont"></Label>
+                        <Label id="signin_google_lbl" class="iconFont"></Label>
+                    </View>
+                </View>
+            </View>
+        </ScrollView>
+
+        <!-- FORGOT PASSWORD SCREEN -->
+        <View id="forgot_password_container" class="layoutVertical">
+            <ScrollView scrollType="vertical">
+                <Label id="restMessageId1" class="widthFill message fontMedium" top="0" visible="false" >A LINK HAS BEEN SENT TO YOUR EMAIL TO RESET PASSWORD</Label>
+                <View id="sub_forgot_container" top="60dp">
+                    <ImageView class="signin_logo" top="10dp"></ImageView>
+                    <TextField id="signin_forgot_txt"  type="TextField" class="textfield keyBoardTypeEmail"></TextField>
+                    <View id="forgot_email_seperator" class="textfieldSeperator top0"></View>
+                    <Label class="or_lbl fontLight"></Label>
+                    <TextField id="signin_numbar_txt"  type="TextField" class="textfield keyBoardTypeNumber"></TextField>
+                    <View id="number_seperator" class="textfieldSeperator top0"></View>
+                    <Label id="forgot_submit_lbl" text="SUBMIT" class="buttonLbl1 button_text_font" onClick="forgetPassword"></Label>
+                    <Label id="forgot_cancel_lbl" text="CANCEL"  class="buttonLbl2 button_text_font" bottom="10dp"></Label>
+                </View>
+            </ScrollView>
+        </View>
+
+        <!-- GUEST ENTER SCREEN -->
+        <View id="guest_container" class="layoutVertical">
+            <ScrollView scrollType="vertical">
+                <Label id="restMessageId" class="widthFill top0 message fontMedium">A LINK HAS BEEN SENT TO YOUR EMAIL TO RESET PASSWORD</Label>
+                <View id="sub_forgot_container"  top="70dp">
+
+                    <ImageView class="signin_logo"></ImageView>
+                    <Label class="meanwhile_lbl fontLight">MEANWHILE YOU CAN</Label>
+                    <Label id="continue_guest_lbl" class="button_text_font" text="CONTINUE AS GUEST"></Label>
+                    <Label id="guest_cancel_lbl" text="CANCEL"  class="buttonLbl2 button_text_font"></Label>
+                </View>
+            </ScrollView>
+        </View>
+
+        <!-- OTP ENTER SCREEN -->
+        <View id="otp_container" class="layoutVertical">
+            <ScrollView scrollType="vertical">
+                <Label id="otpMessageId" class="widthFill top0 message">WE HAVE SENT AN OTP TO YOUR REGISTERED MOBILE NUMBER</Label>
+                <View id="sub_forgot_container" top="70dp">
+
+                    <ImageView class="signin_logo"></ImageView>
+                    <Label class="otp_lbl fontLight">PLEASE ENTER OTP</Label>
+                    <View class="otp_textfield_container layoutHorizontal">
+                        <View class="otp_text_container heightSize layoutVertical">
+                            <TextField id="otp_no1" class="widthFill otp_txt keyBoardTypeNumber"></TextField>
+                            <View id="seperator1" class="otp_textfieldSeperator top0"></View>
+                        </View>
+                        <View class="otp_text_container heightSize layoutVertical">
+                            <TextField id="otp_no2" class="widthFill otp_txt keyBoardTypeNumber"></TextField>
+                            <View id="seperator2" class="otp_textfieldSeperator top0"></View>
+                        </View>
+                        <View class="otp_text_container heightSize layoutVertical">
+                            <TextField id="otp_no3" class="widthFill otp_txt keyBoardTypeNumber"></TextField>
+                            <View id="seperator3" class="otp_textfieldSeperator top0"></View>
+                        </View>
+                        <View class="otp_text_container heightSize layoutVertical">
+                            <TextField id="otp_no4" class="widthFill otp_txt keyBoardTypeNumber"></TextField>
+                            <View id="seperator4" class="otp_textfieldSeperator top0"></View>
+                        </View>
+                    </View>
+                    <Label id="otp_resend_lbl" text="Resend OTP" class="fontLight" onClick="resendOTP"></Label>
+                    <Label id="otp_submit_lbl" text="SUBMIT" class="button_text_font" onClick="otpConfirmation"></Label>
+                    <Label id="otp_cancel_lbl" text="CANCEL"  class="buttonLbl2 button_text_font"></Label>
+                </View>
+            </ScrollView>
+        </View>
+
+        <!-- RESET PASSWORD SCREEN -->
+        <View id="reset_password_container" class="layoutVertical">
+            <ScrollView scrollType="vertical">
+                <View id="sub_forgot_container" top="60dp">
+                    <ImageView class="signin_logo" top="10dp"></ImageView>
+                    <TextField id="signin_resetpassword_txt"  type="TextField" class="textfield"></TextField>
+                    <View id="resetnew_seperator" class="textfieldSeperator top0"></View>
+                    <TextField id="signin_resetconfpassword_txt"  type="TextField" class="textfield"></TextField>
+                    <View id="resetconf_seperator" class="textfieldSeperator top0"></View>
+                    <Label id="reset_lbl" text="RESET" class="buttonLbl1 button_text_font" onClick="setNewPassword"></Label>
+                    <Label id="reset_cancel_lbl" text="CANCEL"  class="buttonLbl2 button_text_font" bottom="10dp"></Label>
+                </View>
+            </ScrollView>
+        </View>
+
+        <!-- REGISTER SCREEN -->
+        <View id="register_container">
+
+            <!-- <View id="register_header"> -->
+            <Require src="headerView" type="widget" id="header"></Require>
+            <!-- </View> -->
+            <ScrollView class="layoutVertical" top="53" scrollType="vertical">
+                <Label id="noteLabel" class="note_lbl fontLight" visible="false"></Label>
+                <View id="super_register_container">
+
+                    <TextField id="register_first_txt" hintText="FIRST NAME" maxLength="30"  type="TextField" class="textfield registerText"></TextField>
+                    <View id="register_first_seperator" class="registertextfieldSeperator top0"></View>
+                    <TextField id="register_last_txt" hintText="LAST NAME" type="TextField" maxLength="30" class="textfield registerText"></TextField>
+                    <View id="register_last_seperator" class="registertextfieldSeperator top0"></View>
+                    <TextField id="register_email_txt" hintText="EMAIL"  type="TextField" class="textfield registerText keyBoardTypeEmail"></TextField>
+                    <View id="register_email_seperator" class="registertextfieldSeperator top0"></View>
+                    <TextField id="register_phone_txt" maxLength="10" hintText="PHONE"  type="TextField" class="textfield registerText keyBoardTypeNumber"></TextField>
+                    <View id="register_phone_seperator" class="registertextfieldSeperator top0"></View>
+
+                    <!-- add new field  -->
+                    <View  class="left0 top10 widthSize" height="40dp" layout="horizontal" top="10">
+                        <Label class="genderlbl" left="5dp">GENDER </Label>
+                        <Label gender="male" id="male" class="commonRadioStyles iconFont" left="15dp" onTouchstart="selectGender" ></Label>
+                        <Label gender="male" id="radioText1" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >MALE</Label>
+                        <Label gender="female" id="female" class="commonRadioStyles iconFont" left="14dp"  onTouchstart="selectGender" ></Label>
+                        <Label gender="female" id="radioText2" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >FEMALE</Label>
+                        <Label gender="other" id="other" class="commonRadioStyles iconFont" left="14dp"  onTouchstart="selectGender" ></Label>
+                        <Label gender="other" id="radioText3" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >OTHER</Label>
+                    </View>
+                    
+                    
+                    <Label id="dob" class="genderlbl widthFill" top="3dp" left="5dp">DOB</Label>
+                    <View class="widthFill" top="5dp" left="5dp" height="40" layout="horizontal">
+                        <View class="left0 widthSize" dob="true" onClick="showDatePicker">
+                            <Label id="dob_date" touchEnabled="false" class="greyColor left0 top0 labelValue fontLight">DD</Label>
+                            <Label class="top0 dropDown iconFont" left="70"></Label>
+                            <View class="border" left="-12" width="28%" top="30"></View>
+                        </View>
+                        <View class="left5 widthSize" dob="true" onClick="showDatePicker">
+                            <Label id="dob_month" touchEnabled="false"  class="greyColor left0 top0 labelValue fontLight">MM</Label>
+                            <Label class="top0 dropDown iconFont" left="70"></Label>
+                            <View class="border" left="-12" width="28%" top="30"></View>
+                        </View>
+                        <View class="left5 widthSize" dob="true" onClick="showDatePicker">
+                            <Label id="dob_year" touchEnabled="false"  class="greyColor left0 top0 labelValue fontLight">YYYY</Label>
+                            <Label class="top0 dropDown iconFont" left="70"></Label>
+                            <View class="border" left="-12" width="28%" top="30"></View>
+                        </View>
+                    </View>
+
+                    <!-- end -->
+                    <View width="98%" height="41dp" top="7dp">
+                        <TextField id="register_password_txt" hintText="PASSWORD"  type="TextField"></TextField>
+                        <View id="register_password_seperator" class="registertextfieldSeperator"></View>
+                        <Label id="showpassword_lbl" class="iconFont" onClick="showPassword"></Label>
+                    </View>
+
+                </View>
+
+                <!-- New Label added instead of Password Strength -->
+                <Label class="passwordStrengthLbl fontLight">Minimum 7 characters including atleast 1 number</Label>
+                <!-- New Label added instead of Password Strength -->
+
+                <!-- Below Password strength has been set to visible false -->
+                <Label class="pstrength_lbl fontLight" visible="false">Password strength</Label>
+                <View id="sliderContainer" class="heightSize" visible="false">
+                    <View id="slider"></View>
+                </View>
+                <Label id="strengthStatus" class="fontMedium" visible="false"></Label>
+                <!-- Below Password strength has been set to visible false -->
+
+                <!-- <View class="trems_container">
+                <Label id="check" class="iconFont" onClick="selectTermNCondition"></Label>
+                <Label id="terms_lbl" class="fontLight"></Label>
+                </View> -->
+                <Label id="register_signup_lbl" text="SIGN UP"  class="button_text_font"></Label>
+                <Label id="register_cancel_lbl" text="Cancel"  class="fontLight"></Label>
+            </ScrollView>
+        </View>
+
+    </Window>
+</Alloy>

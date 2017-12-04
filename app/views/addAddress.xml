@@ -1,0 +1,56 @@
+<Alloy>
+	<View id="superView" onSwipe="hideKeyboard">
+		<View class="addressHeader">
+			<Label id="addressLbl" class="addressLbl">ADD NEW ADDRESS</Label>
+			<Label id="refreshIcon" onClick="refreshAddress"></Label>
+			<Label id="addressCloseLbl" class="closeLbl"></Label>
+		</View>
+		<ScrollView top="53dp" scrollType="vertical">
+			<View class="widthFill top0" height="205">
+				<View class="top0 layoutVertical">
+					<TextField id="fname"  type="TextField" class="addressTextfield" onReturn="navigateToNextTextfield"></TextField>
+					<View id="fname_seperator" class="addressTextSeperator top0"></View>
+					<TextField id="lname"  type="TextField" class="addressTextfield top10" onReturn="navigateToNextTextfield"></TextField>
+					<View id="lname_seperator" class="addressTextSeperator top0"></View>
+					<TextField id="phoneNo"  type="TextField" class="addressTextfield keyBoardTypeNumber top10" onReturn="navigateToNextTextfield"></TextField>
+					<View id="phoneNo_seperator" class="addressTextSeperator top0"></View>
+					<View class="dropDownSeperator"></View>
+				</View>
+			</View>
+			<View id="stateDropDown" class="layoutVertical" bubbleParent="false">
+				
+				<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+					<Label id="stateLbl" class="fontLight dropDownLbl"></Label>
+					<Label id="stateDropDownIcon" class="iconFont dropDownIcon"></Label>
+				</View>
+				<ScrollView id="stateScroll" class="dropDownScroll layoutVertical" zIndex="12"  ></ScrollView>
+				
+				
+
+			</View>
+			
+			
+			<View class="filterSeperator"></View>
+			<View id="cityDropDown" class="layoutVertical" bubbleParent="false">
+				<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+					<Label id="cityLbl" class="fontLight dropDownLbl"></Label>
+					<Label id="cityDropDownIcon" class="iconFont dropDownIcon"></Label>
+				</View>
+				<ScrollView id="cityScroll" class="dropDownScroll layoutVertical" zIndex="12" ></ScrollView>
+			</View>
+			<View class="secondDropDownSeperator"></View>
+			<View class="addressDetails layoutVertical">
+				<TextField id="addressLine1"  type="TextField" class="addressTextfield" onReturn="navigateToNextTextfield"></TextField>
+				<View id="addressLine1_seperator" class="addressTextSeperator top0"></View>
+				<TextField id="addressLine2"  type="TextField" class="addressTextfield top10" onReturn="navigateToNextTextfield"></TextField>
+				<View id="addressLine1_seperator" class="addressTextSeperator top0"></View>
+				<TextField id="pinCode"  type="TextField" class="addressTextfield keyBoardTypeNumber top10" onReturn="navigateToNextTextfield"></TextField>
+				<View id="addressLine1_seperator" class="addressTextSeperator top0"></View>
+				<Label id="saveAddress" class="button_text_font" onClick="saveAddress">SAVE ADDRESS</Label>
+			</View>
+		</ScrollView>
+		
+		<!-- <View id="transparentView" class="widthFill heightFill"  borderColor="red" zIndex="10" touchEnabled="false"  onClick="hideTransparentView"></View> -->
+
+	</View>
+</Alloy>

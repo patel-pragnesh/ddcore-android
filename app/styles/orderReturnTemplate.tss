@@ -1,0 +1,174 @@
+".top0":{
+	top: 0
+}
+
+".top5":{
+	top: 5
+}
+
+".top10":{
+	top: 10
+}
+
+
+".top20":{
+	top: 20
+}
+
+".left0":{
+	left: "0%"
+}
+
+".left5":{
+	left: "5%"
+}
+
+".left10":{
+	left: "26%"
+}
+
+".right0":{
+	right: "0%"
+}
+
+".right1":{
+	right: "1%"
+}
+
+".right5":{
+	right: "5%"
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".labelClass":{
+	font:{
+		fontSize:"12dp"
+	},
+	
+	
+}
+
+
+
+"#orderImage":{
+	width:"50dp",
+	height:"50dp",
+	//borderColor:"red"
+}
+
+
+"#orderTitle":{
+	color:"#333333",
+	left: "80dp",
+	font:{
+		fontSize:"10dp",
+		
+	}
+}
+
+"#orderPrice":{
+	color:"#333333",
+	font:{
+		fontSize:"12dp"
+	}
+}
+
+
+"#orderCatergory":{
+	color:"#6E6E6E",
+	top:22,
+	left: "80dp",
+	font:{
+		fontSize:"10dp"
+	}
+	
+}
+
+"#orderColor":{
+	width:"18dp",
+	height:"16dp",
+	left:"80dp",
+	top:40,
+	backgroundColor:"#58D3F7",
+}
+
+"#orderUOM":{
+	top:42,
+	left:"120dp",
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize:"10dp"
+	}
+}
+"#orderaction_container":{
+	//layout:"horizontal",
+	height:"20dp",
+	//width:"150dp",
+	width:Titanium.UI.SIZE,
+	//width:Titanium.UI.FILL,
+	//top:60,
+	top:40,
+	//borderColor:"green",
+	
+}
+
+".orderactionLabel":{
+	color:Alloy.Globals.labelTitleColor,
+	//color:"#000",
+	font:{
+		fontSize:"12dp"
+	},
+	//borderColor:"black",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	//width:"50dp",
+	// width:Titanium.UI.SIZE
+	
+}
+
+"#orderDetail_container":{
+	layout:"vertical"
+}
+
+"#orderStatus":{
+	color:"#000",
+	font:{
+		fontSize:"12dp"
+	}
+}
+
+"#orderProgressStatus":{
+	backgroundColor:"#04B404",
+	height:"2px",
+	left:"0%",
+	right:"5%",
+	zIndex:1,
+}
+
+".border":{
+	backgroundColor: "#6E6E6E",
+	height: "2px",
+	width:"95%",
+	left: "0%",
+	right: "0%",
+	zIndex:0,
+}
+
+"#orderStatusDate":{
+	color:"#000",
+	
+}
+
+
+// download pdf
+
+".downloadPdfLbl":{
+	color:"#e65e48",
+	font:{
+		fontSize:"11dp"
+	},
+	height:"20dp",
+}
+

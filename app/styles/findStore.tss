@@ -1,0 +1,447 @@
+
+".container": {
+	backgroundColor: "#231f20"
+}
+"#findStore":{
+	backgroundColor: "#231f20"
+}
+"#findStoreMailView":{
+	// visible:"false",
+	top:"53dp",
+	layout:"vertical",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	 backgroundColor: "#231f20"
+}
+"#map_container":{
+	visible:"false",
+	top:"53dp",
+	visible:"false",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,	
+}
+"#header":{
+	height: "55dp",
+	width:Titanium.UI.FILL,
+	//borderColor: "green",
+	top: "0",
+	left: "0",
+	backgroundColor: "#231f20"
+}
+".screenName":{
+	font:{
+		fontSize: "16dp"
+	},
+	left: "5%",
+	color: "#fff"
+}
+
+"#searchField":{
+	font:{
+		fontSize: "14dp"
+	},
+	color: "#ffff",
+	left: "5%",
+	width:Titanium.UI.FILL,
+	right: "20%",
+	returnKeyType:Titanium.UI.RETURNKEY_SEARCH
+}
+
+
+".searchStore":{
+	text:Alloy.Globals.icon.search,
+	right: "14%",
+	font:{
+		fontSize: "20dp"
+	},
+	color: "#fff"
+}
+
+
+".closeStore":{
+	text:Alloy.Globals.icon.close,
+	right: "5%",
+	font:{
+		fontSize: "20dp"
+	},
+	color: "#fff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#filterContainer": {
+	// top:"53dp",
+	backgroundColor: "#231f20",
+	width:Titanium.UI.FILL,
+	height: "40dp",
+	scrollType:"horizontal",
+	layout:"horizontal"
+}
+"#shopingBagLbl":{
+	//left: "0dp"
+}
+"#reviewLbl":{
+	//right: "0dp"
+}
+".filtersLbl":{
+	font:{
+		fontSize: "10sp"
+	},
+	color: "#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	height:Titanium.UI.FILL,
+	//width: "48%"
+	width: "32%"
+}
+".filterSeperator":{
+	font:{
+		fontSize: "12sp"
+	},
+	color: "#a6ffffff",
+	text: "|"
+}
+"#vwToAnimate":{
+	width: "32%",
+	height: "2dp",
+	left: "0dp",
+	backgroundColor: "#e65e48"
+}
+/* drop down for filters*/
+
+"#fabricStoreFilterView":{
+	//width:Titanium.UI.FILL,
+	//height: "150",//35
+	zIndex: "5",
+	top: "10dp",
+	type: "outerView"
+}
+"#blindsFilterView":{
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	zIndex: "5",
+	top: "10dp",
+	type: "outerView"
+}
+".dropDownLbl":{
+	// borderColor:"cyan",
+	//left: "55dp",
+	//left:"55dp",
+	left:"10dp",
+	right:"1dp",
+	top: "0dp",
+	width: Titanium.UI.SIZE,
+	height: "35dp",
+	font: {
+		fontSize: "10dp",
+		fontFamily: "futura_medium_bt-webfont"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	color: "#ffffff",
+	touchEnabled: false
+}
+"#styleNameLbl":{
+	color:"#fff"
+}
+"#styleNameLbl1":{
+	color:"#fff"
+}
+"#styleDropDownIcon":{
+	text: Alloy.Globals.icon.dropdownArrow
+}
+"#styleDropDownIcon1":{
+	text: Alloy.Globals.icon.dropdownArrow
+}
+"#styleDropDownIcon2":{
+	text: Alloy.Globals.icon.dropdownArrow
+}
+".dropDownIcon":{
+
+	//rigth: "0dp",
+	width: "30dp",
+	height: "30dp",
+	font:{
+		fontSize: "7dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#e65e48",
+	touchEnabled: false
+}
+"#styleScroll":{
+	//height: "100dp",
+		backgroundColor:"#fff",
+//	borderColor: "red"
+}
+"#beddingstyleScroll":{
+	backgroundColor:"#fff",
+}
+".dropDownScroll":{
+	backgroundColor: "#ffffff"
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+//drop down for style
+"#fabricFilterMainView":{
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	top: "5dp",
+	zIndex: "100",
+	type : "outerView",
+	
+}
+"#blindsFilterMainView":{
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	top: "5dp",
+	zIndex: "100",
+	type : "outerView",
+	
+}
+
+"#beddingFilterMainView":{
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	top: "5dp",
+	zIndex: "100",
+	type: "outerView"
+}
+
+"#styleDropDown":{
+	width: "150dp",
+	right: "5dp",
+	height: "35dp",
+	//height:Titanium.UI.SIZE,
+	// backgroundColor:"#fff",
+	top: "5dp",
+	zIndex: "100"
+}
+"#styleDropDown1":{
+	width: "150dp",
+	right: "5dp",
+	height: "35dp",
+	//height:Titanium.UI.SIZE,
+	// backgroundColor:"#fff",
+	top: "5dp",
+	zIndex: "100"
+}
+
+"#styleDropDown2":{
+	width: "150dp",
+	right: "5dp",
+	height: "35dp",
+	//height:Titanium.UI.SIZE,
+	//backgroundColor:"#fff",
+	top: "5dp",
+	zIndex: "100"
+}
+
+"#fabricListContainer": {
+	top: "40dp",
+	left: "5dp",
+	right: "5dp",
+	scrollType: "vertical"
+}
+"#blindsListContainer":{
+	top: "40dp",
+	left: "5dp",
+	right: "5dp",
+	scrollType: "vertical"
+}
+"#beddingListContainer":{
+	top: "40dp",
+	left: "5dp",
+	right: "5dp",
+	scrollType: "vertical"
+}
+
+
+"#beddingListContainer":{
+	top: "40dp",
+	left: "5dp",
+	right: "5dp",
+	scrollType: "vertical",
+	backgroundColor: "#231f20",
+	separatorColor: "transparent"
+}
+
+".fabricTemplate":{
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	width:Ti.UI.FILL,
+	layout: "vertical"
+}
+
+".blindsTemplate":{
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	width:Ti.UI.FILL,
+	layout: "vertical"
+}
+
+"#locationName":{
+	left: "20dp",
+	top: "0",
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#fff",
+	height: "12dp",
+	wordWrap:true
+}
+
+"#locationKm":{
+	color: "#a0a0a0",
+	font:{
+		fontSize: "12dp"
+	},
+	top: "0",
+	right: "20dp"
+}
+
+"#exculsive_lbl":{
+	color: "#fff",
+	font:{
+		fontSize: "10dp"
+	},
+	top: "5dp",
+	left: "20dp"
+}
+
+"#address_lbl":{
+	left: "20dp",
+	color: "#a0a0a0",
+	width: "70%", //Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	maxLines: 4,
+	wordWrap: true,
+	font:{
+		fontSize: "10dp"
+	}
+}
+
+"#getDirection_lbl":{
+	color:Alloy.Globals.labelTitleColor,
+	top: "5dp",
+	left: "20dp",
+	bottom: "15dp",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+".selectRow":{
+	text:Alloy.Globals.icon.tick,
+	color: Alloy.Globals.labelTitleColor,
+	left: "10dp",
+	top: "5dp",
+	//visible:false,
+	font:{
+		fontSize: "12dp"
+	}
+}
+"#sc1":{
+	backgroundColor:"#fff",
+}
+
+"#searchStoreMainViewContainer":{
+	top: "53dp",
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor: "#66231f20",
+	visible: "false",
+}
+"#searchStoreMainView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	zIndex: "100",
+	backgroundColor: "#231f20"
+}
+"#searchListItemID":{
+	top: "2dp",
+	height: "50dp"
+}
+".searchListLabelContainer":{}
+".searchListItemClass":{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: "20dp",
+	width: "80%",
+	color: "#fff"
+}
+
+".addToSearch":{
+	textAlign: "center",
+	right: "0",
+	text: Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "15dp"
+	},
+	color: "#fff"
+}
+".searchStoreListTemplate":{
+	backgroundColor: "#231f20"
+}
+
+".emptyTemplate":{
+	backgroundColor: "#231f20"
+}
+".emptyDataLbl":{
+	font:{
+		fontSize: "11dp",//10
+		fontFamily: "futura_medium_bt-webfont"
+	},
+	height: "15dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#fff"
+}
+"#ListPageImageOnMap":{
+	top:"53dp",
+	// height:"50dp",
+	// width:"50dp",	
+	// bottom:"15dp",
+	// left:"15dp",
+	borderColor:"#803E3535",
+	// backgroundColor:"#fff",
+	// borderRadius:"25dp",	
+}
+"#ListPagePop":{
+	left:"15dp",
+}
+"#goToPop":{
+	left:"70dp"
+}
+".mapIcons":{
+	height:"50dp",
+	width:"50dp",	
+	bottom:"15dp",
+	borderColor:"#803E3535",
+	backgroundColor:"#fff",
+	borderRadius:"25dp",		
+}
+"#ListPageIcon":{
+	textAlign: "center",	
+	text: Alloy.Globals.icon.details,
+	font:{
+		fontSize: "18dp"
+	},
+	color: "#877c7c"
+}
+"#goToMapIcon":{
+	textAlign: "center",	
+	text: Alloy.Globals.icon.location,
+	font:{
+		fontSize: "18dp"
+	},
+	color: "#877c7c"
+}
+
+
+"#messageLbl":{
+	//bottom:"5dp",
+	font:{
+		fontSize: "14dp"
+	},
+	color: "#e65e48",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	//width:"90%"
+}

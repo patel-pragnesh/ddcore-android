@@ -1,0 +1,13 @@
+{
+	"id": "com.ddecor.pagingcontrol",
+	"name": "pagingcontrol",
+	"description" : "Paging indicator for Ti.UI.ScrollableViews",
+	"author": "",
+	"version": "0.1",
+	"copyright":"Copyright (c) 2016",
+	"license":"MIT",	
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"page indicator, paging control, scrollable view, view pager, tabs, lines",
+	"platforms":"android,ios"
+}

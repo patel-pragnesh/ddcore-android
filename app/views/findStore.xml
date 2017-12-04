@@ -1,0 +1,154 @@
+<Alloy>
+    <Window id="findStore" onAndroid:back="goToBack" onClose="clearMemory">
+        <View id="header">
+            <Label visible="true" id="screenLbl" class="screenName fontLight">FIND A STORE</Label>
+            <TextField id="searchField" visible="false"  class="fontLight" type="textField" hintText="Enter City/ State/ Pincode"></TextField>
+            <Label id="searchStore" class="searchStore navigationMenuLbl iconFont" onClick="enableSearch"></Label>
+            <Label id="closeStore" class="closeStore navigationMenuLbl iconFont"></Label>
+        </View>
+        <View id="map_container"></View>
+        <View id="findStoreMailView">
+            <View id="filterContainer">
+                <Label id="shopingBagLbl" class="filtersLbl left0">FABRIC</Label>
+                <Label class="filterSeperator"></Label>
+                <Label id="reviewLbl" class="filtersLbl">BLINDS</Label>
+                <Label class="filterSeperator"></Label>
+                <Label id="beddingLbl" class="filtersLbl right0">BEDDING</Label>
+            </View>
+            <View id="vwToAnimate"></View>
+            <ScrollableView id="storeLocators">
+                <View id="fabricStoreView" >
+                    <View id="fabricFilterMainView">
+                        <View id="styleDropDown"  class="layoutVertical">
+                            <View class="widthFill heightSize top0 layoutHorizontal"  touchEnabled="false" >
+                                <Label id="styleNameLbl" class="dropDownLbl" >ALL</Label>
+                                <Label id="styleDropDownIcon" class="iconFont dropDownIcon"></Label>
+                            </View>
+                            <ScrollView id="sc1" height="0" class="layoutVertical"></ScrollView>
+                        </View>
+                    </View>
+                    <ListView id="fabricListContainer" class="widthFill heighFill" defaultItemTemplate="fabricTemplate" bottom="5dp" >
+                        <Templates>
+                            <ItemTemplate name="fabricTemplate" class="fabricTemplate" selectionStyle="none">
+                                <View top="5dp" left="0" class="widthFill heightSize">
+                                    <Label bindId="headerTitle" id="locationName"  class="fontHeavy" ></Label>
+                                    <Label bindId="locationKm" id="locationKm"  class="fontMedium" ></Label>
+                                </View>
+                                <Label bindId="subTitle" id="exculsive_lbl" class="fontMedium"></Label>
+                                <Label bindId="address" id="address_lbl"></Label>
+                                <Label bindId="getDirection" id="getDirection_lbl">GET DIRECTIONS</Label>
+                            </ItemTemplate>
+                            <ItemTemplate name="emptyTemplate1" bindId="templateView1" class="emptyTemplate">
+                                <Label class="emptyDataLbl" bindId="message">THERE ARE NO COLLECTIONS IN THIS CATEGORY.</Label>
+                            </ItemTemplate>
+                        </Templates>
+                        <ListSection id="listSection1"></ListSection>
+                    </ListView>
+                    
+                    
+                    
+                    <!-- <View height="50dp" bottom="0dp" backgroundColor="#231f20" class="heightSize widthFill">
+                        <Label id="messageLbl" zIndex="150">
+                            Share invoice at feedback section to win gift voucher
+                        </Label>
+                    </View> -->
+                    
+                </View>
+                <View id="blindStoreView">
+                    <View id="blindsFilterMainView">
+                        <View id="styleDropDown1" class="layoutVertical">
+                            <View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+                                <Label id="styleNameLbl1" class="dropDownLbl">ALL</Label>
+                                <Label id="styleDropDownIcon1" class="iconFont dropDownIcon"></Label>
+                            </View>
+                            <ScrollView id="styleScroll" height="0" class="layoutVertical"></ScrollView>
+                        </View>
+                    </View>
+                    <ListView id="blindsListContainer" class="widthFill heighFill" defaultItemTemplate="blindsTemplate" bottom="5dp">
+                        <Templates>
+                            <ItemTemplate name="blindsTemplate" class="blindsTemplate" selectionStyle="none">
+                                <View top="5dp" left="0" class="widthFill heightSize">
+                                    <Label bindId="headerTitle" id="locationName"  class="fontHeavy" ></Label>
+                                    <Label bindId="locationKm" id="locationKm"  class="fontMedium" ></Label>
+                                </View>
+                                <Label bindId="subTitle" id="exculsive_lbl" class="fontMedium"></Label>
+                                <Label bindId="address" id="address_lbl"></Label>
+                                <Label bindId="getDirection" id="getDirection_lbl">GET DIRECTIONS</Label>
+                            </ItemTemplate>
+                            <ItemTemplate name="emptyTemplate" bindId="templateView" class="emptyTemplate">
+                                <Label class="emptyDataLbl" bindId="message">THERE ARE NO COLLECTIONS IN THIS CATEGORY.</Label>
+                            </ItemTemplate>
+                        </Templates>
+                        <ListSection id="listSection2"></ListSection>
+                    </ListView>
+                    <!-- <View height="50dp" bottom="0dp" backgroundColor="#231f20" class="heightSize widthFill">
+                        <Label id="messageLbl" zIndex="150">
+                            Share invoice at feedback section to win gift voucher
+                        </Label>
+                    </View> -->
+                </View>
+                
+                
+                <!--------------- -->
+                <View id="BeddingStore">
+                    <View id="beddingFilterMainView">
+                        <View id="styleDropDown2" class="layoutVertical">
+                            <View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+                                <Label id="styleNameLbl2" class="dropDownLbl">ALL</Label>
+                                <Label id="styleDropDownIcon2" class="iconFont dropDownIcon"></Label>
+                            </View>
+                            <ScrollView id="beddingstyleScroll" height="0" class="layoutVertical"></ScrollView>
+                        </View>
+                    </View>
+                    <ListView id="beddingListContainer" class="widthFill heighFill" defaultItemTemplate="blindsTemplate" bottom="5dp" >
+                        <Templates>
+                            <ItemTemplate name="blindsTemplate" class="blindsTemplate" selectionStyle="none">
+                                <View top="5dp" left="0" class="widthFill heightSize">
+                                    <Label bindId="headerTitle" id="locationName"  class="fontHeavy" ></Label>
+                                    <Label bindId="locationKm" id="locationKm"  class="fontMedium" ></Label>
+                                </View>
+                                <Label bindId="subTitle" id="exculsive_lbl" class="fontMedium"></Label>
+                                <Label bindId="address" id="address_lbl"></Label>
+                                <Label bindId="getDirection" id="getDirection_lbl">GET DIRECTIONS</Label>
+                            </ItemTemplate>
+                            <ItemTemplate name="emptyTemplate" bindId="templateView" class="emptyTemplate">
+                                <Label class="emptyDataLbl" bindId="message">THERE ARE NO COLLECTIONS IN THIS CATEGORY.</Label>
+                            </ItemTemplate>
+                        </Templates>
+                        <ListSection id="listSection3"></ListSection>
+                    </ListView>
+                    <!-- <View height="50dp" bottom="0dp" backgroundColor="#231f20" class="heightSize widthFill">
+                        <Label id="messageLbl" zIndex="150">
+                            Share invoice at feedback section to win gift voucher
+                        </Label>
+                    </View> -->
+                </View>
+                
+            </ScrollableView>
+        </View>
+        <View id="searchStoreMainViewContainer" class="layoutVertical">
+            <View id="searchStoreMainView">
+                <ListView id="searchStoreList" backgroundColor="#231f20" class="widthFill heightSize" defaultItemTemplate="searchStoreListTemplate" >
+                    <Templates>
+                        <ItemTemplate name="searchStoreListTemplate" class="searchStoreListTemplate heightSize" selectionStyle="none">
+                            <View class="searchListLabelContainer" layout="horizontal" width="Titanium.UI.FILL" height="Titanium.UI.SIZE" top="0" left="0">
+                                <Label bindId="searchListItemBindID" id="searchListItemID" class="fontMedium searchListItemClass">EXCULSIVE</Label>
+                                <!-- <Label bindId="searchListDropBindID"  id="searchListDropBindID" class="iconFont addToSearch"></Label> -->
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection id="searchStoreListSection"></ListSection>
+                </ListView>
+            </View>
+        </View>
+        <View id="ListPagePop" class="mapIcons">
+                <Label id="ListPageIcon" class="iconFont"></Label>
+            </View>
+            <View id="goToPop" class="mapIcons">
+                <Label id="goToMapIcon" class="iconFont"></Label>
+            </View>
+        <!-- <View id="ListPageImageOnMap">
+            
+        </View> -->
+    </Window>
+</Alloy>

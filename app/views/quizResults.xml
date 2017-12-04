@@ -1,0 +1,46 @@
+<Alloy>
+	<Window id="quizResults" class="windowBackground" onClose="cleanUp" onFocus="updateCount">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View class="heightSize">
+				<ImageView id="quizImage" class="quizImageView"></ImageView>
+				<View class="bottom0 widthFill heightSize gradientBackground">
+					<View bottom="20dp" class="layoutVertical heightSize">
+						<Label class="collectionLbl fontHeavy">YOUR STYLE</Label>
+						<Label id="collectionNameLbl" class="fontLight">CLASSICAL</Label>
+					</View>
+					<View bottom="10dp" class="heightSize">
+						<Label id="shareIcon" class="share_wish_icon" visible="false"></Label>
+					</View>
+				</View>
+			</View>
+			<View class="layoutVertical widthFill heightSize">
+				<Label class="quote_lbl fontLight" id="quizDescription">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</Label>
+				<Label id="tourDeQuiz" class="buttonDiscover button_text_font">TAKE QUIZ AGAIN</Label>
+			</View>
+			<View class="colorSeperator"></View>
+			<View id="lookContainer" class="layoutVertical widthFill heightSize similarStyleContainer">
+				<View class="viewAllContainer">
+					<Label text="LOOKS IN YOUR STYLE" class="categoryName fontHeavy"></Label>
+					<Label class="viewAll fontHeavy" onClick="viewAllStyle"></Label>
+					<Label class="rightArrow iconFont" onClick="viewAllStyle"></Label>
+				</View>
+				<ListView id="listView" class="list" defaultItemTemplate="listTypeTemplate" onItemclick="looksListEvent">
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection id="mainSection"></ListSection>
+					<FooterView>
+						<View class="widthFill heightSize" top="1dp">
+							<Label id="curtainsLoadMore" class="loadMore fontMedium textCenter" onClick="loadMoreStyle">LOAD MORE</Label>
+							<ActivityIndicator id="loader" class="indicator" message=" Loading..." />
+						</View>
+					</FooterView>
+
+				</ListView>
+
+			</View>
+
+		</ScrollView>
+	</Window>
+</Alloy>

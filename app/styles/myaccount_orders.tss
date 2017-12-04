@@ -1,0 +1,206 @@
+"#myaccount_order_container": {
+	backgroundColor: "#fff",
+	//layout: "vertical",
+	left: 0,
+	top: 0
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".top0":{
+	top: 0
+}
+
+".top1":{
+	top: 1
+}
+
+".top10":{
+	top: 10
+}
+
+
+".top20":{
+	top: 20
+}
+
+".left0":{
+	left: "0%"
+}
+
+".left5":{
+	left: "5%"
+}
+
+
+".right0":{
+	right: "0%"
+}
+
+
+".right5":{
+	right: "5%"
+}
+
+
+"#openOrder_btn":{
+	font:{
+		fontSize: "10dp"
+		//fontSize: "8sp"
+	},
+	
+}
+
+
+".listViewStyle":{
+	backgroundColor: "transparent" ,
+	left: "0",//"2.5%",
+	right: "0",//"2.5%" ,
+	height: "200dp",//Titanium.UI.SIZE,
+	//width:"95%",
+	top: "0dp",
+	separatorColor: "transparent",
+	separatorHeight: 3
+}
+
+".commonListItemStyle":{
+	top: 0,
+	backgroundColor: "transparent",
+	height:Ti.UI.SIZE
+}
+
+".labelClass":{
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+
+
+"#orderCount":{
+	color: "#333333",
+	left: "25%"
+}
+
+"#orderPrice":{
+	color: "#333333",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#orderDate":{
+	color: "#333333",
+	font:{
+		fontSize: "10p"
+	}
+}
+
+
+
+
+
+/***/
+"#orderDetail_container":{
+	layout: "vertical"
+}
+
+"#orderStatus":{
+	color: "#000",
+	font:{
+		fontSize: "12dp"
+	}
+}
+
+"#orderProgressStatus":{
+	backgroundColor: "#00bf00",//"#04B404",
+	height: "2px",
+	left: "0%",
+	right: "5%",
+	zIndex: 1
+}
+
+".border":{
+	backgroundColor: "#6E6E6E",
+	height: "2px",
+	width: "95%",
+	left: "0%",
+	right: "0%",
+	zIndex: 0
+}
+
+"#orderStatusDate":{
+	color: "#000"
+}
+
+".dropDown":{
+	color: "#000",
+	text:Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "5dp"
+	},
+	width:"16dp",
+	height:"10dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+	//borderColor:"red"
+}
+
+
+
+".dropDownLbl":{
+	font:{
+		fontSize: "10dp"
+	},
+	color: "#000",
+	//color: "red",
+	top: "10dp",
+	// left: "5dp",
+	// right: "5dp"
+}
+
+"#dropDownList":{
+	scrollType: "vertical" ,
+	layout: "vertical" ,
+	//borderColor: "#a0a0a0",
+	//borderRadius: 2,
+	backgroundColor: "#ffff",
+	//width:Titanium.UI.SIZE ,
+	width: "129dp",
+	//height:Titanium.UI.SIZE,
+	height:"119dp",
+	top: "24dp",//"10dp", //"24dp",
+	zIndex: 2,
+	right: "5dp",
+	visible: false,
+	height:"100dp",
+	//borderColor:"red"
+}
+
+
+"#dropDownBg":{
+	backgroundColor: "transparent",
+	//backgroundColor: "#fff",
+	borderColor: "#a0a0a0",
+	borderWidth:0.5,
+	//borderRadius: 2,
+	height:"120dp",
+	width: "130dp",
+	zIndex:3,
+	top:"5dp",
+	right:"5dp",
+	visible: false,
+	touchEnabled:false,
+	
+}
+
+"#noOrders":{
+	text:"No Order",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#a0a0a0",
+	visible:false,
+	font:{
+		fontSize:"18dp"
+	}
+}

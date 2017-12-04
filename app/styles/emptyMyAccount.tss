@@ -1,0 +1,25 @@
+
+"#myaccountEmptylbl":{
+	font:{
+		fontSize: "12dp"
+	},
+	width: "80%",
+	top: "30%",
+	color: "#555555",
+	wordWrap: true,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+
+"#myAccountActionBtn": {
+	color: "#fff",
+	//backgroundColor: "#a0a0a0",
+	backgroundColor: "#a0a0a0",
+	width: "70%",
+	height: "40dp",
+	bottom: "20dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: "12dp"
+	}
+}

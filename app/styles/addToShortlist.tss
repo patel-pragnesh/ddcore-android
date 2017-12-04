@@ -1,0 +1,132 @@
+//collection fabric shortlist product
+"#collectionFabricController":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	visible:false,
+	//layout:"vertical",
+	backgroundColor:"#231f20",
+	type : "shortlist"
+}
+".fabricHeader":{
+	top:"0dp",
+	width:Titanium.UI.FILL,
+	height:"53dp",
+	
+}
+".fabricLbl":{
+	left:"15dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize:"15sp",
+		fontFamily:'futura_lt_bt_light-webfont'
+	},
+	color:"#ffffff",
+}
+"#refreshIcon":{
+	right:"60dp",
+	// width:"45dp",
+	// height:"45dp",
+	// font:{ 		
+		// fontSize:"28dp",
+		// fontFamily:"icomoon"
+	// },
+	width:"40dp",
+	height:"40dp",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.refresh,
+	
+}
+".closeLbl":{
+	right:"15dp",
+	// width:"45dp",
+	// height:"45dp",
+	// font:{
+		// fontSize:"28dp",
+		// fontFamily:"icomoon"
+	// },
+	width:"40dp",
+	height:"40dp",
+	font:{
+		fontSize:"20dp",
+		fontFamily:"icomoon"
+	},
+	color:"#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+
+}
+"#fabricScroll":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout:"vertical",
+	
+}
+"#fabricDescription":{
+	width:"90%",
+	height:Titanium.UI.SIZE,
+	top:"10dp",
+	font:{
+		fontSize:"13dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#fabricSelectedContainer" : {
+	top:"25dp",
+	bottom:"80dp",
+	layout : "horizontal",
+	height:Titanium.UI.SIZE,
+	horizontalWrap : true,
+}
+"#selectedCountLbl":{
+	top:"30dp",
+	font:{
+		fontSize:"13sp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#e65e48",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+"#shortlistSelectedLbl":{
+	//top: "30dp",
+	bottom:"30dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor:"#80e7e7e7",
+	borderWidth:"0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#shortlistContainer":{
+	width:Titanium.UI.FILL,
+	height:"80dp",
+	bottom:"0dp",
+	visible:false,
+	backgroundColor:"#231f20"
+}
+".headingCollection":{
+	top:"40dp",
+	font:{
+		fontSize:"11dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#e65e48",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".selectionNote":{
+	top:"7dp",
+	font:{
+		fontSize:"9dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#a6ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+///

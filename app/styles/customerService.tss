@@ -1,0 +1,137 @@
+".detailScroll":{
+	top:"53dp",
+	scrollType:"vertical",
+	layout:"vertical",
+	scrollingEnabled:true
+}
+".containerForPage" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+}
+".containerWithMargin" : {
+	left: "20dp",
+	right: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+}
+".smallHeading" : {
+	top:"22dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#333333",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".smallTextOrange" : {
+	top: "5dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"14dp"
+	},
+	color:"#e65e48",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+".horizontalSeparator" : {
+	bottom: 0,
+	height: "1dp",
+	width: Titanium.UI.FILL,
+	backgroundColor:"#cccccc"
+}
+".containerWithOutMargin" : {
+	left: "20dp",
+	right: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+}
+".rowBlock" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".inputText" : {
+	top: 0,
+	left: "10dp",
+	right: "10dp",
+	color: "#a0a0a0",
+	width: Titanium.UI.FILL,
+	height: "35dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize:"16dp"
+	},
+}
+".icon" : {
+	top: 0,
+	right: "10dp",
+	text: Alloy.Globals.icon.dropdownArrow,
+	width: Titanium.UI.SIZE,
+	height: "35dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#333333",
+	font:{
+		fontSize:"5dp",
+		fontFamily: "icomoon"
+	},
+	zIndex: 1
+}
+".inputTextArea" : {
+	left: "5dp",
+	right: "10dp",
+	width: Titanium.UI.FILL,	
+	height: Titanium.UI.SIZE,
+	color: "#a0a0a0",
+	hintTextColor: "#a0a0a0",
+	//tintColor: "transparent",
+	backgroundColor: "transparent",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font:{
+		fontSize:"15dp"
+	},
+}
+"#camera" : { 
+	text: Alloy.Globals.icon.camera,
+	isImageAttached: false,
+	color: "#333333",
+	font:{
+		fontSize:"25dp",
+		fontFamily: "icomoon"
+	},
+	
+}
+".attachedImageCont" : {
+	right: "60dp",
+	width: "70dp",
+	height: "70dp"
+}
+".attachedImage" :{
+	width: Titanium.UI.FILL
+}
+".buttonText" : {
+	left: "30dp",
+	right: "30dp",
+	width: Titanium.UI.FILL,	
+	height: "40dp",
+	color: "#ffffff",
+	backgroundColor: "#231f20",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize:"16dp"
+	},
+}
+"#cancel" : {
+	top: "15dp",
+	left: "30dp",
+	right: "30dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+/* for the custom picker */
+".dropDownScroll":{
+	top: "35dp",
+	backgroundColor: "#ffffff",
+	height: 0,
+	borderColor: "#cccccc"
+}

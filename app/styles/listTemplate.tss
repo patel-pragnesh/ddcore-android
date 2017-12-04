@@ -1,0 +1,560 @@
+"ItemTemplate":{
+	selectionStyle: "none"
+}
+
+".gridTemplate" : {
+  	height:Ti.UI.SIZE,
+	backgroundColor:"transparent",
+	width:Alloy.Globals.listWidth,
+	//borderColor:"yellow"
+}
+"#mainContainer":{
+	top:"12dp",//10
+	width:Titanium.UI.FILL,	
+	height:Titanium.UI.SIZE,
+	
+}
+".productContainer":{
+	width:Alloy.Globals.imageWidth,
+	height:Titanium.UI.SIZE,
+	//backgroundSelectedColor:"#33000000",
+	layout:"vertical",
+	top:"0dp",
+	//bubbleParent:false
+	//borderColor:"red"
+}
+".productImage":{
+	width:Titanium.UI.FILL,
+	height:Alloy.Globals.imageWidth,
+	top:"0dp",
+	//backgroundColor:"#33000000",
+	//backgroundSelectedColor:"#40000000",
+	//bubbleParent:false
+	//touchEnabled:false
+}
+"#product1":{
+	left:"0dp",
+}
+"#product2":{
+	right:"0dp"
+}
+".shareContainer":{
+	top:"8dp",//10,4
+	width:Titanium.UI.FILL,
+	//width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	//backgroundColor:"#f2f2f2"
+}
+".nameContainer":{
+	left:"0dp",
+	top : "0dp",
+	height:Titanium.UI.SIZE,
+	width:"63%",
+	layout:"vertical",
+}
+".name":{
+	top:"0dp",
+	font:{
+		fontSize:"11dp",//10
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#333333",
+	height:"12dp",
+	width:Titanium.UI.FILL,
+	//wordWrap:true,
+	ellipsize:true,
+	wordWrap:false,
+	//touchEnabled:false
+}
+
+".productSizeClass":{
+	top:"2dp",
+	left:"0dp",
+	font:{
+		fontSize:"9dp",//10
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#a6a6a6",
+	height:Titanium.UI.SIZE,
+	//height:"12dp",
+	width:Titanium.UI.FILL,
+	//wordWrap:true,
+	ellipsize:true,
+	wordWrap:false,
+}
+".whereBye":{
+	top:"2dp",
+	left:"0dp",
+	font:{
+		fontSize:"10dp",//11
+		fontFamily:"futura_lt_bt_light-webfont"	
+		//fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#e65e48",
+	height:"13dp",
+	ellipsize:true,
+	wordWrap:false,
+	width:Titanium.UI.SIZE,
+}
+".share_wish_icon":{
+	font:{
+		fontSize:"18dp",//15,20
+		fontFamily:"icomoon"
+	},
+	top:"2dp",//0
+	width:"35dp",//35
+	height:"35dp",//25
+	color:"#a6a6a6",//a6000000
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	borderWidth:"0"
+	//borderColor:"red"
+	
+}
+".cart_share_wish_icon":{
+	font:{
+		fontSize:"18dp",//20
+		fontFamily:"icomoon"
+	},
+	bottom:"0dp",
+	//width:Titanium.UI.SIZE,
+	//height:Titanium.UI.SIZE,
+	width:"35dp",
+	height:"35dp",
+	color:"#a6000000",
+	//borderColor:"red",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+"#shareIcon1":{
+	right:"35dp",
+	text:Alloy.Globals.icon.share,
+}
+"#wishIcon1":{
+	right:"0dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+"#shareIcon2":{
+	text:Alloy.Globals.icon.share,
+	right:"35dp"
+}
+"#wishIcon2":{
+	right:"0dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+".cartImageContainer":{
+	 width:Titanium.UI.FILL,
+	 height:Titanium.UI.FILL,
+}
+".cartIcon":{
+	font:{
+		fontSize:"20dp",//23
+		fontFamily:"icomoon"
+	},
+	width:"35dp",
+	height:"35dp",
+	//color:"#a6000000",
+	color:"#fff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	bottom: "10dp",
+	right: "10dp",
+	backgroundColor: "#66000000",
+	borderRadius: 18,
+	//borderColor:"#66000000"
+}
+
+///list tss
+
+"#listMainContainer":{
+	height:"100dp",
+	width:Titanium.UI.FILL,
+	backgroundSelectedColor:"#f2f2f2"
+}
+".listproductContainer":{
+	height:"65dp",
+	width:Titanium.UI.FILL,
+	left:"15dp",
+	//right:"15dp",
+	//borderColor:"red",
+}
+"#listProductImage":{
+	width:"65dp",
+	//width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	left:"0dp",
+	defaultImage:"/images/default_logo.png"
+}
+".listImageContainer":{
+	width:"65dp",
+	height:Titanium.UI.FILL,
+	left:"0dp",
+	backgroundColor:"#eeece7",
+}
+".listDetailsContainer":{
+	left:"75dp",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//borderColor:"yellow"
+}
+".listNameContainer":{
+	top:"0dp",
+	left:"0dp",
+	width:"48%",//55
+	height:Titanium.UI.SIZE,
+	layout:"vertical"
+}
+"#listProductNameLbl":{
+	left:"0dp",
+	top:"3dp",
+	height:"12dp",
+	width:Titanium.UI.FILL,
+	ellipsize:true,
+	wordWrap:false,
+	font:{
+		fontSize:"11dp"//10
+	},
+	color:"#333333",
+}
+"#listWhereBuyLbl":{
+	left:"0dp",
+	top:"2dp",
+//	height:"12dp",
+	ellipsize:true,
+	wordWrap:false,
+	width:Titanium.UI.SIZE,
+	font:{
+		fontSize:"10dp",//10
+		fontFamily:"futura_lt_bt_light-webfont"	
+		//fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#e65e48",
+}
+"#productTypeLbl":{
+	left:"0dp",
+	top:"2dp",
+//	height:"12dp",
+	ellipsize:true,
+	wordWrap:false,
+	width:Titanium.UI.FILL,
+	font:{
+		fontSize:"0dp",//8
+		fontFamily:'futura_lt_bt_light-webfont'
+	},
+	color:"#737373",
+}
+"#notifyLbl":{
+	left:"0dp",
+	//top:"2dp",
+	bottom:"20dp",
+	height:Titanium.UI.SIZE,
+	ellipsize:true,
+	wordWrap:false,
+	width:Titanium.UI.FILL,
+	font:{
+		fontSize:"10dp",
+		fontFamily:'futura_lt_bt_light-webfont'
+	},
+	color:"#e65e48",
+}
+"#listWishIcon":{
+	right:"0dp",
+	top:"0dp",
+	width:"50dp",
+	text:Alloy.Globals.icon.shortlist,	
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#listShareIcon":{
+	right:"50dp",//35
+	top:"0dp",
+	text:Alloy.Globals.icon.share,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+	
+}
+"#listCartIcon":{
+	right:"85dp",//35
+	top:"0dp",
+	text:Alloy.Globals.icon.bag,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#cartWishIcon":{
+	right:"50dp",
+	bottom:"0dp",
+	text:Alloy.Globals.icon.shortlist,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#cartDeleteIcon":{
+	right:"0dp",//0
+	bottom:"0dp",
+	width:"50dp",
+	text:Alloy.Globals.icon.deleteIcon,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#listProductDetails":{
+	bottom:"3dp",
+	left:"0dp",
+	//height:"12dp",
+	width:Titanium.UI.FILL,
+	right:"15dp",
+	ellipsize:true,
+	wordWrap:false,
+	touchEnabled:false,
+	font:{
+		fontSize:"10dp",
+		fontFamily:'futura_lt_bt_light-webfont'
+	},
+	color:"#333333",
+}
+".listSeperator":{
+	width:Titanium.UI.FILL,
+	bottom:"0dp",
+	left:"15dp",
+	right:"15dp",
+	backgroundColor:"#e6e6e6",
+	height:"1dp"
+}
+////
+
+///Block tss
+
+"#blockMainContainer":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	
+}
+".blockproductContainer":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	left:"15dp",
+	right:"15dp",
+	top:"15dp",
+	//borderColor:"red",
+	layout:"vertical"
+}
+"#blockProductImage":{
+	height:Alloy.Globals.listWidth,
+	width:Alloy.Globals.listWidth,
+}
+".blockImageContainer":{
+	height:Alloy.Globals.listWidth,
+	width:Alloy.Globals.listWidth,
+	 backgroundColor:"#eeece7",
+}
+"#blockShareIcon":{
+	right:"35dp",
+	text:Alloy.Globals.icon.share,
+}
+"#blockWishIcon":{
+	right:"0dp",
+	text:Alloy.Globals.icon.shortlist,
+}
+"#blockCartIcon":{
+	right:"70dp",
+	text:Alloy.Globals.icon.bag,
+}
+".blockSeperator":{
+	width:Titanium.UI.FILL,
+	top:"15dp",
+	backgroundColor:"#e6e6e6",
+	height:"1dp"
+} 
+////
+
+//cart template
+".priceLbl":{
+	top:"0dp",
+	left:"10dp",
+	//right:"15dp",//0
+	font:{
+		fontSize:"13dp",//16
+		fontFamily:"futura-hv-bt-heavy"	
+	},
+	color:"#e65e48",
+	//borderColor:"red"
+}
+".rupies":{
+	font:{
+		fontSize:"11dp",
+		fontFamily:"icomoon"
+	},
+	color:"#e65e48",
+	text:Alloy.Globals.icon.currency,
+	left:"0dp",
+	top:"1dp",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#pricePerSetLbl":{
+	left:"2dp",
+	//top:"4dp",
+	ellipsize:true,
+	wordWrap:false,
+	//width:Titanium.UI.FILL,
+	font:{
+		fontSize:"9dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#333333",	
+}
+".small_rupies":{
+	font:{
+		fontSize:"10dp",
+		fontFamily:"icomoon"	
+	},
+	text:Alloy.Globals.icon.currency1,
+	left:"0dp",
+	color:"#333333",	
+	
+}
+"#priceContainer":{
+	left:"0dp",
+	layout:"horizontal",
+	top:"4dp",
+	width:Titanium.UI.FILL,
+	height:"11dp"
+}
+"#qtyContainer":{
+	left:"0dp",
+	bottom:"0dp",
+	width:"50%",
+	height:"20dp",
+	//borderColor:"blue"
+}
+".colorImage":{
+	left:"0dp",
+	bottom:"0dp",
+	width:"15dp",
+	height:"15dp",
+	borderColor:"#f2f2f2",
+	
+}
+"#subQtyContainer":{
+	left:"30dp",
+	bottom:"0dp",
+	//width:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	height:"15dp",
+	layout:"horizontal"
+}
+"#setlbl":{
+	left:"0dp",
+	top:"2dp",
+	font:{
+		fontSize:"9dp",
+		fontFamily:"futura_medium_bt-webfont"
+	},
+	color:"#e65e48"
+}
+"#downIcon":{
+	left:"5dp",
+	top:"0dp",
+	text:Alloy.Globals.icon.expandFill,
+	font:{
+		fontSize:"12dp",
+		fontFamily:"icomoon"
+	},
+	color:"#333333"
+}
+///
+
+".emptyDataLbl":{
+	font:{
+		fontSize:"11dp",//10
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	height:"15dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color:"#a6000000",
+}
+".defaultLogo":{
+	font:{
+		fontSize: "35dp",
+		fontFamily:"icomoon1"	
+	},
+	color:"#c5c3bf",
+	zIndex:'-1',
+	
+}
+".blockDefaultLogo":{
+	font:{
+		fontSize: "120dp",
+		fontFamily:"icomoon"	
+	},
+	color:"#c5c3bf",
+	zIndex:'-1'
+}
+".listDefaultLogo":{
+	font:{
+		fontSize: "35dp",
+		fontFamily:"icomoon1"	
+	},
+	color:"#c5c3bf",
+	zIndex:'-1',
+	touchEnabled:false
+}
+
+"#opacLbl":{
+	backgroundColor:"transparent",
+	width:Titanium.UI.FILL,
+	height:"20dp",
+	bottom:"0dp",
+	font:{
+		fontSize:"8dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color:"#ffffff"
+}
+"#opacBlurLbl":{
+	backgroundColor:"transparent",
+	width:Titanium.UI.FILL,
+	height:"45dp",
+	top:"0dp",
+}
+
+
+".outOfStock":{
+	width:Titanium.UI.FILL,
+	height:Alloy.Globals.imageWidth,
+	top: "0dp",
+	
+	backgroundColor: "#BFffffff",
+	text: "OUT OF STOCK",
+	font: {
+		fontSize: "14dp"
+	},
+	//zIndex: 2,
+	touchEnabled:false,
+	visible: false,
+	color: "#000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+
+".outOfStockBlock":{
+	height:Alloy.Globals.listWidth,
+	width:Alloy.Globals.listWidth,
+	top: "0dp",
+	backgroundColor: "#66ffffff",
+	text: "OUT OF STOCK",
+	font: {
+		fontSize: "18dp"
+	},
+	touchEnabled:false,
+	bubbleParent:true,
+	visible: false,
+	color: "#000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+".outOfStockList":{
+	left: "0dp",
+	top: "5dp",
+	text: "OUT OF STOCK",
+	font: {
+		fontSize: "10dp"
+	},
+	touchEnabled:false,
+	bubbleParent:true,
+	visible: false,
+	color: "#000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}

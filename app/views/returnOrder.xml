@@ -1,0 +1,55 @@
+<Alloy>
+	<View id="returnOrder" onTouchstart="hideKeyboard">
+		<Label id="screenName" class="fontLight">RETURN PRODUCT</Label>
+		<Label id="close_btn" class="iconFont" ></Label>
+		<Label id="returnOrderMsgContainer" class="fontMedium"></Label>
+		<View id="returnReasonContainer" class="widthFill heightSize">
+
+			<Label id="selectReasonTitle" class="fontHeavy">SELECT A REASON</Label>
+
+			<ListView id="reasonList" class="widthFill" height="180dp" top="0" defaultItemTemplate="reasonTemplate" separatorColor="transparent" backgroundColor="transparent" onItemclick="selectReason">
+				<Templates>
+					<ItemTemplate name="reasonTemplate" backgroundColor="transparent" selectedBackgroundColor="#00000000" selectionStyle="none">
+						<View reason="reason1" layout="horizontal" left="5%" top="5dp" id="toggeReaseonFun1"  class="widthSize heightSize" >
+							<Label id="reason1" bindId="reasonIcon" reason="reason1"  class="radioIcon iconFont"></Label>
+							<Label reason="reason1" bindId="reasonText" class="fontLight reason iconFont"   >REASON 1</Label>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="reasonListSection">
+					
+				</ListSection>
+
+			</ListView>
+			<View top="5dp" class="layoutHorizontal widthSize heightSize" left="5%" bottom="10dp">
+				<Label right="10dp" class="fontMedium qtyClass" id="qty">1 QUANTITY</Label>
+				<Label  class="fontMedium qtyClass" onClick="changeQtyPopup" id="changeQty">Change</Label>
+
+			</View>
+			<!-- <Label id="note_lbl" class="fontLight">NOTES (OPTIONAL)</Label> -->
+			<View class="border"></View>
+			<TextArea id="note_txt" class="fontLight" value="NOTES (OPTIONAL)" onFocus="noteTxtFocus" onBlur="noteTxtBlur" ></TextArea>
+			<View class="border"></View>
+			<View class="widthFill" height="100dp"  top="10dp" left="5%" right="5%">
+				<!-- <ScrollView width="80%" height="70dp" top="10dp" left="0" borderColor="green" scrollType="vertical">
+
+				</ScrollView> -->
+
+				<ImageView class="returnOrderImg" id="returnOrderImg"></ImageView>
+				<Label id="cameraBtn" class="iconFont" ></Label>
+			</View>
+
+		</View>
+		<Label id="action1" class="fontMedium" >YES</Label>
+		<Label id="action2" class="fontLight">BACK</Label>
+		<View id="qtyContainer" class="widthFill heightFill">
+
+			<View class="qtyheader">
+				<Label class="qtyLbl">SELECT QUANTITY</Label>
+				<Label id="qtyCloseLbl" class="closeLbl" onClick="hideQtyContainer"></Label>
+			</View>
+			<ScrollView id="qtyDetails" onClick="changeQty"></ScrollView>
+		</View>
+
+	</View>
+</Alloy>

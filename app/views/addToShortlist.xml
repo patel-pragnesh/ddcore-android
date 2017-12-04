@@ -1,0 +1,22 @@
+<Alloy>
+	<View id="collectionFabricController">
+		<View class="widthFill heightFill layoutVertical">
+			<View class="fabricHeader">
+				<Label id="collectionFabricTitle" class="fabricLbl"></Label>
+				<!-- <Label id="refreshIcon"></Label> -->
+				<Label id="fabricCloseLbl" class="closeLbl"></Label>
+			</View>
+			<ScrollView id="fabricScroll">
+				<Label id="collectionTitle" class="headingCollection"></Label>
+				<Label id="fabricDescription"></Label>
+				<Label class="selectionNote">PLEASE SELECT THE PRODUCTS YOU WISH TO SHORTLIST</Label> 
+				<Label id="selectedCountLbl"></Label>
+				<View id="fabricSelectedContainer"></View>
+
+			</ScrollView>
+		</View>
+		<View id="shortlistContainer">
+		<Label id="shortlistSelectedLbl" class="button_text_font">SHORTLIST SELECTED</Label>
+		</View>
+	</View>
+</Alloy>

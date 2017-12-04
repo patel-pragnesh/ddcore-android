@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="styleDiscovery" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="cleanUp">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollableView id="scrollableView" class="fillView">
+			<ScrollView scrollType="vertical" >
+				<View class="containerForPage">
+					<View class="small_dash"></View>
+					<Label class="collection_lbl">DISCOVER YOUR</Label>
+					<Label class="categories_lbl fontLight">STYLE</Label>
+					<Label class="quote_lbl fontLight">Make shopping more fun by exploring designs that truly fit your taste</Label>
+					<ImageView class="discoveryImage" ></ImageView>
+					<Label id="tourDeQuiz" class="buttonDiscover button_text_font" onClick="moveToQuestionScreen">TAKE THE QUIZ</Label>
+				</View>
+			</ScrollView>
+		</ScrollableView>
+	</Window>
+</Alloy>

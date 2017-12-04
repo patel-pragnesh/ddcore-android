@@ -1,0 +1,165 @@
+<Alloy>
+	<Window id="estoreDetails" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow" windowSoftInputMode="Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN">
+
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View class="heightSize transparent_border">
+				<!-- <View backgroundColor="#d9231f20" class="widthFill" height="200" zIndex="10"> d9231f20 -->
+				<ScrollView id="estoreImageScroll" touched="false">
+					<ImageView id="blurImage" width="100%" height="200dp" zIndex="2"></ImageView>
+					<ImageView id="estoreImage"></ImageView>
+					<!-- <View backgroundColor="#d9231f20" class="widthFill top0" height="200dp" zIndex="4"></View> -->
+				</ScrollView>
+				<View id="ratingView" class="layoutVertical bottom0 left0 widthSize heightSize transparent_border" zIndex="10">
+					<View bottom="10" class="heightSize layoutVertical">
+						<Label id="ratingLbl"></Label>
+						<Label id="ratingIcon"></Label>
+					</View> 
+				</View> 
+				
+				<View class="layoutVertical bottom0 right0 widthSize heightSize transparent_border" zIndex="10">
+					<View bottom="5" class="heightSize">
+						<Label id="wishIcon" class="share_wish_icon"></Label>
+						<Label id="shareIcon" class="share_wish_icon"></Label>
+					</View>
+				</View>
+				<View class="scrollableContainer widthFill"></View>
+				<!-- </View> -->
+				
+			</View>
+			<ScrollView id="imageOptionScroll">
+				<!-- <ImageView width="45" left="10dp" height="30" borderColor="orange"></ImageView> -->
+			</ScrollView>
+			<ScrollView id="colorOptionScroll">
+				<!-- <View width="39dp" height="39dp" left="10" backgroundColor="gray">
+					<View width="30" height="30" backgroundColor="orange"></View>
+				</View> -->
+			</ScrollView>
+			<View class="colorSeperator"></View>
+			<View class="skuNamePriceContainer">
+				<View class="subNameContainer">
+					<Label id="skuNameLbl" class="fontLight"></Label>
+					<Label id="subSkuNameLbl" class="fontHeavy"></Label>
+				</View>
+				<View class="priceContainer">
+					<Label id="priceLbl" class="fontHeavy"></Label>
+					<Label id="taxLbl" class="fontHeavy">+TAX</Label>
+				</View>
+
+			</View>
+			
+			<ScrollView id="collectionDetail1" scrollType="vertical" scrollingEnabled="false">
+                <View id="tcCollectionContainer" class="left0 top0 heightSize layoutVertical" width="35%">
+                    <Label id="collectionName"></Label>
+                    <ImageView id="collectionImage"></ImageView>
+                </View>
+                <View id="collectionSeperator"></View>
+                <View id="collectionSubDetail"></View>
+            </ScrollView>
+            
+           <View id="moreDetailsContainer">
+                <Label id="viewMoreDetailsLbl" class="fontLight">View more details</Label>
+            </View>
+            
+			<Label id="descriptionLbl" class="fontLight"></Label>
+			<Label id="readMoreLbl" class="fontLight">Read more</Label>
+			<ScrollView id="washCareContainer" top="15dp" left="10dp" class="widthFill heightSize" scrollType="horizontal" right="10dp">
+
+			    <ImageView id="ironImage" class="top0 left0"></ImageView>
+
+	
+
+			</ScrollView>
+			
+<!-- <<<<<<< HEAD
+		
+			<View id="stockSeperator_0" class="stockSeperator" visible="false" top="0dp"></View>
+			<View id="instockSuperContainer" class="instockContainer" touchEnabled="false" visible="false">
+=======
+			<View id="moreDetailsContainer">
+				<Label id="viewMoreDetailsLbl" class="fontLight">View more details</Label>
+			</View>-->
+			<View id="stockSeperator_0" class="stockSeperator"  top="15dp"></View> 
+			
+			
+			<View id="instockSuperContainer" class="instockContainer" >
+				<Label id="stockStatus" class="instockLbl"></Label>
+				<Label id="availabilityLbl" class="checkAvailabilityLbl"></Label>
+				<View id="pincodeContainer">
+					<TextField id="pincodeTxt" type="TextField"></TextField>
+					<Label id="checkBtn"></Label>
+					<ActivityIndicator id="activityIndi" class="shopIndicator" />
+				</View>
+				<Label id="estimateDateLbl"></Label>
+			</View>
+			
+			<View id="stockSeperator_1" class="stockSeperator" top="5dp"></View>
+			
+			
+			<Label id="availableDesigLbl" class="availableDesignLbl fontMedium">ALSO AVAILABLE AS</Label>
+			<ScrollableView id="availableDesignScroll"></ScrollableView>
+			<View id="pageControlContainer" class="widthFill heightSize"></View>
+			<Label id="storeLocator" onClick="navigateToStoreLocater" class="storelocatorlbl iconFont"></Label>
+			<View id="SuperSimilarCollection">
+				<View id="similarCollectionContainer" class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label text="SIMILAR PRODUCTS" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<View id="listSeperator"></View>
+				<View id="alsoViewCollectionContainer" class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label text="PEOPLE ALSO VIEWED" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+
+			</View>
+
+		</ScrollView>
+		<!-- <Label id="returnLbl" class="downLbl fontHeavy">RETURNS/REFUNDS</Label> -->
+		<Label id="addToBagLbl" class="downLbl fontHeavy">ADD TO BAG</Label>
+		<Label id="whereToBuy" onClick="navigateToStoreLocater" class="downLbl fontHeavy">WHERE TO BUY</Label>
+
+		<!-- <View id="upArrowCardView" visible="false"> -->
+		<!-- <CardView id="upArrowLbl" class="uparrow" visible="false">
+			<Label class="upIcon"></Label>
+		</CardView> -->
+			<Label id="upArrowLbl"></Label>
+		<!-- </View> -->
+		<View id="previewContainer">
+			<View bottom="50">
+				<Label id="closeLbl"></Label>
+				<ScrollableView id="imagePreviewContainer">
+					<ImageView class="widthFill heightFill" image="/images/bed1.jpg"></ImageView>
+				</ScrollableView>
+				<Label id="imagePreviewWishIcon" class="preview_share_wish_icon"></Label>
+				<Label id="imagePreviewShareIcon" class="preview_share_wish_icon"></Label>
+			</View>
+			<ScrollView id="subImageContainer">
+				<ImageView width="45" left="10dp" height="30" image="/images/bed1.jpg"></ImageView>
+			</ScrollView>
+		</View>
+		
+		<View id="ratingContainer">
+			<View class="ratingHeader">
+				<Label class="ratingLbl">RATE THIS ITEM</Label>
+				<Label id="ratingCloseLbl" class="closeLbl"></Label>
+			</View>
+			<View id="subRatingContainer" class="layoutHorizontal">
+				<Label id="rate1" type="rate" count="1" value="6" class="rate"></Label>
+				<Label id="rate2" type="rate" count="2" value="7" class="rate"></Label>
+				<Label id="rate3" type="rate" count="3" value="8" class="rate"></Label>
+				<Label id="rate4" type="rate" count="4" value="9" class="rate"></Label>
+				<Label id="rate5" type="rate" count="5" value="10" class="rate"></Label>
+			</View>
+			<Label id="done" class="button_text_font">DONE</Label>
+		</View>
+		<ScrollView id="previewImageScroll" scrollType="horizontal" backgroundColor="white" visible="false">
+				
+				<ImageView id="preview_image"></ImageView>
+			</ScrollView>
+			<Label id="previewCloseLbl"></Label>
+	</Window>
+</Alloy>

@@ -1,0 +1,40 @@
+<Alloy>
+	<ListView id="myappoinments" class="widthFill heightSize" top="10" defaultItemTemplate="appointmentTemplate"  left="5dp" right="5dp" onItemclick="appointmentListClick">
+		<Templates>
+			<ItemTemplate name="appointmentTemplate" class="top0  appointmentTemplate"  selectionStyle="none" >
+				<View  class="top5 widthFill heightSize" layout="vertical">
+					<View class="widthFill heightSize left0" borderColor="transparent">
+
+						<!-- <View layout="horizontal" top="0" left="0" class="widthSize"> -->
+							<Label bindId="appointmentSlot" id="appoinment_date" class="labelTitleColor fontHeavy top0"></Label>
+							<!-- <Label id="appoinment_status" class="fontLight top0 greyColor left0" >MORNING</Label> -->
+						<!-- </View> -->
+						
+						<View class="right5 top0 widthSize heightSize"  layout="horizontal" bottom="1dp" >
+							<Label bindId="callIcon" class="greyColor iconFont call" right="20dp" left="0" ></Label>
+							<!-- <Label class="greyColor  right10 iconFont edit" visible="false"></Label> -->
+							<Label bindId="deleteIcon" class="greyColor right10 iconFont delete"></Label>
+						</View>
+					</View>
+					<Label bindId="storeName" id="appointment_number" class="fontMedium greyColor top0 left5"></Label>
+					<Label bindId="address" id="appointment_address" class="labelClass fontLight greyColor top10 heightSize left5" ></Label>
+					<Label bindId="noteLbl" id="view_notes" class="fontLight labelTitleColor top10" ></Label>
+					<Label bindId="note" id="note" class="top0 height0" color="#555555"></Label>
+					<View class="border" left="5dp"></View>
+					<Label height="10dp"></Label>
+				</View>
+			</ItemTemplate>
+		</Templates>
+		<ListSection id="appointmentSection">
+			<!--<ListItem></ListItem>
+			 <ListItem></ListItem>
+			<ListItem></ListItem>
+			<ListItem></ListItem>
+			<ListItem></ListItem>
+			<ListItem></ListItem>
+			<ListItem></ListItem>
+			<ListItem></ListItem> -->
+		</ListSection>
+
+	</ListView>
+</Alloy>

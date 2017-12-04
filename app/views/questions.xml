@@ -1,0 +1,12 @@
+<Alloy>
+	<View id="questions" class="questionsView">
+		<View class="gradientView">
+			<Label class="collection_lbl fontHeavy">TAP PICTURE TO CONFIRM YOUR ANSWER</Label>
+			<View class="small_dash"></View>
+			<Label id ="question" class="categories_lbl fontLight">What is your ideal vacation?</Label>
+		</View>
+		<ImageView id="answersImage" class="answersImage" clickType="image"></ImageView>
+		<!-- <ImageView id="answersImage1" class="answersImage" visible="false" zIndex="-5" touchEnabled="false"></ImageView> -->
+		<View id="options" class="bottomAnswer"></View>
+	</View>
+</Alloy>

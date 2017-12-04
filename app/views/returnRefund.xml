@@ -1,0 +1,175 @@
+<Alloy>
+	<Window id="returnRefund" onAndroid:back="goToBack" onClose="destroyWindow">
+		<View id="superView" class="superView">
+			<View class="refundHeader">
+				<Label class="headerLbl">RETURNS / REFUND POLICY</Label>
+				<Label id="refundCloseLbl" class="closeLbl"></Label>
+			</View>
+			<ScrollView top="40dp" class="layoutVertical">
+				<View class="policyView">
+					<View class="rowBlock">
+						<Label class="policyText">Thanks for shopping at D’decor. We appreciate the fact that you like to buy our products.</Label>
+					</View>
+					<View class="rowBlock">
+						<Label class="policyText">We understand, however, that sometimes a product may not be what you expected it to be. In that unlikely event,
+we invite you to review the following terms related to returning a product.</Label>
+					</View>
+					<View class="rowBlock">
+						<Label class="policyText">As with any shopping experience, there are terms and conditions that apply to transactions at D’decor Store. The main thing to remember is that by placing an order or making a purchase at D’decor, you agree to the terms set forth as below.</Label>
+					</View>
+				</View>
+				<View class="horizontalSeparator"></View>
+				<View id="questions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper" top="30dp">
+							<Label type="questionText" class="questionsText">ON WHAT BASIS CAN I RETURN THE PRODUCT?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Product can be returned if one of the below conditions is satisfied.</Label>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Product is Damaged- during transit.</Label>
+							</View>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Product is Defective - during manufacturing process.</Label>
+							</View>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Product is Not as described on the website.</Label>
+							</View>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Order is Delayed for over 10 days.</Label>
+							</View>
+							<Label class="answerText" top="8dp" bottom="8dp">IMPORTANT POINTS</Label>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Orders cannot be cancelled, once they are shipped.</Label>
+							</View>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Return process will be initiated once we receive the goods.</Label>
+							</View>
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Return valid only for customers in India.</Label>
+							</View>
+							<View class="innerPoints" bottom="18dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Please ensure that the product is unused, not damaged and all the tags and bar codes, invoice slips are intact at the time of return.Further, the damaged/defective Products must be returned in the original condition they were received in with all the accompanying accessories.</Label>
+							</View>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW DO I RETURN AN ITEM ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">STEP 1</Label>
+							<Label class="answerText" bottom="8dp">Download our Returns Form and email us the filled up form at enquiry@ddecor.com within 7 days after you have received the product. Alternately, you can click on the ‘Return” option on the website / app, and follow the directions.</Label>
+							<Label class="answerText" bottom="8dp">STEP 2</Label>
+							
+							<!-- <Label class="answerText" bottom="8dp">After you contact us, there are two options</Label>
+							
+							<View class="innerPoints">
+								<View class="dot"></View>
+								<Label class="answerPoint">Either you ship the product yourself.</Label>
+							</View> 
+							
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">We will arrange for a pick up from the same address to which the product was shipped.</Label>
+							</View>-->
+							
+							<Label class="answerText" bottom="8dp">We will arrange for a pick up from the same address to which the product was shipped.</Label>
+							<Label class="answerText" bottom="8dp">Please put the Product in its original packaging and seal it well and send it across.</Label>
+                            <Label class="answerText" bottom="8dp">Please ensure that the product is unused, not damaged and all the tags and bar codes, invoice slips are intact at the time of return.</Label>
+                            <Label class="answerText" bottom="8dp">STEP 3</Label>
+							<Label class="answerText" bottom="18dp">Once the product reaches our warehouse, we will inspect the product and once our inspection team confirms that the product received is in acceptable condition, as dispatched from our warehouse, we will initiate the return.On the other hand, if the Product is not as per the aforementioned conditions, then the returned Product will not be accepted and would be returned back to the customer.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I GET A REFUND ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">We will either replace your product or give you a gift voucher for the same amount.</Label>
+							<Label class="answerText" bottom="18dp">IN CASE YOU DO NOT WANT TO OPT FOR THE GIFT VOUCHER FOR THE AMOUNT OF REFUND OR THE EXCHANGE PRODUCT, SUCH AMOUNT SHALL THEN BE REFUNDED AS YOU PAID FOR THE PRODUCT. IF THE PAYMENT WAS MADE BY CREDIT CARD, DEBIT CARD OR NET BANKING, WE WILL REFUND THE MONEY TO YOUR CREDIT CARD, DEBIT CARD OR NET BANKING ACCOUNT RESPECTIVELY*. TBD</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I RETURN A PART OF THE ORDER ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="18dp">Yes, a return can be created at item level and if you have ordered multiple items, you can initiate a return for a partial quantity.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT IS "NOT AS DESCRIBED CONDITION FOR RETURN ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="18dp">In case there is a mismatch between what is stated on the website and the order you received, you can return the order under ' Not as described'. This can include sizes, colors, designs and product description.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT ARE THE EXCEPTIONS TO THE RETURNS POLICY ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Products bought at D’decor store. Please refer to respective stores for their return policy.</Label>
+							</View>
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Return request is made outside the specified time frame.</Label>
+							</View>
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Anything missing from the package you've received including price tags, labels, original packing, freebies and accessories.</Label>
+							</View>
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Defective/damaged products due to customer handling.</Label>
+							</View>
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Used products.</Label>
+							</View>
+							<View class="innerPoints" bottom="8dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Products with tampered or missing serial numbers.</Label>
+							</View>
+							<View class="innerPoints" bottom="18dp">
+								<View class="dot"></View>
+								<Label class="answerPoint">Made-to-order products/ Custom-stitched.</Label>
+							</View>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHO DO I CONTACT FOR QUERIES REGARDING REFUNDS AND RETURNS ?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">You can write to the</Label>							
+							<Label class="answerText" bottom="8dp">GRIEVANCE OFFICER</Label>
+							<Label class="answerText" bottom="8dp">NAME: Jasmeet Setia</Label>
+							<Label class="answerText" bottom="8dp">1081/1082, Solitaire Corporate Park - 10 \n167, Guru Hargovindji Marg \nAndheri East, Mumbai 400093 \nINDIA</Label>
+							<Label class="answerText" bottom="18dp">EMAIL \nenquiry@ddecor.com</Label>
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

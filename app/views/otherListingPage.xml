@@ -1,0 +1,68 @@
+<Alloy>
+	<Window id="otherListingPage" class="windowBackground" onAndroid:back="goToBack" onClose="destroyWindow" onFocus="updateCount">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<!-- <View id="listScrollView"> -->
+			<!-- <View id="filterContainer">
+				<Label id="sortByLbl" class="filtersLbl fontMedium">
+					SORT BY
+				</Label>
+				<Label class="filterSeperator"></Label>
+				<Label id="filterByLbl" class="filtersLbl fontMedium">
+					FILTER BY
+				</Label>
+			</View> -->
+			<ListView id="listView" class="list" defaultItemTemplate="listTypeTemplate" >
+				<Templates>
+					<Require type="view" src="listTemplate" id="template">
+					</Require>
+				</Templates>
+				<ListSection id ="mainSection">
+				</ListSection>
+				<FooterView>
+					<View id="footerView" height="85dp">
+						<ActivityIndicator id="activityInd" top="10"/>
+					</View>
+				</FooterView>
+			</ListView>
+		<!-- </View> -->
+		<View id="listTypeContainer">
+			<Label id="total_toast_lbl"></Label>
+			<View backgroundColor="#ccffffff" top="10dp" layout="vertical">
+			<Label id="listTypeLbl"></Label>
+			<View id="listTypeSubContainer"  class="typeIconCollection" >
+				<View  id="gridContainer" class="widthSize heightSize left0 layoutVertical">
+					<Label id="gridIcon" class="listTypeIcon"></Label>
+					<Label id="gridLbl" class="iconLbl">GRID</Label>
+				</View>
+				<View id="listContainer" class="widthSize heightSize layoutVertical">
+					<Label id="listIcon" class="listTypeIcon"></Label>
+					<Label id="listLbl" class="iconLbl">LIST</Label>
+				</View>
+				<View id="blockContainer"  class="widthSize heightSize right0 layoutVertical">
+					<Label id="blockIcon" class="listTypeIcon"></Label>
+					<Label  id="blockLbl" class="iconLbl">BLOCK</Label>
+				</View>
+			</View>
+			</View>
+		</View>
+		<!-- <View id="sortView" class="widthFill heightFill">
+			<View class="sortheader">
+				<Label class="filterLbl">SORT BY</Label>
+				<Label id="sortCloseLbl" class="closeLbl"></Label>
+			</View>
+			<View id="sortDetails" class="sortContainer">
+				
+				
+			</View>
+		</View>
+		<View id="filterView" class="widthFill heightFill">
+			<View class="sortheader">
+				<Label class="filterLbl">FILTER BY</Label>
+				<Label id="refreshIcon" onClick="getFilters"></Label>
+				<Label id="filterCloseLbl" class="closeLbl"></Label>
+			</View>
+			<ScrollView id="filterByContainer" class="sortContainer"></ScrollView>
+			<Label id="filterApplyLbl" class="button_text_font">APPLY</Label>
+		</View> -->
+	</Window>
+</Alloy>

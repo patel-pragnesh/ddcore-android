@@ -1,0 +1,67 @@
+".fillView" : {
+	top: "53dp",
+	width : Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	scrollingEnabled: false
+}
+".containerForPage" : {
+	top: 0,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	layout: "vertical",
+	backgroundImage:"/images/styleDiscovery.jpg"
+	
+}
+".small_dash":{
+	top:"40dp",
+	width:"45dp",
+	height:"1dp",
+	backgroundColor:"#cccccc"
+}
+".collection_lbl":{
+	top:"20dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#e65e48"
+} 
+".categories_lbl":{
+	top:"7dp",
+	font:{
+		fontSize:"22dp"
+	},
+	color:"#333333"
+}
+".quote_lbl" : {
+	top: "22dp",
+	width: "88%",
+	height: Titanium.UI.SIZE,
+	font: {
+		fontSize:"14dp"
+	},
+	color:"#555555",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".discoveryImage" : {
+	top: "25dp",
+	//backgroundColor: "#ffffff",
+	backgroundColor: "transparent",
+	width: Titanium.UI.FILL,
+	height: "300dp"
+	//height:"200dp",
+	//image:"/images/product2.jpg"
+}
+".buttonDiscover":{
+	top: "20dp",
+	//bottom:"35dp",
+	bottom:"20dp",
+	width: "70%",
+	height: "40dp",
+	color: "#ffffff",
+	backgroundColor: "#CC7b7979",
+	borderColor: "#CC7b7979",
+	font : {
+		fontSize: "11dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}

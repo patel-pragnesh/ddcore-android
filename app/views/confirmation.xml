@@ -1,0 +1,19 @@
+n<Alloy>
+	<View id="confirmation" >
+		<Label id="screenName" class="fontLight">CONFIRMATION</Label>
+		<Label id="close_btn" class="iconFont" ></Label>
+		
+		<View class="widthSize heightSize layoutVertical">
+			
+		<Label id="msgContainer" class="fontLight"></Label>
+		<Label id="productName" class="fontLight" top="10dp"> </Label>
+		</View>
+		
+		
+		
+		<Label id="action1" class="fontMedium optionlbl">NO</Label>
+		
+		<Label id="action2" class="fontMedium optionlbl">YES</Label>
+
+	</View>
+</Alloy>

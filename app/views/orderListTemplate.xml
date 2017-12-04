@@ -1,0 +1,38 @@
+<Alloy>
+	<ListView id="orderListView" defaultItemTemplate="orderTemplate" class="listViewStyle" onItemclick="selectOrderItem" >
+
+		<Templates>
+			<Require name="orderTemplate" src="orderTemplate"></Require>
+			<Require name="orderReturnTemplate" src="orderReturnTemplate"></Require>
+		</Templates>
+		<ListSection backgroundColor="transparent" id="listSection" height="Ti.UI.FILL">
+		</ListSection>
+		<FooterView>
+			<!-- <View id="orderDetail_container" class="top10 widthFill" height="100dp"> -->
+			<View class="heightSize layoutVertical">
+				<View id="orderDetail_container" class="top10 widthFill" height="70dp">
+				<View id="orderProgressContainer" class="widthSize heightSize left0 layoutVertical">
+					
+					<Label id="orderStatus" class="left5 top0 fontLight">In Process</Label>
+					<View class="left5 top5 widthSize heightSize">
+						<Label id="orderProgressStatus" class="top0" width="30%"></Label>
+						<View  class="top0 border"></View>
+					</View>
+					<Label bindId="orderStatusDate" id="orderStatusDate" class="left5 top5 fontMedium labelClass">Est Delivery : 26 July - 28 July 2016</Label>
+					
+					
+					
+				</View>
+				
+				
+				<Label id="cancelOrder" onClick="cancelOrder" class="left5 top5 fontLight labelClass">Cancel Order</Label>
+				<!-- Below code is comment will be used in phase 2 -->
+				<!-- <Label id="addressTitle" class="left5 top10 fontHeavy labelClass" color="#555555">D'DECOR STORE</Label>
+				<Label id="address" class="left5 top5 fontLight widthFill heightSize labelClass" color="#555555">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,	GURU NAKA ROAD, BANDRA (W),	MUMBAI - 4000081.</Label> -->
+			</View>
+			<Label id="downloadPdfLbl" visible="false" bindId = "downloadPpdf" left="5%" class="downloadPdfLbl iconFont" onClick="viewPdfViewer"></Label>
+			</View>
+		</FooterView>
+
+	</ListView>
+</Alloy>

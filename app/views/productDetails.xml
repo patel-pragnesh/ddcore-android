@@ -1,0 +1,57 @@
+<Alloy>
+	<Window id="productDetails" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View id="collectionImageContainer" class="heightSize" >
+				<ScrollView id="collectionImageScroll" touched="false">
+					<ImageView id="blurImage" class="heightFill" width="100%" zIndex="2"></ImageView>
+					<ImageView id="collectionImage" height="Titanium.UI.FILL" zIndex="8" type="image"></ImageView>	
+					<View backgroundColor="#d9231f20" class="heightFill" width="100%" zIndex="4"></View>
+				</ScrollView>
+				<View class="layoutVertical bottom0 widthFill heightSize" zIndex="100">
+					<Label id="collectionTitleLbl" class="collectionLbl fontHeavy"></Label>
+					<Label id="collectionNameLbl" class="fontLight"></Label>
+					<View bottom="10" class="heightSize">
+						<Label id="wishIcon" class="share_wish_icon"></Label>
+						<Label id="shareIcon" class="share_wish_icon"></Label>
+					</View>
+				</View>
+				<View id="opac" class="scrollableContainer widthFill"></View>
+			</View>
+			<ScrollView id="colorOptionScroll"></ScrollView>
+			<View class="colorSeperator"></View>
+			
+			<Label id="descriptionLbl" class="fontLight"></Label>
+            <Label id="readMoreLbl" class="fontLight"></Label>
+			
+			
+			<Label id="availableDesigLbl" class="availableDesignLbl fontMedium"></Label>
+			<View id="availableDesignContainer" class="heightSize">
+			<ScrollableView id="availableDesignScroll"></ScrollableView>	
+			<!-- <View id="loaderView" backgroundColor="white" width="Titanium.UI.FILL" height="50"></View> -->
+			</View>
+			<View id="pageControlContainer" class="widthFill heightSize"></View>	
+			<Label id="storeLocator" onClick="navigateToStoreLocater" class="storelocatorlbl iconFont"></Label>
+			
+			<View id="SuperSimilarCollection">
+				<View id="similarCollectionContainer"  class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label id="similarCollectionLbl" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<View id="listSeperator"></View>
+				<View id="alsoViewCollectionContainer" class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label id="peopleAlsoViewLbl" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				
+			</View>
+
+		</ScrollView>
+		
+		<!-- <Label id="upArrowLbl"></Label> -->
+	</Window>
+</Alloy>

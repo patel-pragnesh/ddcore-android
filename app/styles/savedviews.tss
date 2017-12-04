@@ -1,0 +1,206 @@
+
+"#savedviews": {
+	//borderColor:"red",
+	//layout:"vertical"
+}
+
+"#allrooms_btn":{
+	//top:"2%",
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "10dp"
+	},
+	right: "10%",
+	width:"100dp",
+	ellipsize:true,
+	//borderColor:"red",
+	wordWrap:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+
+".arrow":{
+	//top:"6%",
+	color: "#000",
+	text:Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "5dp"
+	}
+}
+
+"#savedViewContainer":{
+	//borderColor:"green",
+	top: "2%"
+}
+
+".viewTitle":{
+	color: "#000",
+	font:{
+		fontSize: "12dp"
+	},
+	top: 0,
+	left: "5%"
+}
+
+
+".viewImage":{
+	//borderColor: "red",
+	backgroundColor: "#6E6E6E",
+	width: "60dp",
+	height: "60dp",
+	left: "5%",
+	top: "20%"
+}
+
+".viewName":{
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize: "10dp"
+	},
+	top: "20%",
+	left: "90dp"
+}
+
+".viewDate":{
+	top: "36%",
+	color: "#000",
+	font:{
+		fontSize: "8dp"
+	},
+	left: "90dp"
+}
+
+".viewEariler_btn":{
+	height: "36dp",
+	left: "5%",
+	right: "5%",
+	backgroundColor: "#d2d2d2",
+	color: "#000",
+	font:{
+		fontSize: "10dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".border":{
+	bottom: "1%",
+	//top:"85%",
+	backgroundColor: "#a0a0a0",
+	left: "6%",
+	right: "6%",
+	height: "1px",
+	width:Titanium.UI.FILL
+}
+
+".share":{
+	text:Alloy.Globals.icon.share,
+	font:{
+		fontSize: "16dp"
+	},
+	color: "#a6a6a6",
+	right: 14,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width:"20dp",
+	height:"20dp",
+}
+
+".download":{
+	text:Alloy.Globals.icon.download,
+	font:{
+		fontSize: "16dp"
+	},
+	color: "#a6a6a6",
+	right: 14,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width:"20dp",
+	height:"20dp",
+}
+
+".delete":{
+	text:Alloy.Globals.icon.deleteIcon,
+	font:{
+		fontSize: "16dp"
+	},
+	color: "#a6a6a6",
+	right: 14,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width:"20dp",
+	height:"20dp",
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".dropDownLbl":{
+	font:{
+		fontSize: "10dp"
+	},
+	color: "#000",
+	top: "10dp",
+	left: "5dp",
+	right: "5dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+
+
+".saveViewTemplate":{
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent",
+	width:Ti.UI.FILL,
+	layout: "vertical"
+}
+
+
+".loadMore":{
+	//top:"20dp",
+	bottom: "10dp",
+	width: "90%",
+	height: "35dp",
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#333333",
+	backgroundColor: "#4d000000"
+}
+
+"#dropDownList":{
+	visible: false ,
+	layout: "vertical",
+//	width: Titanium.UI.SIZE,
+	// height: Titanium.UI.SIZE,
+	height:"138dp",
+	width: "130dp",
+	top: "7%",
+	zIndex: 2 ,
+	//right: "5%",
+	right: "3%",
+	//borderColor: "#A4A4A4",
+	//borderRadius: 2,
+	backgroundColor: "#fff",
+	scrollType:"vertical",
+}
+
+
+
+"#noProduct":{
+	top: "10dp",
+	height: "0dp",
+	visible: false ,
+	color: "#4d000000",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#dropDownBg":{
+	backgroundColor: "transparent",
+	//backgroundColor: "#fff",
+	borderColor: "#a0a0a0",
+	borderWidth:0.5,
+	//borderRadius: 2,
+	height:"160dp",
+	width: "130dp",
+	zIndex:3,
+	top:8,
+	right: "3%",
+	visible: false,
+	touchEnabled:false,
+}

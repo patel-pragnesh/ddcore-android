@@ -1,0 +1,203 @@
+".detailScroll":{
+	top:"53dp",
+	scrollType:"vertical",
+	layout:"vertical"
+}
+".containerForPage" : {
+	left: "15dp",
+	right: "15dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	bottom:"15dp"
+}
+".small_dash":{
+	top:"50dp",
+	width:"45dp",
+	height:"1dp",
+	backgroundColor:"#cccccc"
+}
+".aboutUsHead_lbl":{
+	font:{
+		fontSize:"27dp"
+	},
+	color:"#333333"
+}
+".aboutUs_lbl":{
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#e65e48",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".aboutUsParagraph_lbl" :{
+	width: "94%",
+	top:"30dp",
+	font:{
+		fontSize:"13dp"
+	},
+	color: "#999999",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".aboutUsHeadWhite_lbl" :{
+	font:{
+		fontSize:"27dp"
+	},
+	color:"#ffffff"
+}
+".aboutUsParagraphWhite_lbl" : {
+	width: "94%",
+	top:"30dp",
+	font:{
+		fontSize:"13dp"
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".iconTriplet" : {
+	width: "94%",
+	height: Titanium.UI.SIZE
+}
+".bigIcons" : {
+	width: "33%",
+	height: "50dp",
+	font:{
+		fontSize:"35dp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".textTriplet" : {
+	width: "94%",
+	height: Titanium.UI.SIZE
+}
+".textSmall" : {
+	width: "33%",
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"9dp",
+		fontFamily: "futura_medium_bt-webfont"
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".iconBig" : {
+	width: Titanium.UI.FILL,
+	height: "60dp",
+	font:{
+		fontSize:"40dp",
+		fontFamily: "icomoon"
+	},
+	color: "#333333",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".rewardsHead_lbl" : {
+	font:{
+		fontSize:"18dp"
+	},
+	color:"#333333",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".reward_lbl" : {
+	font:{
+		fontSize:"9dp"
+	},
+	color:"#e65e48",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".viewAllLbl":{
+	font:{
+		fontSize:"11dp",
+		fontFamily:"futura_medium_bt-webfont"	
+	},
+	color:"#333333",
+	width:Titanium.UI.FILL,
+	height:"35dp",
+	backgroundColor:"#f4f4f4",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
+}
+".darkButtonLabel" : {
+	top:"25dp",
+	font:{
+		fontSize:"12dp",
+		fontFamily:"icomoon"
+	},
+	color:"#FFFFFF",
+	width:Titanium.UI.FILL,
+	height:"40dp",
+	backgroundColor:"#404040",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".aboutUsHeadMed_lbl" : {
+	font:{
+		fontSize:"21dp"
+	},
+	color:"#333333",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".textSmallBlack" : {
+	width: "33%",
+	height: Titanium.UI.SIZE,
+	font:{
+		fontSize:"9dp",
+		fontFamily: "futura_medium_bt-webfont"
+	},
+	color: "#999999",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".iconBigImg" : {
+	height: "80dp",
+}
+"#teflon" : {
+	color: "#000000",
+	font:{
+		fontSize:"50dp",
+		fontFamily: "Times New Roman"
+	},
+}
+
+"#infrastructure":{
+	backgroundImage:"/images/aboutusBg.png"
+}
+
+
+
+
+/* New UI TSS*/
+	
+".personName":{
+	color:"#fff",
+	font:{
+		fontSize:"12dp"
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	
+}
+
+
+".boldText":{
+	font:{
+		fontSize:"32dp"
+	},
+	color:"#ffffff"
+}
+
+
+".tangerineFont":{
+	font:{
+		fontFamily:"Tangerine_Bold",
+		fontSize:"28dp"
+	},
+	color:"#fff"
+}
+
+".smallFont":{
+	font:{
+		fontSize:"8dp"
+	}
+}
+

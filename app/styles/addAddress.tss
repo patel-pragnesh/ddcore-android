@@ -1,0 +1,187 @@
+
+"#superView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor: "#ffffff",
+	visible: false,
+	// layout:"vertical",
+	backgroundColor: "#231f20"
+}
+".addressHeader":{
+	top: "0dp",
+	zIndex :"100",
+	width:Titanium.UI.FILL,
+	height: "53dp",//40
+}
+".addressLbl":{
+	left: "15dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize: "17dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff"
+}
+".closeLbl":{
+	right: "15dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20sp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+"#refreshIcon":{
+	right: "60dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20sp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text:Alloy.Globals.icon.refresh,
+}
+"#fname":{
+	top: "20dp",//40
+	hintText: "*FIRST NAME"
+}
+"#addressLine1":{
+	top:"0dp",
+	hintText: "*ADDRESS LINE 1"
+}
+"#addressLine2":{
+	hintText: "ADDRESS LINE 2"
+}
+"#pinCode":{
+	hintText: "*PIN CODE",
+	maxLength:6
+}
+".addressTextfield":{
+	height: "40dp",
+	width: "88%",
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	//borderColor:"red",
+	hintTextColor: "#a0a0a0",
+	font:{
+		fontSize: "15dp",
+		fontFamily: "futura_lt_bt_light-webfont"
+	}
+}
+".addressTextSeperator":{
+	height: "0.5dp",
+	width: "88%",
+	backgroundColor: "#e65e48"
+}
+".top10":{
+	top: "10dp"
+}
+"#lname":{
+	hintText: "*LAST NAME"
+}
+"#phoneNo":{
+	hintText: "*NUMBER",
+	maxLength:10
+}
+".dropDownSeperator":{
+	top: "20dp",
+	height: "0.5dp",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#A1A39E"
+}
+".secondDropDownSeperator":{
+	top: "225dp",//245
+	height: "0.5dp",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#A1A39E"
+}
+"#stateDropDown":{
+	top: "185dp",//205
+	left: "0",///6%
+	width: "48%",//42
+	zIndex: "100",
+	height: "40dp",
+	//cardElevation:"0",
+	
+}
+".filterSeperator":{
+	top: "185dp",//245
+	left: "50%",
+	backgroundColor: "#a6ffffff",
+	height: "35dp",
+	width: "1dp"
+}
+"#cityDropDown":{
+	top: "185dp",
+	right: "0",
+	width: "48%",//42
+	zIndex: "100",
+	height: "40dp",
+}
+"#stateLbl":{
+	left:"20dp",
+	text: "STATE",
+}
+"#cityLbl":{
+	left:"15dp",
+	text: "CITY",
+}
+"#stateScroll":{
+	height:"0"
+}
+"#cityScroll":{
+	height:"0"
+}
+".dropDownLbl":{
+	
+	left: "0dp",
+	top: "0dp",
+	width: "65%",
+	height: "40dp",
+	font:{
+		fontSize: "12sp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#e65e48",
+	touchEnabled: false
+}
+"#stateDropDownIcon":{
+	text:Alloy.Globals.icon.expandFill,
+}
+"#cityDropDownIcon":{
+	text:Alloy.Globals.icon.expandFill,
+}
+".dropDownIcon":{
+	
+	rigth: "0dp",
+	width: "19%",
+	height: "40dp",
+	font:{
+		fontSize: "12sp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#a6ffffff",
+	touchEnabled: false
+}
+".addressDetails":{
+	top:"228dp",//248
+}
+"#saveAddress":{
+	top: "30dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor:"#80e7e7e7",
+	borderWidth:"0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	bottom:"50dp"
+}
+".dropDownScroll":{
+	backgroundColor: "#595959"
+}

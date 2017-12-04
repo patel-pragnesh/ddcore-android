@@ -1,0 +1,125 @@
+
+
+"#myaccount_photo_container": {
+	height: "36.5%",
+	borderColor: "#000",
+	borderWidth: 1,
+	backgroundColor: "#000000",
+	//zIndex:1
+}
+
+"#myaccount_detail_container":{
+	top: "29.6%",
+	layout:"vertical",
+	// borderColor: "red",
+	// borderWidth: 1,
+	
+}
+
+"#profile_bg_img":{
+	//image:"/images/neha_dhupia.jpg",
+	 height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	
+	// height:"100%",
+	// width:"60%",
+	//bottom:"10dp",
+	
+	// borderRadius:400,
+	backgroundColor: "#231f20",
+	opacity:0.4,
+	
+	
+}
+
+
+"#profile_img":{
+	//image:"/images/neha_dhupia.jpg",
+	width: "100dp",//"80dp",
+	height:"100dp",//"80dp",
+	borderRadius: 50,
+	 //borderWidth: 1,
+	// borderColor: "transparent",
+	// left: 50,
+	left: 35,
+	backgroundColor:"#80000000",
+	
+	
+}
+
+"#addPhoto":{
+	width: "94dp",//"80dp",
+	height:"94dp",//"80dp",
+	borderRadius: 50,
+	//left: 50,
+	left:37,
+	borderColor:Alloy.Globals.labelTitleColor,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	zIndex:-1,
+	color:Alloy.Globals.labelTitleColor,
+	font:{
+		fontSize:"14dp",
+		
+	}
+}
+
+"#username_lbl":{
+	//text:  "\ue901 NEHA DUPIA",
+	color: "#fff",
+	//left:"180dp",
+	left:"170dp",
+	font:{
+		fontSize:"14dp",
+		fontFamily:"icomoon"
+	},
+	// borderColor:"red",
+	// borderWidth:1
+}
+
+"#useremail_lbl":{
+	//text:"n.dhupia@gmail.com",
+	color:"#999999",//"#fff",
+	//left:"180dp",
+	left:"170dp",
+	top:"56%",
+	font:{
+		fontSize:"14dp"
+	},
+}
+
+"#paging" : {
+    top: 0,
+    indicatorColor: "#e64e48",//"#09c",
+    tabs: true,
+    backgroundColor : "transparent",//"#cacaca",
+    font : {
+        fontSize : "12dp",
+       // fontWeight : 'bold',
+        fontFamily:"futura_lt_bt_light-webfont",
+        //fontFamily:"futura_medium_bt-webfont",	
+    }
+}
+"#scrollableView":{
+	backgroundColor:"#fff",
+	// borderColor:"black",
+	// borderWidth:1
+}
+
+"#addAppoinment":{
+	backgroundColor:Alloy.Globals.labelTitleColor,
+	borderRadius:20,
+	borderWidth:0.5,
+	borderColor:Alloy.Globals.labelTitleColor,
+	width:"40dp",
+	height:"40dp",
+	text:Alloy.Globals.icon.add,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,	
+	bottom:"50dp",
+	zIndex:10,
+	right:"5%",
+	font:{
+		fontSize:"16dp",
+		fontFamily:"icomoon",	
+	},
+	color:"#000",
+}

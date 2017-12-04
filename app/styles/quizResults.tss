@@ -1,0 +1,157 @@
+".detailScroll":{
+	top: "53dp",
+	scrollType: "vertical",
+	layout: "vertical",
+	contentHeight: 'auto',
+}
+".quizImageView": {
+	left: "0dp",
+	top: "0dp",
+	width:Titanium.UI.FILL,
+	height: "250dp",
+	image: "/images/bed.jpg"
+}
+".gradientBackground":{
+	backgroundGradient:{
+		type: 'linear',
+		colors: [
+			{
+				color: '#00000000',
+				position: 0
+			},{
+				color: '#000000',
+				position: 1.0
+			}
+		],
+		startPoint:{
+			x: 0,
+			y: 0
+		},
+		endPoint:{
+			x: 0,
+			y: "100%"
+		},
+		backFillStart: false
+	}
+}
+".share_wish_icon":{
+	font:{
+		fontSize: "16dp",
+		fontFamily: "icomoon"
+	},
+	width: "20dp",
+	height: "20dp",
+	color: "#FFFFFF",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#shareIcon":{
+	right: "10dp",
+	text:Alloy.Globals.icon.share
+}
+".collectionLbl":{
+	top: "30dp",
+	font:{
+		fontSize: "9dp"
+	},
+	color: "#e65e48"
+}
+"#collectionNameLbl":{
+	font:{
+		fontSize: "25dp"
+	},
+	color: "#ffffff",
+	width: "90%",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".colorSeperator":{
+	left: "15dp",
+	right: "15dp",
+	height: "2px",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#999999"
+}
+".quote_lbl": {
+	top: "25dp",
+	width: "88%",
+	height: Titanium.UI.SIZE,
+	font: {
+		fontSize: "11.5dp"
+	},
+	color: "#999999",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".buttonDiscover":{
+	top: "15dp",
+	bottom: "25dp",
+	width: "70%",
+	height: "40dp",
+	color: "#ffffff",
+	backgroundColor: "#ee777777",
+	borderColor: "#ee777777",
+	font: {
+		fontSize: "11dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+".similarStyleContainer": {
+	left: "15dp",
+	right: "15dp"
+}
+".list":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+".viewAllContainer":{
+	width:Titanium.UI.FILL,
+	height: "40dp"
+}
+".categoryName":{
+	font:{
+		fontSize: "10dp"
+	},
+	color: "#333333",
+	left: "0dp"
+}
+".viewAll":{
+	font:{
+		fontSize: "9dp"
+	},
+	color: "#e65e48",
+	right: "20dp",
+	text: "VIEW ALL",
+	height:Titanium.UI.FILL
+}
+".rightArrow":{
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#e65e48",
+	text: "\ue912",//Alloy.Globals.icon.menu,
+	height:Titanium.UI.FILL,
+	right: "0dp",
+	width: "20dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT
+}
+".loadMore":{
+	top: "20dp",
+	bottom: "20dp",
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	font:{
+		fontSize: "12dp"
+	},
+	color: "#333333",
+	backgroundColor:"#f4f4f4",
+}
+
+".indicator":{
+	style: Ti.UI.ActivityIndicatorStyle.PLAIN,
+	color: "#333333",
+	top: "20dp",
+	bottom: "20dp",
+	width:Titanium.UI.FILL,
+	height: "35dp",
+	font:{
+		fontSize: "12dp"
+	}
+}

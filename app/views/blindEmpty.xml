@@ -1,0 +1,24 @@
+<Alloy>
+	<View class="heightSize layoutVertical top0" id="mainContainer" >
+
+		<View id="blinds1Container" class="viewAllContainer">
+			<Label id="blinds1NameLbl" class="categoryName fontHeavy"></Label>
+		</View>
+		<Label class="emptyDataLbl" bindId="message">THERE ARE NO PRODUCTS IN THIS CATEGORY.</Label>
+		
+		<View class="collectionsSeperator"></View>
+		
+		<!-- <ListView id="blinds1ListView" class="listview" defaultItemTemplate="emptyTemplate" >
+			<Templates>
+				<ItemTemplate name="emptyTemplate" bindId="templateView">
+					<Label class="emptyDataLbl" bindId="message">THERE ARE NO PRODUCTS IN THIS CATEGORY.</Label>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section">
+				<ListItem></ListItem>
+			</ListSection>
+
+		</ListView> -->
+
+	</View>
+</Alloy>

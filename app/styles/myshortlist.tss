@@ -1,0 +1,101 @@
+"#myshortlist": {
+	//layout: "vertical",
+
+}
+
+"#allitem_lbl":{
+	color:Alloy.Globals.labelTitleColor,
+	//right:"5%",
+	font:{
+		fontSize: "10dp"
+	},
+	right: "10%",
+	bubbleParent:false,
+	
+	width:"100dp",
+	ellipsize:true,
+//	borderColor:"red",
+	wordWrap:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+
+".dropDown":{
+	color: "#000",
+	text:Alloy.Globals.icon.dropdownArrow,
+	font:{
+		fontSize: "5dp"
+	},
+	//width:"16dp",
+	//height:"16dp",
+	//textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	//borderColor:"red"
+}
+
+
+".listview":{
+	width:Titanium.UI.FILL,
+	//height: "80%"
+	height:Titanium.UI.FILL
+}
+
+".labelTitleColor":{
+	color:Alloy.Globals.labelTitleColor
+}
+
+".dropDownLbl":{
+	font:{
+		fontSize: "10dp"
+	},
+	color: "#000",
+	top: "10dp",
+	// left: "5dp",
+	// right: "5dp"
+}
+
+
+"#dropDownList":{
+	visible: false ,
+	layout: "vertical" ,
+	//borderColor: "#A4A4A4",
+	//borderRadius: 2,
+	backgroundColor: "#fff",
+	// width:Titanium.UI.SIZE,
+	// height:Titanium.UI.SIZE,
+	height:"98dp",
+	width: "136dp",
+	top: "7%",
+	zIndex: 2,
+	right: "3%",
+	scrollType:"vertical"
+}
+
+"#dropDownBg":{
+	backgroundColor: "transparent",
+	//backgroundColor: "#fff",
+	borderColor: "#a0a0a0",
+	borderWidth:0.5,
+	//borderRadius: 2,
+	height:"120dp",
+	width: "136dp",
+	zIndex:3,
+	top:7,
+	right: "3%",
+	visible: false,
+	touchEnabled:false,
+}
+
+
+/*Remove All button */
+".removeAll":{
+	height: "45dp",
+	//borderColor: "red",
+	text: "REMOVE ALL",
+	bottom: "0",
+	zIndex: "10",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#000",
+	backgroundColor:"#66ffffff",
+	font:{
+		fontSize:"14dp"
+	}
+}

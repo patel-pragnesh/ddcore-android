@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="allBlinds" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+		<Require src="headerView" type="widget" id="header"></Require>
+		
+		<ScrollView id="collectionScroll" class="collectionsScroll">
+			
+			<!-- <View class="heightSize layoutVertical top0" id="mainContainer">
+				<View id="blinds1Container" class="viewAllContainer">
+					<Label id="blinds1NameLbl" class="categoryName fontHeavy"></Label>
+					<View id="blinds1ViewAllContainer" class="heightFill right0 width40">
+						<Label id="blinds1ViewAllLbl" class="viewAll fontHeavy widthFill"></Label>
+						<Label id="blinds1rightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<ListView id="blinds1ListView" class="listview" defaultItemTemplate="gridTemplate" >
+					<Templates>
+						<Require type="view" src="listTemplate" id="template"></Require>
+					</Templates>
+					<ListSection>
+						<ListItem></ListItem>
+					</ListSection>
+					<FooterView>
+						<View class="heightSize layoutVertical">
+							<View id="blinds1LoadMore" class="loadMore">
+								<Label id="blinds1LoadMoreLbl" class="loadmorelbl">LOAD MORE</Label>
+								<ActivityIndicator id="blinds1ActivityIndicator" class="indicator" message=" Loading..." />
+							</View>
+							<View class="collectionsSeperator"></View>
+						</View>
+					</FooterView>
+				</ListView>
+			</View> -->
+			
+		</ScrollView>
+		
+	</Window>
+</Alloy>

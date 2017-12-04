@@ -1,0 +1,111 @@
+
+"#dImaginer": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//backgroundImage :"/images/Dimaginer.jpg", 
+	//visible: false,
+	backgroundColor:"#231f20"
+	// layout:"vertical",
+	// backgroundColor: "#231f20",
+	// backgroundGradient:{
+		// type:'linear', 
+		// colors:[{
+			// color : '#FFF', position: 0
+			// },{
+			// color : '#231f20', position: 1.0
+		// }], 
+		// startPoint:{
+			// //x:0,
+			// x:"0%",
+			// y:"50%"
+			// //y:"15%"
+		// }, 
+		// endPoint:{
+			// //x:0,
+			// //y:"100%"
+			// x:"0%",
+			// y:"100%"
+		// },  
+		// backFillStart:false
+	// },
+}
+
+".detailScroll":{
+	top:"53dp",
+	scrollType:"vertical",
+	//layout:"vertical"
+}
+"#containerForPage" : {
+	left: "0dp",
+	right: "0dp",
+	top : "0dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	//borderColor: 'red'
+}
+'#videoPlayer' : {
+	//height: '260dp',
+	width: Titanium.UI.FILL,
+	backgroundColor: '#231f20',
+	top:'0dp',
+	autoplay: false,
+	visible: false
+}
+"#videoContainer" : {
+	left: "0dp",
+	right: "0dp",
+	top: "125dp",
+	//height:"150",
+	width: Titanium.UI.FILL,
+	layout: "vertical",
+	
+	//borderColor: 'green'
+}
+
+".small_dash":{
+	top:"20dp",
+	width:"45dp",
+	height:"1dp",
+	backgroundColor:"#333333"
+}
+".aboutUsHead_lbl":{
+	font:{
+		fontSize:"25dp"
+	},
+	color:"#FFFFFF"
+}
+".aboutUs_lbl":{
+	top:"15dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#e65e48"
+}
+".aboutUsParagraph_lbl" :{
+	width: "88%",
+	top:"25dp",
+	font:{
+		fontSize:"15dp"
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#storeLbl":{
+	width: "88%",
+	top:"13dp",
+	font:{
+		fontSize:"13dp"
+	},
+	color: "#E65E48",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".imgView" :{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	left: "0dp",
+	right: "0dp",
+	top: '53dp',
+	image: "/images/Dimaginer.jpg"
+}

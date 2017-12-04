@@ -1,0 +1,215 @@
+<Alloy>
+	<View id="myaccount_container" class="widthFill heightFill" onDblclick="hideKeyboard">
+
+		<!-- My Account Info -->
+		<ScrollView id="myaccount_info" class="widthFill heightFill" scrollType="vertical">
+
+			<Label id="editProfile_btn" class="fontLight labelTitleColor" onClick="openEditProfileScreen">Edit profile</Label>
+			<!-- <Button id="editProfile_btn" class="fontLight labelTitleColor" onTouchstart="openEditProfileScreen">Edit profile</Button> -->
+			<!-- <Button></Button> -->
+
+			<!-- Read Only Info -->
+			<Label id="number_lbl" class="left5 labelTitle fontMedium" top="10">NUMBER</Label>
+			<Label id="number_value_lbl" class="left5 labelValue fontLight" top="2">-</Label>
+			
+			<Label id="dob_lbl" class="left5 labelTitle fontMedium">DATE OF BIRTH</Label>
+			<Label id="dob_value_lbl" class="left5 labelValue fontLight" top="2">- - -</Label>
+			
+			<Label id="anniversary_lbl" class="left5 labelTitle fontMedium">ANNIVERSARY</Label>
+			<Label id="anniversary_value_lbl" class="left5 labelValue fontLight" top="2">- - -</Label>
+			
+			<Label id="address_lbl" class="left5 labelTitle fontMedium">ADDRESS</Label>
+			<ScrollView id="addressContainer" class="widthFill heightSize" scrollType="vertical" layout="vertical" top="1">
+				
+			</ScrollView>
+			<Label id="addnewAdderss_btn" class="left5 labelTitle fontLight" top="2dp"  onClick="navigateToAddAddress">Add new address</Label>
+			<!-- <Label height="40dp" top="2dp" class="left5 widthFill" borderColor="red"></Label> -->
+			
+			<!-- <ScrollView class="widthFill addressValueContainer"> -->
+			<!--
+				 <View class="left0 heightSize widthFill">
+					<Label id="address_value_lbl1" class="address_value_lbl left5 labelValue fontLight">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,GURU NAKA ROAD, BANDRA (W),MUMBAI - 4000081.MAHARASHTRA</Label>
+					<Label class="addressEdit fontLight">Edit</Label>
+				</View>
+				<View class="border"></View>
+				
+				<View class="left0 heightSize widthFill">
+					<Label id="address_value_lbl2" class="address_value_lbl left5 labelValue fontLight">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,GURU NAKA ROAD, BANDRA (W),MUMBAI - 4000081.MAHARASHTRA</Label>
+					<Label class="addressEdit fontLight">Edit</Label>
+				</View>
+				<View class="border"></View>
+				
+				<View class="left0 heightSize widthFill">
+					<Label id="address_value_lbl3" class="address_value_lbl left5 labelValue fontLight">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,GURU NAKA ROAD, BANDRA (W),MUMBAI - 4000081.MAHARASHTRA</Label>
+					<Label class="addressEdit fontLight">Edit</Label>
+				</View>
+				 -->
+				
+				<!-- <View class="border"></View> -->
+
+				<!-- <Label id="address_value_lbl2" class="address_value_lbl left5 labelValue fontLight">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,GURU NAKA ROAD, BANDRA (W),MUMBAI - 4000081.MAHARASHTRA</Label>
+				<View class="border"></View>
+				<Label id="address_value_lbl2" class="address_value_lbl left5 labelValue fontLight">GROUND FLOOR, NOTAN HEIGHTS, SECTOR 69X,GURU NAKA ROAD, BANDRA (W),MUMBAI - 4000081.MAHARASHTRA</Label>
+				<View class="border"></View> -->
+
+			<!-- </ScrollView> -->
+
+			<!-- Below code is Commented for time beign -->
+			<!-- <View class="border"></View>-->
+			<!-- <Label id="addnewAdderss_btn" class="left5 fontLight labelTitle labelTitleColor" onClick="navigateToAddAddress" bottom="20dp"  borderColor="green">Add new address</Label> --> 
+
+			<!-- Read Only Info -->
+		</ScrollView>
+
+		<!-- My Account Edit -->
+		<ScrollView id="myaccount_info_edit" class="widthFill heightFill">
+
+			<!-- <Label id="note_lbl" class="left5 labelTitle fontLight top10">Note : Tap the fields to edit</Label> -->
+			<View class="left5 top10 widthSize heightSize" layout="horizontal">
+
+				<Label  class="left0 labelTitle fontHeavy top0">Note :</Label>
+				<Label class="left2 note_lbl fontLight top0" >Tap the fields to edit</Label>
+			</View>
+			<Label id="gender_lbl" class="left5 labelTitle fontMedium top10">I AM</Label>
+			<View  class="left5 top10 widthSize heightSize" layout="horizontal" top="5">
+				<Label gender="male" id="male" class="commonRadioStyles iconFont left0" onTouchstart="selectGender" ></Label>
+				<Label gender="male" id="radioText1" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >MALE</Label>
+				
+				<Label gender="female" id="female" class="commonRadioStyles iconFont" left="14dp"  onTouchstart="selectGender" ></Label>
+				<Label gender="female" id="radioText2" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >FEMALE</Label>
+				
+				<Label gender="other" id="other" class="commonRadioStyles iconFont" left="14dp"  onTouchstart="selectGender" ></Label>
+                <Label gender="other" id="radioText3" class="commonRadioStyles fontLight" color="#000" onTouchstart="selectGender" >OTHER</Label>
+                        
+			</View>
+			
+			<Label  class="left5 labelTitle fontMedium top10" top="20">FIRST NAME</Label>
+			
+			<View class="left2 top0 widthSize heightSize" top="-8" layout="horizontal">
+				<Label class="left0 labelTitle fontLight imp_lbl">*</Label>
+				<TextField id="fname_txt" class="textfield  fontLight" top="0"  hintText="Enter Firstname" onFocus="showBorder" onBlur="hideBorder"></TextField>
+			</View>
+			<View id="fname_txt_border" class="border left5" top="0" width="78%" visible="false"></View>
+			
+			<Label  class="left5 labelTitle fontMedium top10">LAST NAME</Label>
+			<View class="left2 top0 widthSize heightSize" top="-8" layout="horizontal">
+				<Label class="left0 labelTitle fontLight imp_lbl">*</Label>
+				<TextField id="lname_txt" class="textfield  fontLight"  hintText="Enter Lastname" onFocus="showBorder" onBlur="hideBorder"></TextField>
+			</View>
+			
+			<View id="lname_txt_border" class="border left5" top="0" width="78%" visible="false"></View>
+			
+			
+			<Label  class="left5 labelTitle fontMedium top10">EMAIL</Label>
+			<View class="left2 top0 widthSize heightSize" top="-8" layout="horizontal">
+				<Label class="left0 labelTitle fontLight imp_lbl">*</Label>
+				<TextField id="email_txt" class="textfield  fontLight"  hintText="Enter Email ID" onFocus="showBorder" onBlur="hideBorder"></TextField>
+			</View>
+			
+			<View id="email_txt_border" class="border left5" top="0" width="78%" visible="false"></View>
+			
+			
+			<Label  class="left5 labelTitle fontMedium top10">NUMBER</Label>
+			<View class="left2 top0 widthSize heightSize" top="-8" layout="horizontal">
+				<Label class="left0 labelTitle fontLight imp_lbl" visible="false">*</Label>
+				<TextField id="number_txt" class="textfield  fontLight keyBoardTypeNumber"  hintText="Enter Mobile No" onFocus="showBorder" onBlur="hideBorder"></TextField>
+			</View>
+			
+			<View id="number_txt_border" class="border left5" top="0" width="78%" visible="false"></View>
+			
+			
+			<Label  class="left5 labelTitle fontMedium top10">PASSWORD</Label>
+			<View class="left2 top0 widthFill heightSize" top="-8">
+				<!-- <Label class="left0 labelTitle fontLight imp_lbl">*</Label> -->
+				<TextField id="password_txt" class="left10 textfield fontLight" top="5" passwordMask="true" hintText="Enter Password" value="12345678" color="#b2b2b2" touchEnabled="false"></TextField>
+				<Label id="changePassword_btn" class="right5 labelTitle fontLight" top="7" onClick="showChangePassword">Change</Label>
+			</View>
+			
+			<!-- <View id="password_txt_border" class="border left5" top="0" width="78%" visible="false"></View> -->
+			
+			<View id="changePassword_container" class="left0 widthFill top10" layout="vertical">
+				<Label  class="left5 labelTitle fontMedium top0">CHANGE PASSWORD</Label>
+				<View class="left0 top5 widthFill heightSize" top="-8">
+					<TextField id="change_password_txt" class="textfield fontLight top0" left="4%"  passwordMask="true" hintText="NEW PASSWORD" onChange="displayPasswordPreview"></TextField>
+					<Label id="previewPassword" class="right5 labelTitle top5 iconFont" onClick="showPassword" visible="false"></Label>
+				</View>
+				<View id="change_password_txt_border" class="border left5" top="0" width="78%" visible="true"></View>
+
+				<View class="left0 top5 widthFill heightSize">
+					<TextField id="confirm_password_txt" class="textfield fontLight top0" left="4%"  passwordMask="true" hintText="CONFIRM PASSWORD" onChange="displayPasswordPreview"></TextField>
+					<Label id="previewConfirmPassword" class="right5 labelTitle top5 iconFont" visible="false" onClick="showPassword"></Label>
+				</View>
+				<View id="confirm_password_txt_border" class="border left5" top="0" width="78%" visible="true"></View>
+
+
+				<!-- Below code is Commented for time beign -->
+				<!--
+				<Label class="left5 labelTitle fontLight top0">Password strength</Label>
+				<View id="passwordStrength" class="widthFill top0 left5 right5"></View> -->
+
+			</View>
+			<Label id="dob_lbl" class="left5 labelTitle fontMedium top10">DATE OF BIRTH</Label>
+			<View class="left5 top0 widthFill" height="40" layout="horizontal">
+				<View class="left0 widthSize" dob="true" onClick="showDatePicker">
+					<Label id="dob_date" class="greyColor left0 top0 labelValue fontLight">DD</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+				<View class="left5 widthSize" dob="true" onClick="showDatePicker">
+					<Label id="dob_month" class="greyColor left0 top0 labelValue fontLight">MM</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+				<View class="left5 widthSize" dob="true" onClick="showDatePicker">
+					<Label id="dob_year" class="greyColor left0 top0 labelValue fontLight">YYYY</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+			</View>
+			
+			<Label id="anniversary_lbl" class="left5 labelTitle fontMedium top10">ANNIVERSARY</Label>
+			<View class="left5 top0 widthFill" height="40" layout="horizontal">
+				<View class="left0 widthSize"  onClick="showDatePicker">
+					<Label id="anniversary_date" class="greyColor left0 top0 labelValue fontLight">DD</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+				<View class="left5 widthSize"  onClick="showDatePicker">
+					<Label id="anniversary_month" class="greyColor left0 top0 labelValue fontLight">MM</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+				<View class="left5 widthSize"  onClick="showDatePicker">
+					<Label id="anniversary_year" class="greyColor left0 top0 labelValue fontLight">YYYY</Label>
+					<Label class="top0 dropDown iconFont" left="70"></Label>
+					<View class="border" left="-12" width="28%" top="30"></View>
+				</View>
+			</View>
+
+			<!-- Below code is Commented for time beign -->
+			<!-- <Label id="address_lbl" class="left5 labelTitle fontMedium top10">ADDRESS</Label>
+			<View id="testContainer1" class="left5 top0 widthFill" height="40">
+			<View id="testContainer2" class="top0 left0 widthSize heightSize" onClick="showAddressPicker">
+			<Label id="state" class="greyColor left0 top0 labelValue fontLight">STATE</Label>
+			<Label class="top0 dropDown iconFont" left="100"></Label>
+			<View class="border" left="-12" width="44%" top="30"></View>
+			</View>
+			<View class="right5 widthSize" onClick="showAddressPicker">
+			<Label id="city" class="greyColor left0 top0 labelValue fontLight">CITY</Label>
+			<Label class="top0 dropDown iconFont" left="100"></Label>
+			<View class="border" left="-12" width="44%" top="30"></View>
+			</View>
+
+			</View>
+
+			<TextField id="addressline1_txt" class="greyColor textfield fontLight top10" left="5%" value="ADDRESS LINE 1"></TextField>
+			<TextField id="addressline2_txt" class="greyColor textfield fontLight top10" left="5%" value="ADDRESS LINE 2"></TextField>
+			<TextField id="pincode_txt" class="greyColor textfield fontLight top10" left="5%" value="PIN CODE"></TextField>
+			-->
+			<Label id="update_btn" class="top10 fontMedium" onClick="updateAccountInfo">UPDATE</Label>
+			<Label id="cancel_btn" class="top10 labelTitle fontLight" onClick="cancelAccountEdit">Cancel</Label>
+
+		</ScrollView>
+
+	</View>
+</Alloy>

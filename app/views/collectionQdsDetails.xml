@@ -1,0 +1,132 @@
+<Alloy>
+	<Window id="collectionQdsDetails" class="windowBackground" onAndroid:back="goToBack" onFocus="updateCount" onClose="destroyWindow">
+		
+		<Require src="headerView"type="widget" id="header"></Require>
+		<ScrollView id="superScroll" class="detailScroll">
+			<View class="heightSize">
+				
+					<!-- <ImageView id="collectionImage"></ImageView> -->
+					
+				<ScrollView id="estoreImageScroll" touched="false">
+					<ImageView id="blurImage" width="100%" height="200dp" zIndex="2"></ImageView>
+					<ImageView id="collectionImage"></ImageView>
+					<!-- <View backgroundColor="#d9231f20" class="widthFill top0" height="200dp" zIndex="4"></View> -->
+				</ScrollView>
+				
+				<!-- rating added -->
+				<View id="ratingView" width="50%"  class="layoutVertical bottom0 left0 widthSize heightSize transparent_border" zIndex="10" borderColor="red">
+					<View bottom="10" class="heightSize layoutVertical">
+						<Label id="ratingLbl"></Label>
+						<Label id="ratingIcon"></Label>
+					</View>
+				</View>
+				<!-- rating added -->
+				
+				
+				<!-- <View class="layoutVertical bottom0 widthFill heightSize" zIndex="10"> -->
+				<View width="50%" class="layoutVertical bottom0 right0 widthSize heightSize transparent_border" zIndex="10">
+					<View bottom="10" class="heightSize">
+						<Label id="wishIcon" class="share_wish_icon"></Label>
+						<Label id="shareIcon" class="share_wish_icon"></Label>
+					</View>
+				</View>
+				
+				
+				<View class="scrollableContainer widthFill"></View>
+			</View>
+			<ScrollView id="colorOptionScroll">
+				
+			</ScrollView>
+			<View class="colorSeperator"></View>
+			<View class="skuNamePriceContainer">
+				<View class="subNameContainer">
+					<Label id="skuNameLbl" class="fontLight"></Label>
+					<Label id="subSkuNameLbl" class="fontHeavy"></Label>
+				</View>
+				
+				<View class="priceContainer">
+					<Label id="priceLbl" class="fontHeavy"></Label>
+					<Label id="taxLbl" class="fontHeavy"></Label>
+				</View>
+				
+			</View>
+			<Label id="descriptionLbl" class="fontLight"></Label>
+			<Label id="readMoreLbl" class="fontLight">Read more</Label>
+			<ImageView id="ironImage"></ImageView>
+			<View id="moreDetailsContainer">
+				<Label id="viewMoreDetailsLbl" class="fontLight">View more details</Label>
+			</View>
+			
+			<Label id="availableDesigLbl" class="availableDesignLbl fontMedium"></Label>
+			<!-- <ScrollView id="availableDesignScroll">
+				<View class="typeContainer">
+				<ImageView width="60dp" height="60dp" backgroundColor="gray"></ImageView>
+				<Label id="designLbl"></Label>
+				</View>
+			</ScrollView> -->
+			<ScrollableView id="availableDesignScroll"></ScrollableView>
+			<View id="pageControlContainer" class="widthFill heightSize"></View>
+			<Label id="storeLocator" onClick="navigateToStoreLocater" class="storelocatorlbl iconFont"></Label>
+			
+			<View id="SuperSimilarCollection">
+				<View id="similarCollectionContainer" class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label id="similarProductLbl" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				<View id="listSeperator"></View>
+				<View id="alsoViewCollectionContainer" class="viewAllContainer">
+					<View class="categoriesSubContainer">
+						<Label id="matchesBestWithLbl" class="categoryName fontMedium"></Label>
+						<Label id="curtainsrightArrow" class="rightArrow iconFont"></Label>
+					</View>
+				</View>
+				
+			</View>
+			
+			</ScrollView>
+			<!-- <View bottom="0" height="55dp">
+				<View class="bottomGradient" top="0dp" height="15"></View> -->
+			<Label id="estimateLbl" class="downLbl fontHeavy">ESTIMATE</Label>
+			<Label id="whereToByeLbl" onClick="navigateToStoreLocater" class="downLbl fontHeavy">WHERE TO BUY</Label>
+			<!-- </View> -->
+			
+			<!-- <View id="upArrowCardView" visible="false"> -->
+				<!-- <CardView id="upArrowLbl" class="uparrow" visible="false">
+					<Label class="upIcon"></Label>
+				</CardView> -->
+				<Label id="upArrowLbl"></Label>
+			<!-- </View> -->
+			
+			<ScrollView id="previewImageScroll" scrollType="horizontal" backgroundColor="white" visible="false">
+				
+				<ImageView id="preview_image"></ImageView>
+			</ScrollView>
+			<Label id="closeLbl"></Label>
+			
+			<!-- New Rating Screen added -->
+		
+		<View id="ratingContainer">
+			<View class="ratingHeader">
+				<View top="20dp">
+					<Label class="ratingLbl">RATE THIS ITEM</Label>
+					<Label id="ratingCloseLbl" class="closeLbl"></Label>	
+				</View>				
+			</View>
+			<View id="subRatingContainer" class="layoutHorizontal">
+				<Label id="rate1" type="rate" count="1" value="6" class="rate"></Label>
+				<Label id="rate2" type="rate" count="2" value="7" class="rate"></Label>
+				<Label id="rate3" type="rate" count="3" value="8" class="rate"></Label>
+				<Label id="rate4" type="rate" count="4" value="9" class="rate"></Label>
+				<Label id="rate5" type="rate" count="5" value="10" class="rate"></Label>
+			</View>
+			<Label id="done" onClick="sendRating">DONE</Label>
+		</View>
+		
+		<!-- New Rating Screen added -->
+			
+			
+			
+	</Window>
+</Alloy>

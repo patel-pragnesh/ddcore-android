@@ -1,0 +1,37 @@
+<Alloy>
+	<View id="dashboardNavigation">
+		<Label id="menuButton" text=Alloy.Globals.icon.backArrow class="navigationMenuLbl iconFont left0 textCenter"></Label>
+		<Label id="logoIcon"  left="45" class="iconFont"></Label>
+		<Label id="subLbl"></Label>
+		<View id="cartContainer">
+			<Label id="cartCountLbl"></Label>
+			<Label id="cartLbl" text=Alloy.Globals.icon.bag class="navigationMenuLbl iconFont textCenter"></Label>
+		</View>
+		<Label id="searchLbl" text=Alloy.Globals.icon.search class="navigationMenuLbl iconFont textCenter" right="45dp"></Label>
+		<Label id="overFlowMenuLbl" text=Alloy.Globals.icon.dotsMenu class="navigationMenuLbl iconFont textCenter" right="0dp" ></Label>
+	</View>
+	
+	<!-- <View id="overFlowContainer" width="Titanium.UI.FILL" height="Titanium.UI.FILL" visible="false"> -->
+	<View id="openView">
+	<View id="overFlowView">
+	    <Label id="home" class="overFlowOptions">HOME</Label>
+		<Label id="aboutsUs" class="overFlowOptions">ABOUT US</Label>
+		<Label id="appoinmantLbl" class="overFlowOptions">FEEDBACK</Label>
+		<!-- <Label id="homeLbl" height="0dp" class="overFlowOptions">TERMS & CONDITIONS</Label> -->
+		<Label id="customerService" class="overFlowOptions">CUSTOMER SERVICE</Label>
+		<Label id="return_refund"  class="overFlowOptions">RETURNS / REFUND</Label>
+		<Label id="faq"  class="overFlowOptions">FAQ</Label>
+		<Label id="privacy"  class="overFlowOptions">PRIVACY POLICY</Label>
+		<Label id="shortlist"  class="overFlowOptions" onClick="Alloy.Globals.navigateToMyShorlistScreen">MY SHORTLIST</Label>
+		
+		<!-- <Label  class="overFlowOptions">MORE</Label> -->
+	</View>
+	</View>
+	
+	
+</Alloy>
+<!-- <Label id="menuButton" text=Alloy.Globals.icon.menu class="navigationMenuLbl iconFont left0"></Label>
+<Label id="logoIcon" left="40" text=Alloy.Globals.icon.menu class="navigationMenuLbl iconFont"></Label>
+<Label id="cartLbl" text=Alloy.Globals.icon.bag class="navigationMenuLbl iconFont textCenter" right="80dp"></Label>
+<Label id="searchLbl" text=Alloy.Globals.icon.search class="navigationMenuLbl iconFont textCenter" right="40dp"></Label>
+<Label id="overFlowMenuLbl" text=Alloy.Globals.icon.menu class="navigationMenuLbl iconFont textCenter" right="0dp" ></Label> -->

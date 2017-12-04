@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="emptyMyAccount" class="widthFill" height="100%" borderColor="transparent">
+
+		<Label id="myaccountEmptylbl" class="fontMedium">YOU HAVE NO ORDERS</Label>
+		<Label id="myAccountActionBtn" class="fontMedium" onClick="myaccountNavigation" myAccountPage="estore">VISIT OUR ESTORE</Label>
+	</View>
+</Alloy>

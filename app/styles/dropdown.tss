@@ -1,0 +1,14 @@
+
+"#dropdown" : {
+  width:"100dp",
+  height:"80dp",
+  borderColor:"green",
+  zIndex:10
+}
+
+"#dropdownList":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top:0,
+	left:0,
+}

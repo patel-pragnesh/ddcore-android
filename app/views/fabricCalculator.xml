@@ -1,0 +1,145 @@
+<Alloy>
+	<View id="fabricCalculator">
+		<View id="fabricCalculatorContainer">
+			<View class="widthFill" height="53dp" top="0dp" left="0">
+				<Label id="screenName" class="fontLight">FABRIC CALCULATOR</Label>
+				<Label id="refresh_btn" ></Label>
+				<Label id="close_btn" onClick="closeView" ></Label>
+			</View>
+			<View class="widthFill heightFill" left="0" layout="vertical">
+				<View id="calculatorTab">
+				    <Label id="curtains_lbl" class="tabsLbl fontMedium">CURTAINS</Label>
+					
+					<!-- <View id="cusionSelected" class="isSelected" left="5dp"></View> -->
+					<View id="sliderSelection" class="isSelected slideLeft"></View>
+					<Label class="tabsSeperator"></Label>
+					<Label id="cusion_lbl" class="tabsLbl fontMedium">CUSHIONS</Label>
+					<!-- <View id="curtainSelected" class="isSelected" visible="false" right="5dp"></View> -->
+				</View>
+				<ScrollableView id="scrollableView"  class="widthFill heightFill" scrollingEnabled="false">
+					<!-- <ScrollView id="cusion" title="CUSHIONS"  class="widthFill heightFill">
+						<View class="heightSize widthFill" layout="vertical" top="0">	
+							<View class="boxContainer">
+								<View dropValue="type" left="5%" width="42%" height="98%" onClick="showCusionDropdownList">
+									<Label dropValue="type" id="type" class="fontMedium calculatorSelectionLbl" left="5%">SELECT TYPE</Label>
+									<Label dropValue="type" class="dropdown iconFont" right="5%"></Label>
+								</View>
+								<View class="boxSeperator"></View>
+								<View dropValue="size" right="5%" width="42%" height="98%" onClick="showCusionDropdownList">
+									<Label dropValue="size" id="size" class="fontMedium calculatorSelectionLbl" left="5%">CUSHION SIZE</Label>
+									<Label dropValue="size" class="dropdown iconFont" right="5%"></Label>
+								</View>
+	
+							</View>
+							<View width="80%" height="100dp" top="20dp">
+								<ImageView id="cusionImg" class="cusionImg"></ImageView>
+								<View  width="Titanium.UI.FILL" height="70dp" layout="vertical" left="90dp">
+									<!-- <Label class="fontLight qtyValueLbl" >NO. OF PIECES</Label> ////////////temp code
+									<TextField id="noOfPieces_txt" type="TextField" class="fontLight qtyValueLbl" hintText="NO. OF PIECES"></TextField>
+									<View class="qtyBorder1"></View>
+									<Label id="submitQtyBtn" class="iconFont submitQtyBtn" onClick="submitCusionSize"></Label>
+								</View>	
+							</View>	
+						</View>
+						<View id="dropdownView" class="dropdownView left5">
+							<ListView id="dropdownList" onItemclick="cusionListSelection">
+								<ListSection id="section"></ListSection>
+							</ListView>
+						</View>
+						<View class="widthFill" top="240dp" height="60dp" bottom="100dp">
+							<View class="qtyBorder" top="0"></View>
+							<Label class="fontLight qtyLbl" left="7%">QUANTITY</Label>
+							<Label id="quantityLabel" class="fontHeavy qtyValue" right="7%"></Label>
+							<View class="qtyBorder" bottom="0"></View>
+						</View>
+						<Label id="cushion_whereToBuyBtn" class="fontMedium whereTobuy">WHERE TO BUY</Label>
+					</ScrollView> -->
+					<!-- *********************** -->
+					<ScrollView id="curtains" title="CURTAINS"  class="widthFill heightFill" onSingletap="hideCurtainDropdown">
+						<View class="heightSize widthFill" layout="vertical" top="0">
+							<View class="boxContainer">
+								<View  left="5%" width="95%" height="98%" onClick="showCurtainDropdownList">
+									<Label id="curtainType" class="fontMedium calculatorSelectionLbl" left="5%">SELECT TYPE</Label>
+									<Label class="dropdown iconFont" right="5%"></Label>
+								</View>
+							</View>
+							<View width="80%" height="Ti.UI.SIZE" top="20dp" >
+								<ImageView id="curtainImg" class="cusionImg" top="5dp"></ImageView> 
+								<!-- <View  width="Titanium.UI.FILL" height="160dp" layout="vertical" left="0dp"> -->
+								<View  width="Titanium.UI.FILL" height="160dp" layout="vertical" left="90dp">
+									<TextField id="rodWidthTxt" type="TextField" class="fontLight qtyValueLbl" hintText="ROD WIDTH (IN CMS)"></TextField>
+									<TextField id="dropLengthTxt" type="TextField" class="fontLight qtyValueLbl" hintText="DROP LENGTH (MIN. 50 CMS)"></TextField>
+									<View class="qtyBorder1"></View>
+									<Label id="submitCurtainQtyBtn"  class="fontMedium submitQtyBtn"  onClick="submitCurtainSize">SUBMIT</Label>
+								</View>	
+							</View>	
+						</View>
+						<View id="curtainDropdownView" class="dropdownView left5" width="90%">
+							<ListView id="curtainDropdownList" onItemclick="curtainListSelection">
+								<ListSection id="curtainSection"></ListSection>
+							</ListView>
+						</View>
+						<View class="widthFill" top="240dp" height="80dp" bottom="100dp">
+							<View class="qtyBorder" top="0"></View>
+							<Label class="fontLight qtyLbl" top="10dp" left="7%">QUANTITY</Label>
+							<Label id="curtainsQtyLabel" top="10dp" class="fontHeavy qtyValue" right="7%"></Label>
+							
+							<Label class="fontLight qtyLbl" bottom="10dp" left="7%">PRICE</Label>
+                            <Label id="priceLbl" bottom="10dp" class="fontHeavy qtyValue" right="7%"></Label>
+                            
+							<View class="qtyBorder" bottom="0"></View>
+						</View>
+						<Label id="curtains_whereToBuyBtn" class="fontMedium whereTobuy">WHERE TO BUY</Label>						
+					</ScrollView>
+					
+					<!-- *********************** -->
+		
+					<ScrollView id="cusion" title="CUSHIONS"  class="widthFill heightFill">
+                        <View class="heightSize widthFill" layout="vertical" top="0">   
+                            <View class="boxContainer">
+                                <View dropValue="type" left="5%" width="42%" height="98%" onClick="showCusionDropdownList">
+                                    <Label dropValue="type" id="type" class="fontMedium calculatorSelectionLbl" left="5%">SELECT TYPE</Label>
+                                    <Label dropValue="type" class="dropdown iconFont" right="5%"></Label>
+                                </View>
+                                <View class="boxSeperator"></View>
+                                <View dropValue="size" right="5%" width="42%" height="98%" onClick="showCusionDropdownList">
+                                    <Label dropValue="size" id="size" class="fontMedium calculatorSelectionLbl" left="5%">CUSHION SIZE</Label>
+                                    <Label dropValue="size" class="dropdown iconFont" right="5%"></Label>
+                                </View>
+    
+                            </View>
+                            <View width="80%" height="100dp" top="20dp">
+                                 <ImageView id="cusionImg" class="cusionImg"></ImageView> 
+                                <View  width="Titanium.UI.FILL" height="70dp" layout="vertical" left="90dp">
+                                    <!-- <Label class="fontLight qtyValueLbl" >NO. OF PIECES</Label> -->
+                                    <TextField id="noOfPieces_txt" type="TextField" class="fontLight qtyValueLbl" hintText="NO. OF PIECES"></TextField>
+                                    <View class="qtyBorder1"></View>
+                                    <Label id="submitQtyBtn" class="iconFont submitQtyBtn" onClick="submitCusionSize"></Label>
+                                </View> 
+                            </View> 
+                        </View>
+                        <View id="dropdownView" class="dropdownView">
+                            <ListView id="dropdownList" onItemclick="cusionListSelection">
+                                <ListSection id="section"></ListSection>
+                            </ListView>
+                        </View>
+                        <View class="widthFill" top="240dp" height="80dp" bottom="100dp">
+                            <View class="qtyBorder" top="0"></View>
+                            <Label class="fontLight qtyLbl" top="10dp" left="7%">QUANTITY</Label>
+                            <Label id="quantityLabel" top="10dp" class="fontHeavy qtyValue" right="7%"></Label>
+                            
+                            <Label class="fontLight qtyLbl" bottom="10dp" left="7%">PRICE</Label>
+                            <Label id="cushionPriceLbl" bottom="10dp" class="fontHeavy qtyValue" right="7%"></Label>
+                            
+                            <View class="qtyBorder" bottom="0"></View>
+                        </View>
+                        <Label id="cushion_whereToBuyBtn" class="fontMedium whereTobuy">WHERE TO BUY</Label>
+                    </ScrollView> 
+                    
+				</ScrollableView>
+	
+			</View>
+	
+		</View>
+	</View>
+</Alloy>

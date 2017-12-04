@@ -1,0 +1,287 @@
+<Alloy>
+	<Window id="faq" onAndroid:back="goToBack" onClose="destroyWindow">
+		<View id="superView" class="superView">
+			<View class="faqHeader">
+				<Label class="headerLbl">FAQ</Label>
+				<Label id="faqCloseLbl" class="closeLbl"></Label>
+			</View>
+			<View id="faqDropDown" class="layoutVertical">
+				<View class="widthFill heightSize top0 layoutHorizontal" touchEnabled="false">
+					<Label id="faqLbl" class="fontMedium dropDownLbl">GENERAL</Label>
+					<Label class="iconFont dropDownIcon"></Label>
+				</View>
+				<ScrollView id="faqDropDownScroll" class="dropDownScroll layoutVertical"  zIndex="2"></ScrollView>
+			</View>
+			<ScrollView top="80dp">
+				<!-- General Questions -->
+				<View id="generalQuestions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW DO I CONTACT CUSTOMER SERVICE?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerContact" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW DO I REMOVE MY NAME FROM YOUR MAILING LIST?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Please select the 'Unsubscribe' option that comes with every email or newsletter that is sent from D'decor.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WILL YOU SHARE MY INFORMATION WITH OTHERS?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">We do not share your information with anyone. Please read our Privacy Policy for more details.</Label>
+						</View>
+					</View>
+				</View>
+				
+				<!-- Order Questions -->
+				<View id="orderQuestions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW WILL I KNOW THAT MY ORDER IS CONFIRMED?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">After you make your selection and complete the payment process successfully, an automatic order confirmation email will be sent to you with an order confirmation number from D’decor.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW DO I CHECK MY ORDER STATUS?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerTextSupp" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT IF THE ITEM I HAVE ORDERED IS OUT OF STOCK?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">In the rare case that your selection is out of stock, you will be intimated about the next available date. If the date is not suitable, you have the option of changing the selection or canceling your order.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW LONG WILL IT TAKE TO RECEIVE MY ORDER?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Subject to goods being in stock and geographic condition of the city, shipping across India typically takes 4-5 working days.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW CAN I MODIFY MY ORDER?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">You can modify your order during the shopping process by editing your shopping cart. Once you confirm payment, the only way to change your order would be to cancel before the order is shipped and place a new order.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I CANCEL MY ORDER?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Subject to goods being in stock and geographic condition of the city, shipping across India typically takes 4-5 working daysAll orders can be cancelled before the order is processed from our warehouse. Once the order is processed, a cancellation cannot be accepted. Any order requiring special production cannot be cancelled.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHOM SHOULD I CONTACT IF I HAVE PROBLEMS WITH MY ORDER?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerTextSupp1" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+				</View>
+				
+				<!-- Payment Questions -->
+				<View id="paymentQuestions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT PAYMENT METHODS DO YOU ACCEPT?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">CREDIT CARDS:</Label>
+							<Label class="answerText" bottom="8dp">MasterCard \nVISA \nAmerican Express</Label>
+							<Label class="answerText" bottom="8dp">DEBIT CARDS:</Label>
+							<Label class="answerText" bottom="8dp">Maestro \nElectron</Label>
+							<Label class="answerText" bottom="8dp">NET BANKING:</Label>
+							<Label class="answerText" bottom="8dp">For all major Indian banks</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHEN WILL MY CREDIT CARD BE CHARGED?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Your credit card will be charged at the time of placing your order through our secured payment gateway, CC Avenue. An online real–time authorization is done through the payment gateway.</Label>
+						</View>
+					</View>					
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">IS THERE A CASH-ON-DELIVERY OPTION?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Currently, we do not provide an option for COD. We will be introducing it soon.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT CURRENCY WILL MY ORDER BE BILLED IN?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">All domestic orders are billed in Indian Rupees (INR).</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WILL I BE CHARGED FOR OCTROI OR ENTRY TAXES IN CASE OF DOMESTIC SHIPPING IN INDIA?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Our prices are inclusive of all applicable taxes. You will not be charged more than the price mentioned on the website.</Label>
+						</View>
+					</View>
+				</View>
+				
+				
+				<!-- Shipping Questions -->
+				<View id="shippingQuestions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHICH COUNTRIES DO YOU SHIP TO?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerTextSupp2" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW IS MY ORDER SHIPPED?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">We have partnered with Blue Dart to provide the best and quickest shipping option.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I SHIP DIFFERENT ITEMS IN MY ORDER TO DIFFERENT SHIPPING ADDRESSES?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">We can only process one shipping address per order. So, if you would like to order several items and ship to different addresses, please treat these as separate orders.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN MY ORDER SHIP TO A P.O. BOX?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerTextSupp3" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I CHANGE MY SHIPPING ADDRESS AFTER AN ORDER HAS BEEN PLACED?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Please ensure that you type the correct and complete shipping address while ordering as this cannot be changed after confirming your order.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHO DO I CONTACT IN CASE MY ORDER HAS NOT BEEN DELIVERED WITHIN THE STIPULATED TIME?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label id="answerTextSupp4" class="answerText" bottom="8dp"></Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I CHANGE MY BILLING ADDRESS?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Please provide the billing address as per the address on your credit card for successful payment processing.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">HOW LONG WILL IT TAKE TO RECEIVE MY ORDER?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Subject to goods being in stock, domestic shipment across India typically takes 4-5 working days.</Label>
+						</View>
+					</View>
+				</View>
+				
+				<!-- Returns Questions -->
+				<View id="returnsQuestions" class="questions">
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHAT IS YOUR RETURN POLICY?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">We accept returns only for defective goods or those which are damaged in transit when ordered through our online store. You can also return an item if the order has taken more than 10 days to be delivered from the promised date of delivery.</Label>
+						</View>
+					</View>					
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">CAN I RETURN THE PRODUCT AT A D'DECOR STORE?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">Products bought online cannot be exchanged or returned at any of our retail stores.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">WHEN WILL I RECEIVE A REFUND FOR MY RETURNED PRODUCTS?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">When a return is approved, a refund will be credited to your D’decor account in form of a credit note. A refund confirmation will be sent to your email address.</Label>
+						</View>
+					</View>
+					<View class="qAndA">
+						<View type="question" class="questionsWrapper">
+							<Label type="questionText" class="questionsText">I HAVE RECEIVED A CREDIT NOTE. HOW CAN I REDEEM IT?</Label>
+							<Label type="questionText" class="questionsIcon"></Label>
+						</View>
+						<View type="answer" class="answerWrapper" top="18dp">
+							<Label class="answerText" bottom="8dp">To redeem your credit note, key in the code at check out. If the value of your purchase is higher than the value of the credit note, you can pay the difference with any of our payment methods. You will need to use the full amount of the credit note in a single purchase. Please note that you cannot redeem the credit note at any retail outlets.</Label>
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

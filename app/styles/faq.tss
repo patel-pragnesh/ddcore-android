@@ -1,0 +1,150 @@
+".superView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	backgroundColor: "#ffffff",
+	backgroundColor: "#231f20"
+}
+".faqHeader":{
+	top: "0dp",
+	zIndex :"100",
+	width:Titanium.UI.FILL,
+	height: "40dp"
+}
+".headerLbl":{
+	left: "20dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize: "16dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff"
+}
+".closeLbl":{
+	right: "15dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#faqDropDown":{
+	top: "40dp",
+	right: "15dp",
+	width: "29%",
+	zIndex: "100",
+	height: "40dp"
+}
+".dropDownLbl":{	
+	left: "3%",
+	top: "0dp",
+	width: "75%",
+	height: "40dp",
+	font:{
+		fontSize: "10dp"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#ffffff",
+	touchEnabled: false
+}
+"#faqLbl" :{
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+}
+".dropDownIcon":{	
+	rigth: "0dp",
+	width: "18%",
+	height: "40dp",
+	font:{
+		fontSize: "5dp"
+	},
+	text:Alloy.Globals.icon.dropdownArrow,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	color: "#e65e48",
+	touchEnabled: false
+}
+".dropDownScroll":{
+	backgroundColor: "#595959",
+	height: 0
+}
+".dropDownSeperator":{
+	height: "0.5dp",
+	width:Titanium.UI.FILL,
+	backgroundColor: "#666666"
+}
+".questions" :{
+	top:"20dp",
+	left: "20dp",
+	right: "20dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".qAndA" : {
+	top: "10dp",
+	bottom: "10dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical"
+}
+".questionsWrapper" : {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".questionsText" : {
+	left: 0,
+	width: "90%",
+	height: Titanium.UI.SIZE,
+	font : {
+        fontSize : "12dp",
+        fontFamily : "futura-hv-bt-heavy"
+    },
+    color: "#e65e48",
+    touchEnabled:false,
+}
+".questionsIcon" :{
+	right: 0,
+	width: "10%",
+	color: "#ffffff",
+	font:{
+		fontSize: "12dp",
+		fontFamily: "icomoon"
+	},
+	text:Alloy.Globals.icon.downArrow,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	touchEnabled:false,
+}
+".answerWrapper" :{
+	width: Titanium.UI.FILL,
+	height: 0,
+	layout: "vertical"
+}
+".answerText":{
+	font:{
+		fontSize: "12dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+".innerPoints" : {
+	top: "8dp",
+	bottom: "8dp",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+}
+".answerPoint" : {
+	left: "20dp",
+	font:{
+		fontSize: "12dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}

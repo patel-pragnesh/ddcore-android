@@ -1,0 +1,51 @@
+<Alloy>
+	<Window id="payment" class="windowBackground" onAndroid:back="goToBack" onClose="destroyWindow" onFocus="updateCount">
+		<Require src="headerView"type="widget" id="header"></Require>
+		<View id="totalDisplayContainer">
+			<Label id="totalLbl" class="fontLight">TOTAL</Label>
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" right="20">
+					<Label id="rupies"></Label>
+					<Label id="amountLbl"  class="fontHeavy"></Label>	
+			</View>
+			<!-- <Label id="taxLbl" class="fontMedium"></Label> -->
+		</View>
+		<View class="addressSeperator"></View>
+		<View class="reviewSeperator"></View>
+		<View class="paymentSeperator"></View>
+		<View class="nextSeperator"></View>
+		<Label id="addressLbl"></Label>
+		<Label id="reviewLbl"></Label>
+		<Label id="paymentLbl"></Label>
+		
+		
+		<View id="paymentContainer" class="widthFill heightSize" layout="vertical"  left="0" top="150dp">
+		
+			<!-- <View id="paymentOptionContainer" top="2dp" visible="false">
+				<Label id="radio1" class="radio1"></Label>
+				<Label id="paymentOptionLbl" class="paymentOptionLbl">Ccavenue MCPG Payment</Label>
+			</View>
+			
+			<View id="noPaymentOption" layout="horizontal" top="2dp" height="40dp" class="widthFill" visible="false">
+				<Label id="radio2" class="radio1"></Label>
+				<Label id="paymentOptionLbl2" class="paymentOptionLbl">Ccavenue MCPG Payment</Label>
+			</View> -->
+		
+		</View>
+		
+		
+		<Label id="placeOrder" class="downLbl fontHeavy">PLACE ORDER</Label>
+		<View id="confirmationContainer" class="widthFill heightFill">
+			<View class="confirmationHeader">
+				<Label id="confirmationlbl">CONFIRMATION</Label>
+				<Label id="confirmationCloseLbl" class="closeLbl"></Label>
+			</View>
+			<Label class="questionLbl"> Are you sure you want to close transaction?</Label>
+			<Label id="noLbl" class="optionlbl">NO</Label>
+			<Label id="yesLbl" class="optionlbl">YES</Label>
+		</View>
+		<View id="thankYouView" class="widthFill heightFill">
+			<Label id="questionLbl" class="questionLbl">YOUR ORDER HAS BEEN PLACED \n THANK YOU !!!</Label>
+			<Label id="moveToEshopLbl">VISIT OUR ESTORE</Label>
+		</View>
+	</Window>
+</Alloy>

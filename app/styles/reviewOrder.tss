@@ -1,0 +1,151 @@
+"#totalDisplayContainer":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	top:"53dp",
+	backgroundColor:"#ffffff"
+}
+"#totalLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#7e7d7d",
+	left:"20dp"
+}
+"#amountLbl":{
+	font:{
+		fontSize:"18dp",
+	},
+	color:"#e65e48",
+	left:"10dp"
+}
+"#rupies":{
+	font:{
+		fontSize:"11dp",
+		fontFamily:"icomoon"
+	},
+	color:"#e65e48",
+	text:Alloy.Globals.icon.currency,
+	left:"0dp",
+	top:"3dp",
+	verticalAlign:Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+}
+"#taxLbl":{
+	font:{
+		fontSize:"8dp",
+	},
+	color:"#333333",
+	right:"20dp",
+	bottom:"5dp"
+}
+".addressSeperator":{
+	height:"1dp",
+	width:"33%",
+	left:"0dp",
+	top:"103dp",
+	zIndex:"2",
+	backgroundColor:"#333333"
+}
+".reviewSeperator":{
+	height:"1dp",
+	left:"34%",
+	width:"33%",
+	top:"103dp",
+	zIndex:"2",
+	backgroundColor:"#e65e48"
+}
+".nextSeperator":{
+	height:"1dp",
+	left:"0",
+	width:Titanium.UI.FILL,
+	top:"103dp",
+	zIndex:"0",
+	backgroundColor:"#e7e7e7"
+}
+"#addressLbl":{
+	top:"108",
+	left:"10%",
+	width:"33%",
+	font:{
+		fontSize:"10dp",
+		fontFamily : "icomoon"
+		//fontFamily:"futura_lt_bt_light-webfont",
+	},
+	color:"#000000",
+}
+".reviewLbl":{
+	left:"45%",
+	top:"108",
+	width:"33%",
+	font:{
+		fontSize:"11dp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#000000",
+	text:"REVIEW"
+}
+".listView":{
+	top:"120dp",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	bottom:"80dp"
+}
+".downLbl":{
+	height:"40dp",
+	bottom:"0dp",
+	font:{
+		fontSize:"10dp"
+	},
+	color:"#ffffff",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#changeAddressLbl":{
+	left:"0dp",
+	backgroundColor:"#b0b0b0"
+}
+"#paymentLbl":{
+	right:"0dp",
+	backgroundColor:"#e65e48"
+}
+
+
+
+
+
+"#couponTxt":{
+	//bottom:"40dp",
+	top:"0dp",
+	left:"10dp",
+	height:"60dp",
+	width:Titanium.UI.FILL,
+	zIndex:1,
+	//borderColor:"red",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	hintText:"COUPON CODE",
+	
+	font:{
+		fontSize:"12dp"
+	},
+	//paddingLeft:"10dp",
+	color:"#000000",
+	hintTextColor:"#a0a0a0"//"#e6e6e6"
+	
+}
+
+
+"#clearCoupnLbl":{
+	top:"0dp",
+	right:"0dp",
+	zIndex:2,
+	//color:"#e6e6e6",
+	color:Alloy.Globals.labelTitleColor,
+	width:"40dp",
+	height:"40dp",
+	//text:Alloy.Globals.icon.close,
+	text:Alloy.Globals.icon.tick,
+	touchEnabled:false,
+	visible:false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize:"12dp"
+	}
+}

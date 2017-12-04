@@ -1,0 +1,69 @@
+<Alloy>
+	<Window id="storeLocator" onAndroid:back="goToBack">
+		<View id="header">
+			<Label visible="true" id="screenLbl" class="screenName fontLight">FIND A STORE</Label>
+			<TextField visible="false" id="searchField" class="fontLight" hintText="Enter City/ State/ Pincode"></TextField>
+			<Label id="searchStore" class="searchStore iconFont" onClick="enableSearch"></Label>
+			<Label class="closeStore iconFont"></Label>
+		</View>
+		<View id="filterContainer">
+			<Label id="fabric_lbl" class="filtersLbl fontMedium">FABRIC STORES</Label>
+			<View class="isSelected" left="5dp"></View>
+			<Label class="filterSeperator"></Label>
+			<Label id="blind_lbl" class="filtersLbl fontMedium">BLINDS STORES</Label>
+			<View class="isSelected" visible="false" right="5dp"></View>
+		</View>
+		<View id="map_container">
+			
+			<!-- MAP goes here -->
+			
+			
+		</View>
+		
+		<View id="store_list">
+			<Label id="storeDirection" class="iconFont"></Label>
+			<Label id="storeDetails" class="iconFont" onClick="toggelDetailList"></Label>
+			<View id="store_list_container" class="widthFill heightFill" >
+				
+				<ListView  id="storeListView" class="listViewStyle" defaultItemTemplate="template">
+					<Templates>
+					<ItemTemplate name="template" class="widthFill heightSize"  selectionStyle="none" layout="vertical">
+						 <View top="0" left="0%" class="widthFill heightSize">
+							 <Label id="locationName" class="fontMedium" >D'Decor Store ,Bandra</Label> 
+							 <Label id="locationKm" class="fontMedium" >3.3 km</Label>
+						 </View>
+						<Label id="exculsive_lbl">EXCULSIVE</Label>
+						<Label id="address_lbl">address addressaddress address addressaddress address addressaddress address addressaddress address addressaddress address addressaddress address address  </Label>
+						
+						<Label id="getDirection_lbl">GET DIRECTIONS</Label>
+						  
+						 
+					</ItemTemplate>
+					</Templates>
+					<ListSection>
+						<ListItem></ListItem>
+						<ListItem></ListItem>
+					</ListSection>
+				</ListView>
+				
+				
+			</View>
+			<Label id="filterLbl" class="iconFont" onClick="openFilterList"></Label>
+
+		</View>
+		<View id="filterContatiner" >
+			<View id="filterListContainer">
+				<Label class="fontMedium commonFilterListLabel" top="5dp">
+					<!-- <AttributedString>ALL</AttributedString> -->
+					ALL
+				</Label>
+				<Label class="fontLight commonFilterListLabel" >EXCLUSIVE BRAND OUTLETS</Label>
+				<Label class="fontLight commonFilterListLabel" >FRANCHISES</Label>
+				<Label class="fontLight commonFilterListLabel" >DEALERS</Label>
+
+			</View>
+			<Label id="closeFilterLbl" class="iconFont" onClick="closeFilterList"></Label>
+		</View>
+
+	</Window>
+</Alloy>

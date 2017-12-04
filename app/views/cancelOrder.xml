@@ -1,0 +1,13 @@
+<Alloy>
+	<View id="cancelOrder" class="container">
+		<Label id="screenName" class="fontLight">CANCEL ORDER</Label>
+		<Label id="close_btn" class="iconFont" onClick="closeCancelOrder"></Label>
+		
+		
+		<Label id="cancelOrderMsgContainer" class="fontLight"></Label>
+		
+		<Label id="action1" class="fontMedium" onClick="confirmOrderCancel">YES</Label>
+		<Label id="action2" onClick="closeCancelOrder" class="fontLight">BACK</Label>
+		
+	</View>
+</Alloy>

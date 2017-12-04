@@ -1,0 +1,65 @@
+
+"#beddingView" : {
+  //	visible: false,
+  	type : "beddingVIEW",
+	//layout: "vertical",
+	backgroundColor: "#231f20"
+}
+"#beddingTypeView":{
+	visible: false,
+	layout: "vertical",
+	backgroundColor: "#231f20"
+}
+".beddingHeader":{
+	top: "0dp",
+	width:Titanium.UI.FILL,
+	height: "53dp"
+}
+".beddingLbl":{
+	left: "15dp",
+	height:Titanium.UI.FILL,
+	font:{
+		fontSize: "15dp",
+		fontFamily: 'futura_lt_bt_light-webfont'
+	},
+	color: "#ffffff"
+}
+"#beddingDetails":{
+	top: "68dp",//15
+	width:Titanium.UI.FILL,
+	right: "15dp",
+	left: "15dp",
+	//height:Titanium.UI.SIZE,
+	height:Titanium.UI.FILL,
+	layout: "vertical",
+	bottom: "80dp"
+}
+".closeLbl":{
+	right: "15dp",
+	width: "40dp",
+	height: "40dp",
+	font:{
+		fontSize: "20dp",
+		fontFamily: "icomoon"
+	},
+	color: "#ffffff",
+	text:Alloy.Globals.icon.close,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+"#beddingTypeDetails":{
+	layout:"horizontal",
+	//scrollType:"vertical"
+}
+
+
+"#listAllLbl":{
+	//top: "30dp",
+	bottom: "30dp",
+	width: "80%",
+	height: "40dp",
+	color: "#ffffff",
+	borderColor: "#80e7e7e7",
+	borderWidth: "0.5",
+	backgroundColor: "transparent",//B3A9ABA6
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER
+}

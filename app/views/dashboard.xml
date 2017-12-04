@@ -1,0 +1,221 @@
+<Alloy>
+    <Window id="dashboard" class="windowBackground" onFocus="updateCount" onClose="clearMemory" onBlur="stopImageRotation">
+        <View id="fullView">
+            <View id="sliderView">
+                <ImageView id="img1"  class="windowBackgroundImage widthFill heightFill"></ImageView>
+                <View class="heightFill layoutVertical">
+                    <View id="topView">
+                        <View id="sliderProfileContainer" class="widthFill heightSize">
+                            <ImageView id="profileImage" type="user_image"></ImageView>
+                            <Label id="nameLabel" type="nameEmail" class="fontHeavy">Welcome Guest!</Label>
+                            <Label id="emailLabel"  type="nameEmail"  class="fontLight">Login/Register</Label>
+                        </View>
+                        <Label  id="editProfile" class="fontLight" visible="false" onClick="navigateToMyAccount">Edit</Label>
+                    </View>
+                    <View class="sliderSeperator"></View>
+                    <View id="menuScrollContainer" height="Titanium.UI.FILL">
+                        <ScrollView id="menuScroll" layout="vertical">
+                            <View id="sliderCategories" class="widthFill heightFill layoutVertical">
+
+                                <View id="ourrangeContainer" category="1" class="cContainer">
+                                    <View class="categoriesSubContainer">
+                                        <Label id="ourrangeLbl" class="sliderCategoryLbl">OUR RANGE</Label>
+                                        <Label id="ourrangeArrow" class="sliderRightArrow iconFont"></Label>
+                                    </View>
+                                </View>
+                                <View id="inspiredContainer" category="2" class="cContainer">
+                                    <View class="categoriesSubContainer">
+                                        <Label id="inspiredLbl" class="sliderCategoryLbl">GET INSPIRED</Label>
+                                        <Label id="inspiredArrow" class="sliderRightArrow iconFont"></Label>
+                                    </View>
+                                </View>
+                                
+                                <View id="eshopContainer" category="3" class="cContainer">
+                                    <View class="categoriesSubContainer">
+                                        <Label id="eshopLbl" class="sliderCategoryLbl">SHOP</Label>
+                                        <Label id="eshopArrow" class="sliderRightArrow iconFont"></Label>
+                                    </View>
+                                </View>
+                                
+                                <!-- <Label id="shopLbl" text="SHOP"></Label> -->
+                                
+                                
+                                
+                                <!-- <Label id="aboutLbl" class="otherMenu" onClick="navigateToAboutUs">ABOUT</Label> -->
+                                <Label id="storeLocatorLbl" class="otherMenu">STORE LOCATOR</Label>
+                                <Label id="appoinment" class="otherMenu" onClick="navigateToAppointment">REQUEST AN APPOINTMENT</Label>
+                                <!-- <Label id="feedbackLbl" class="otherMenu" onClick="navigateToFeedback">FEEDBACK</Label> -->
+                                <Label id="logoutLbl" visible="false" class="otherMenu">LOGOUT</Label>
+                            </View>
+                        </ScrollView>
+                    </View>
+                </View>
+            </View>
+            <View id="mainView">
+                <View id="fadeView" touchEnabled="false"></View>
+                <View id="dashboardNavigation" zIndex="100">
+
+                    <Label id="menuButton"   text=Alloy.Globals.icon.menu class="iconFont"></Label>
+                    <Label id="logoIcon"   text=Alloy.Globals.icon.logo class="iconFont1"></Label>
+                    <!-- <ImageView id="logoIcon"  image="/images/ddecorHomeIcon.png"></ImageView> --> 
+                    <View id="cartContainer">
+                        <Label id="cartCountLbl"></Label>
+                        <Label id="cartLbl" text=Alloy.Globals.icon.bag class="navigationMenuLbl iconFont textCenter"></Label>
+                    </View>
+                    <!-- <Label id="cartLbl" text=Alloy.Globals.icon.bag class="navigationMenuLbl iconFont textCenter" right="90dp"></Label> -->
+                    <Label id="searchLbl" text=Alloy.Globals.icon.search class="navigationMenuLbl iconFont textCenter" right="45dp"></Label>
+                    <Label id="overFlowMenuLbl" text=Alloy.Globals.icon.dotsMenu class="navigationMenuLbl iconFont textCenter" right="0dp" ></Label>
+                </View>
+                <ScrollView id="dashboardScroll" class="widthFill layoutVertical">
+                    <View class="heightSize top0 widthFill">
+                        
+                        <ScrollableView id="itemScrollableView" zIndex="11">
+                            <!-- <View bottom="25" height="100" borderColor="red">
+                                <View height="100" borderColor="green" width="100"></View>
+                            </View> -->
+                        </ScrollableView>
+                        <!-- <ImageView id="dashboardImage"></ImageView> -->
+                        <View id="opac" class="scrollableContainer widthFill" touchEnabled="false"></View>
+                        <ImageView id="dashboardImage"></ImageView>
+                        <!--<<View top="130dp" left="10dp" right="10dp" zIndex="12" height="Titanium.UI.SIZE">
+                            <!--<Label class="lbl1">LIVE</Label>-->
+                            <!--<View class="subLblContainer">
+                                <Label id="beautifulLbl"  class="lbl2"></Label>
+                                <Label class="lbl4"></Label>
+                         </View>
+                            <Label id="dashboard_homeLbl" class="lbl3"></Label>-->
+                    <!--</View>-->
+                     
+                        <View id="scrollControllContainer"></View>
+                    </View>
+                    <Label id="explore_lbl" class="fontMedium" text="START EXPLORING"></Label>
+                    <View id="collectionContainer">
+                        <View class="small_dash"></View>
+                        <!-- <Label class="collection_lbl" text="COLLECTION"></Label> -->
+                        <Label class="categories_lbl fontLight" text="CATEGORIES"></Label>
+                        <View id="categoriesContainer">
+                            <View id="upCategoryContainer" class="layoutHorizontal">
+                                <View id="collectionView" class="widthSize heightFill">
+                                    <Label id="collectionLbl"  text=Alloy.Globals.icon.collections class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl" >COLLECTIONS</Label>
+                                </View>
+                                <View id="curtainsView" class="widthSize heightFill">
+                                    <Label id="curtainsLbl"  text=Alloy.Globals.icon.curtains class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">CURTAINS</Label>
+                                </View>
+                                <View id="upholsteryView" class="widthSize heightFill">
+                                    <Label id="upholsteryLbl"  text=Alloy.Globals.icon.upholstery class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">UPHOLSTERY</Label>
+                                </View>
+                            </View>
+                            <View id="downCategoryContainer" class="layoutHorizontal">
+                                <View id="beddingsView" class="widthSize heightFill">
+                                    <Label id="beddingsLbl" text=Alloy.Globals.icon.beddings class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">BED LINEN</Label>
+                                </View>
+                                <View id="wallpaperView" class="widthSize heightFill">
+                                    <Label id="wallpaperLbl" text=Alloy.Globals.icon.wallpaper class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">WALLPAPER</Label>
+                                </View>
+                                <View id="blindsView" class="widthSize heightFill">
+                                    <Label id="blindsLbl" text=Alloy.Globals.icon.blinds class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">BLINDS</Label>
+                                </View>
+                            </View> 
+                            
+                            <View id="beddingCategoryContainer" class="layoutHorizontal">
+                                <View id="rmcView" class="widthSize heightFill">
+                                    <Label id="rmcLbl" text=Alloy.Globals.icon.rmc class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">RMC</Label>
+                                </View>
+                                <View id="cushionView" class="widthSize heightFill">
+                                    <Label id="cushionLbl" text=Alloy.Globals.icon.cushion class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">CUSHIONS</Label>
+                                </View>
+                                <View id="towelView" class="widthSize heightFill">
+                                    <Label id="towelLbl" text=Alloy.Globals.icon.towel class="categoryIconLbl iconFont"></Label>
+                                    <Label class="categoryLbl">TOWELS</Label>
+                                </View>
+                            </View>
+                            
+                            <View id="rugsCategoryContainer" class="">
+								<View id="rugsView" class="widthSize heightFill">
+									<Label id="rugsLbl"  text=Alloy.Globals.icon.rug class="categoryIconLbl iconFontNew"></Label>
+									<Label class="categoryLbl" >RUGS</Label>
+								</View>								
+							</View>  
+                            
+                        </View>
+                        <Label id="storeLocator" class="storelocatorlbl iconFont" onClick="navigateToStoreLocater"></Label>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <View class="widthFill heightSize layoutVertical" backgroundColor="#ffffff">
+                            <View class="small_dash"></View>
+                            <Label class="visit_lbl" text="VISIT OUR"></Label>
+                            <!-- <Label class="visit_lbl" text="COMING SOON"></Label> -->
+                            <Label  class="estore_lbl fontLight" text="E-STORE"></Label>
+                            <ImageView id="estoreImage" class="estore_image" onClick="navigateToEstore"></ImageView>
+                        </View>
+                        
+                        <!-- New Desgin during  Phase 2 live  -->
+                        
+                        <View class="widthFill layoutVertical" height="585dp"  backgroundColor="#fff">
+                            
+                            
+                            <View class="widthFill" height="280dp" >
+                                <ImageView id="exploreImg" class="widthFill heightFill" left="0" top="0" defaultImage="/images/default_logo.png" />
+                                    
+                                <Label id="exploreLookBtn" class="fontHeavy" onClick="navigateToLooks" />   
+                            </View>
+                            
+                             
+                            
+                            <View class="widthFill" height="305dp" onClick="navigateToStyleDiscovery"  >
+                                <ImageView id="styleImg" class="widthFill" height="200dp" left="0" top="80dp" defaultImage="/images/default_logo.png" />
+                                    <View class="widthFill heightSize layoutVertical"  backgroundColor="transparent" top="0dp">
+                                        <View class="small_dash"></View>
+                                        <Label class="visit_lbl" text="DISCOVER YOUR"></Label>
+                                        <Label  class="estore_lbl fontLight" text="STYLE"></Label>
+                                    </View>
+                            </View>     
+                                    
+                            
+                            
+                            
+                            
+                            
+                        </View> 
+                        
+                        <!-- New Desgin during  Phase 2 live  -->
+                        
+                        
+                        
+                        
+                    </View>
+
+                </ScrollView>
+                <!-- over flow view -->
+                <View id="openView">
+                <View id="overFlowView">
+                    <Label id="homeLbl" onClick="navigateToAboutUs" class="overFlowOptions">ABOUT US</Label>
+                    <Label id="appoinmantLbl" class="overFlowOptions">FEEDBACK</Label>
+                    <!-- <Label id="terms_condition" height="0dp" class="overFlowOptions">TERMS & CONDITIONS</Label> -->
+                    <Label id="customerService"  class="overFlowOptions">CUSTOMER SERVICE</Label>
+                    <Label id="return_refund"  class="overFlowOptions">RETURNS / REFUND</Label>
+                    <Label id="faq"  class="overFlowOptions">FAQ</Label>
+                    <Label id="privacy"  class="overFlowOptions">PRIVACY POLICY</Label>
+                    <Label id="shortlist"  class="overFlowOptions" onClick="Alloy.Globals.navigateToMyShorlistScreen">MY SHORTLIST</Label>
+                    <!-- <Label class="overFlowOptions">MORE</Label> -->
+
+                </View>
+                    </View>
+                <!-- over flow view -->
+            </View>
+        </View>
+    </Window>
+</Alloy>

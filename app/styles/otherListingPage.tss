@@ -1,0 +1,112 @@
+
+"#filterContainer" : {
+  //top:"53dp",//53//0
+  top:"0dp",//53//0
+  backgroundColor:"#231f20",
+  width:Titanium.UI.FILL,
+  height:"35dp",
+}
+".filtersLbl":{
+	font:{
+		fontSize:"11dp",
+	},
+	color:"#e65e48",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	height:Titanium.UI.FILL,
+	width:"48%",
+	//borderColor:"green"
+}
+"#sortByLbl":{
+	left:"0dp"
+}
+"#filterByLbl":{
+	right:"0dp"
+}
+".filterSeperator":{
+	font:{
+		fontSize:"12sp"
+	},
+	color:"#a6ffffff",
+	text:"|"
+}
+".list":{
+	//top:"88dp",//88//35
+	top:"53dp",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+}
+"#listTypeContainer":{
+	width:Titanium.UI.FILL,
+	height:"127dp",//100
+	bottom:"-65dp",
+	//backgroundColor:"#ccffffff",
+	layout:"vertical",
+}
+"#total_toast_lbl":{
+	backgroundColor:"#a6000000",
+	color:"#ffffff",
+	font:{
+		fontSize: "10dp",
+		fontFamily: "futura_lt_bt_light-webfont"
+	},
+	//bottom:"45dp",
+	height:"17dp",
+	width:"80dp",
+	borderRadius:"10",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled:false
+	
+}
+
+"#listTypeLbl":{
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_lt_bt_light-webfont",
+	},
+	color:"#333333",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	height:"35dp",
+	width:Titanium.UI.FILL,
+	top:"0dp"
+}
+".typeIconCollection":{
+	width:"60%",
+	height:"65dp",
+	//borderColor:"red"
+}
+".listTypeIcon":{
+	font:{
+		fontSize:"35dp",
+		fontFamily:"icomoon"
+	},
+	color:"#000000",
+	//borderColor:"green",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled:false
+	
+}
+"#gridIcon":{
+	text:Alloy.Globals.icon.grid
+}
+"#listIcon":{	
+	text:Alloy.Globals.icon.list,
+	font:{
+		fontSize:"35dp",
+		fontFamily:"icomoon"
+	},
+	color:"#000000",
+}
+"#blockIcon":{
+	text:Alloy.Globals.icon.block
+}
+".iconLbl":{
+	font:{
+		fontSize:"10sp",
+		fontFamily:"futura_lt_bt_light-webfont"
+	},
+	color:"#000000",
+	top:"5dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled:false
+}
+
